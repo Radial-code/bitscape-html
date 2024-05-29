@@ -113,6 +113,9 @@
         rgba(194, 131, 13, 0.1) 100%
     );
 }
+.no-scroll {
+    overflow: hidden;
+  }
 @media (max-width: 1399.98px) {
     .nav_logo_padding {
         border-right: unset !important;
