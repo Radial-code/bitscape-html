@@ -246,3 +246,21 @@
 .overflow_hidden {
     overflow: hidden;
 }
+
+/* ========== BACK TO TOP CSS =========== */
+#back_to_top_btn {
+    display: none;
+    position: fixed;
+    bottom: 45px;
+    right: 14px;
+    background-color: var(--color-skyblue);
+    border: none;
+    z-index: 49;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+}
+#back_to_top_btn:hover {
+    border: 1px solid var(--color-white);
+}
