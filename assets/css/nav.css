@@ -74,11 +74,17 @@
     width: 100%;
     left: 0;
 }
-.mobile_navbar_hover:hover a{
+.mobile_navbar_hover:hover a {
     color: var(--color-meteor);
 }
-.mobile_navbar_hover:hover .mobile_svg_hover{
+.mobile_navbar_hover:hover svg circle {
     fill: var(--color-meteor);
+}
+.mobile_navbar_hover:hover svg rect {
+    fill: var(--color-meteor);
+}
+.mobile_navbar_hover:hover .mobile_svg_hover {
+    stroke: var(--color-meteor);
 }
 .mobile_navbar_hover:hover {
     background: linear-gradient(
