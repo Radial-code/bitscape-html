@@ -60,7 +60,6 @@ body {
 
 .bg_gray {
     background-color: var(--color-gray);
-
 }
 
 .text_black {
@@ -86,7 +85,6 @@ body {
 .text_mine_shaft {
     color: var(--color-mine-shaft);
 }
-
 
 /*=========================================== FONT WEIGHT ========================================== */
 .fw_normal {
