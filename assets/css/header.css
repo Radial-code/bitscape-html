@@ -1,0 +1,54 @@
+.hero_bg_img {
+    background-image: url("../images/webp/hero_bg.webp");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.hero_bg_img .yellow_button {
+    width: 120px !important;
+    height: 25px !important;
+}
+
+.headding_max_width {
+    max-width: 480px;
+}
+.macbook_paragrph_width{
+    max-width: 482px;
+    margin-left:auto ;
+}
+
+.macbook_img{
+    transform: translateX(-100px);
+}
+@media (min-width: 1920px) {
+    .hero_bg_img {
+        height: unset !important;
+    }
+}
+@media (min-width: 768px) {
+    .macbook_img{
+        transform: translateX(-8px);
+    }
+    .macbook_content_pb{
+        padding-bottom: 150px;
+    }
+    .hero_bg_img .yellow_button {
+        width: 220px !important;
+        height: 46px !important;
+    }
+    .hero_mobile_img {
+        width: 778px;
+        height: 954px;
+        right: 0%;
+        top: 70px;
+        display: block;
+        position: absolute;
+    }
+    .hero_bg_img {
+        height: calc(100vh - 78px);
+    }
+    .col_lg_5 {
+        width: 41.33%;
+        padding: 0 12px;
+    }
+}

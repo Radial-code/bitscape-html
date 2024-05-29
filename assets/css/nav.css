@@ -5,17 +5,6 @@
     padding: 0 32px 0 18px;
 }
 
-.yellow_button {
-    width: 130px;
-    height: 32px;
-    background: var(--color-meteor);
-    border: none;
-    padding: 10px;
-    clip-path: polygon(0 0, 100% 0, 100% 58%, 87% 100%, 0 100%);
-}
-.yellow_button:hover{
-    background: white;
-}
 .px_32 {
     padding: 0 32px;
 }
@@ -24,14 +13,6 @@
     padding: 0 32px 0 18px;
 }
 
-.yellow_button {
-    width: 130px;
-    height: 32px;
-    background: var(--color-meteor);
-    border: none;
-    padding: 10px;
-    clip-path: polygon(0 0, 100% 0, 100% 58%, 87% 100%, 0 100%);
-}
 .social_icons:hover svg path {
     fill: var(--color-meteor);
 }
@@ -251,3 +232,4 @@
         gap: 2px;
     }
 }
+

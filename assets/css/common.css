@@ -53,6 +53,10 @@
     align-items: center;
 }
 
+.align_items_end {
+    align-items: flex-end;
+}
+
 /* ============= ROW AND COL =============== */
 .row {
     display: flex;
@@ -214,6 +218,10 @@
 
 /* =============== LINE HEIGHT ================*/
 
+.lh_100 {
+    line-height: 100%;
+}
+
 .lh_110 {
     line-height: 110%;
 }
@@ -332,6 +340,17 @@
     padding-right: 12px;
 }
 
+.pt_32 {
+    padding-top: 32px;
+}
+
+.pt_20 {
+    padding-top: 20px;
+}
+
+.pt_12 {
+    padding-top: 12px;
+}
 /* ============== MARGIN ========== */
 .ml_48 {
     margin-left: 48px;
@@ -379,6 +398,36 @@
     margin-right: auto;
 }
 
+.yellow_button {
+    width: 130px;
+    height: 32px;
+    background: var(--color-meteor);
+    border: none;
+    clip-path: polygon(0 0, 100% 0, 100% 58%, 87% 100%, 0 100%);
+}
+.yellow_button:hover {
+    background: white;
+}
+
+.black_button {
+    width: 120px;
+    height: 25px;
+    background: black;
+    border: 1px solid var(--bg_zombie);
+    clip-path: polygon(0 0, 100% 0, 100% 56%, 87% 100%, 0 100%);
+}
+
+.black_button:hover {
+    background: white;
+    color: black !important;
+}
+
+.box_black_button {
+    background-color: white;
+    padding: 1px;
+    clip-path: polygon(0 0, 100% 0, 100% 58%, 87% 100%, 0 100%);
+}
+
 /* ========================== SUHEADING=========================== */
 .sub_heading {
     font-size: var(--font-lg);
@@ -402,6 +451,10 @@
     }
 }
 @media (min-width: 768px) {
+    .black_button {
+        width: 218px;
+        height: 44px;
+    }
     .order_md_0 {
         order: 0;
     }
