@@ -1,3 +1,7 @@
+.gap_12 {
+    gap: 12px;
+}
+
 /* ================= DISPLAY FLEX ============= */
 
 .d_flex {
@@ -117,12 +121,15 @@
     padding: 0 12px;
 }
 
-/* ============= WIDTH =============== */
+/* ============= WIDTH AND HEIGHT =============== */
 
 .w_100 {
     width: 100%;
 }
 
+.h_100 {
+    height: 100%;
+}
 /* ================= TEXT ALIGN ============= */
 
 .text_start {
@@ -148,6 +155,10 @@
 /* ============ LETTER SPACING =========== */
 .letter_16 {
     letter-spacing: 16%;
+}
+
+.letter_20 {
+    letter-spacing: 3px;
 }
 
 .-letter_10 {
@@ -269,6 +280,8 @@
     border: 1px solid var(--color-white);
 }
 
+/* =========== BORDER ========== */
+
 .border_top {
     border-top: 2px solid var(--color-mine-shaft);
 }
@@ -283,4 +296,69 @@
 
 .border_right {
     border-right: 2px solid var(--color-mine-shaft);
+}
+
+/* ============== PADDING ========== */
+.pl_48 {
+    padding-left: 48px;
+}
+
+.pr_48 {
+    padding-right: 48px;
+}
+
+.pl_32 {
+    padding-left: 32px;
+}
+
+.pr_32 {
+    padding-right: 32px;
+}
+
+.pl_24 {
+    padding-left: 32px;
+}
+
+.pr_24 {
+    padding-right: 32px;
+}
+/* ============== MARGIN ========== */
+.ml_48 {
+    margin-left: 48px;
+}
+
+.mr_48 {
+    margin-right: 48px;
+}
+
+.ml_32 {
+    margin-left: 32px;
+}
+
+.mr_32 {
+    margin-right: 32px;
+}
+
+.ml_24 {
+    margin-left: 32px;
+}
+
+.mr_24 {
+    margin-right: 32px;
+}
+
+/* ============ GAP ============= */
+.gap_48 {
+    gap: 48px;
+}
+
+.gap_32 {
+    gap: 32px;
+}
+.gap_32 {
+    gap: 32px;
+}
+
+.gap_32 {
+    gap: 24px;
 }
