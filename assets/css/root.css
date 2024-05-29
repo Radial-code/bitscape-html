@@ -14,7 +14,7 @@ body {
 .custom_container {
     max-width: 1496px;
     margin: 0 auto;
-    padding: 0 12px;
+    padding: 0 20px;
     border-left: 2px solid var(--color-mine-shaft);
     border-right: 2px solid var(--color-mine-shaft);
 }

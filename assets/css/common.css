@@ -370,6 +370,7 @@
     margin-left: auto;
     margin-right: auto;
 }
+
 /* ========================== SUHEADING=========================== */
 .sub_heading {
     font-size: var(--font-lg);
@@ -394,5 +395,13 @@
 
     .order_md_1 {
         order: 1;
+    }
+
+    .flex_md_row {
+        flex-direction: row;
+    }
+
+    .align_items_md_center {
+        align-items: center;
     }
 }
