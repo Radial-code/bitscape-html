@@ -239,7 +239,7 @@
     }
 
     .pt_md_0 {
-        padding-top: 0px;
+        padding-top: 0px !important;
     }
 
     .computer_blur {
