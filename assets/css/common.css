@@ -353,11 +353,11 @@
 }
 
 .pt_20 {
-    padding-top: 20px;
+    padding-top: 20px !important;
 }
 
 .pb_24 {
-    padding-bottom: 24px;
+    padding-bottom: 24px !important;
 }
 
 .pt_12 {
@@ -469,13 +469,16 @@
     line-height: 130%;
 }
 @media (min-width: 1400px) {
+    .h_3xl_100 {
+        height: 100%;
+    }
     .custom_container {
         border-left: 2px solid var(--color-mine-shaft);
         border-right: 2px solid var(--color-mine-shaft);
     }
 }
 @media (min-width: 768px) {
-
+    
     .d_md_none {
         display: none !important;
     }
@@ -492,7 +495,7 @@
         width: 172px;
         height: 46px;
     }
-    .yellow_button{
+    .yellow_button {
         font-size: 12px;
     }
     .black_button {
