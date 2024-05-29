@@ -34,16 +34,83 @@
     padding-top: 70px;
 }
 
-@media (min-width:768px) {
+.pb_70 {
+    padding-bottom: 70px;
+}
+
+
+.pt_24 {
+    padding-top: 24px;
+}
+
+/* ======================= Cards Section ============================= */
+.section_line::after {
+    position: absolute;
+    content: "";
+    width: 110%;
+    left: -5%;
+    top: 0;
+    background-color: var(--color-mine-shaft);
+    height: 2px;
+}
+
+.section_line::before {
+    position: absolute;
+    content: "";
+    width: 110%;
+    left: -5%;
+    bottom: 0;
+    background-color: var(--color-mine-shaft);
+    height: 2px;
+}
+
+.letter_spacing {
+    letter-spacing: -1px;
+}
+
+.py_20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media (min-width:576px) {
     .pr_sm_0 {
         padding: 0;
     }
+
+    .letter_spacing {
+        letter-spacing: 0px;
+    }
+
 }
 
 @media (min-width:768px) {
+
+    .section_line::before {
+        left: -103%;
+        width: 220%;
+    }
+
+    .section_line::after {
+        width: 0;
+    }
+
+    .border_md_right {
+        border-right: 2px solid var(--color-mine-shaft);
+    }
+
+    .border_md_top {
+        border-top: 2px solid var(--color-mine-shaft);
+    }
+
     .pt_md_70 {
         padding-top: 70px;
     }
+
+    .pb_md_0 {
+        padding-bottom: 70px;
+    }
+
 
     .pt_md_0 {
         padding-top: 0px;
@@ -62,6 +129,32 @@
     .welcome_bg_image {
         top: 60px;
     }
+
+    .col_md_6 {
+        width: 50%;
+    }
+
+    .section_line::before {
+        left: -103%;
+        width: 220%;
+    }
+
+    .section_line::after {
+        width: 0;
+    }
+
+    .border_md_right {
+        border-right: 2px solid var(--color-mine-shaft);
+    }
+
+    .border_md_top {
+        border-top: 2px solid var(--color-mine-shaft);
+    }
+
+    .pl_8 {
+        padding-left: 8px;
+    }
+
 }
 
 @media (min-width:1024px) {
@@ -70,5 +163,27 @@
         max-height: 335px;
         filter: blur(200px);
         top: 35%;
+    }
+
+    .section_line::before {
+        width: 0;
+    }
+
+    .col_lg_6 {
+        width: 50%;
+    }
+
+    .col_lg_4 {
+        width: 33.33%;
+    }
+
+    .border_lg_right {
+        border-right: 2px solid var(--color-mine-shaft);
+    }
+}
+
+@media (min-width:1280px) {
+    .p_xl_24 {
+        padding: 24px;
     }
 }

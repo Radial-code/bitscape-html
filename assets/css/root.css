@@ -15,8 +15,7 @@ body {
     max-width: 1496px;
     margin: 0 auto;
     padding: 0 20px;
-    border-left: 2px solid var(--color-mine-shaft);
-    border-right: 2px solid var(--color-mine-shaft);
+
 }
 
 :root {
@@ -187,5 +186,12 @@ body {
         --font-sm: 10px;
         --font-lg: 26px;
         --font-xl: 26px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .custom_container {
+        border-left: 2px solid var(--color-mine-shaft);
+        border-right: 2px solid var(--color-mine-shaft);
     }
 }
