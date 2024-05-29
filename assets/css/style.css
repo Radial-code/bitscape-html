@@ -18,12 +18,10 @@
     border: 0.5px solid var(--color-meteor);
     border-radius: 50%;
     transform: translateY(-20px);
-
 }
 
 .position_mobile {
     margin-top: -45px;
-
 }
 
 .border_rounded_second {
@@ -97,7 +95,6 @@
     padding-bottom: 73px;
 }
 
-
 .pt_24 {
     padding-top: 24px;
 }
@@ -153,10 +150,9 @@
     opacity: 0.7;
 }
 
-@media (min-width:576px) {
+@media (min-width: 576px) {
     .position_mobile {
         margin-top: 0px;
-
     }
 
     .pr_sm_0 {
@@ -178,12 +174,9 @@
     .max_w_380 {
         max-width: 400px;
     }
-
-
 }
 
-@media (min-width:768px) {
-    
+@media (min-width: 768px) {
     .d_md_block {
         display: block !important;
     }
@@ -220,7 +213,6 @@
     .pb_md_0 {
         padding-bottom: 0px;
     }
-
 
     .pt_md_8 {
         padding-top: 8px;
@@ -278,7 +270,7 @@
     }
 }
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
     .bfi_section {
         min-height: 400px;
     }
@@ -288,7 +280,7 @@
     }
 }
 
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
     .computer_blur {
         max-width: 683px;
         max-height: 335px;
@@ -361,13 +353,13 @@
     }
 }
 
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
     .bfi_section {
         min-height: 455px;
     }
 }
 
-@media (min-width:1280px) {
+@media (min-width: 1280px) {
     .p_xl_24 {
         padding: 24px;
     }
@@ -389,13 +381,13 @@
     }
 }
 
-@media (min-width:1440px) {
+@media (min-width: 1440px) {
     .bfi_section {
         min-height: 580px;
     }
 }
 
-@media (min-width:1496px) {
+@media (min-width: 1496px) {
     .bfi_section {
         min-height: 610px;
     }
