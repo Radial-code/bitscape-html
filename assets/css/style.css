@@ -34,8 +34,16 @@
     padding-top: 70px;
 }
 
+.pt_43 {
+    padding-top: 43px;
+}
+
 .pb_70 {
     padding-bottom: 70px;
+}
+
+.pb_73 {
+    padding-bottom: 73px;
 }
 
 
@@ -68,9 +76,22 @@
     letter-spacing: -1px;
 }
 
+.pt_12 {
+    padding-top: 12px;
+}
+
+.pt_8 {
+    padding-top: 8px;
+}
+
 .py_20 {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+/* ======================= FOOTER ======================= */
+.icons_max_w {
+    max-width: 202px;
 }
 
 @media (min-width:576px) {
@@ -179,6 +200,10 @@
 
     .border_lg_right {
         border-right: 2px solid var(--color-mine-shaft);
+    }
+
+    .pl_lg_0 {
+        padding-left: 0;
     }
 }
 
