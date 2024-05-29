@@ -6,6 +6,10 @@
     box-sizing: border-box !important;
 }
 
+body {
+    background-color: var(--color-gray) !important;
+}
+
 /* ================DEFINE CONTAINER================ */
 .custom_container {
     max-width: 1496px;

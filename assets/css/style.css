@@ -1,0 +1,8 @@
+/* ================= WELCOME SECTION =============================== */
+.sub_heading {
+    font-size: var(--font-lg);
+    color: var(--color-zombie);
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 110%;
+}
