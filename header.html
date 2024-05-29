@@ -15,52 +15,84 @@
 </head>
 
 <body>
-  <header class=" border_bottom">
-    <nav class="custom_container ">
-      <div class="d_flex align_items_center nav_height justify_content_between">
-        <div class="d_flex align_items_center justify_content_center gap_12 border_right h_100  nav_logo_padding">
+  <header class="border_bottom  ">
+    <nav class="custom_container">
+      <div class="d_flex align_items_center nav_height justify_content_between d_md_none ">
+        <!-- ========== NAV-LOGO ========== -->
+        <div
+          class="d_flex align_items_center justify_content_center gap_12 border_right h_100 nav_logo_padding position_relative z_10">
           <img src="./assets/images/svg/logo.svg" alt="logo">
           <img src="./assets/images/svg/bitscape-logo.svg" alt="bitscape-logo.svg">
         </div>
-        <div class="d_flex align_items_center justify_content_center gap_48 border_right h_100 w_100 pl_48 pr_48">
-          <a href="#market" class="ff_styrene fw_medium text_sm lh_110 letter_20 text_white text_uppercase">MARKETS</a>
-          <a href="#trade" class="ff_styrene fw_medium text_sm lh_110 letter_20 text_white text_uppercase">TRADE</a>
-          <a href="#swap" class="ff_styrene fw_medium text_sm lh_110 letter_20 text_white text_uppercase">SWAP</a>
-          <a href="#assets" class="ff_styrene fw_medium text_sm lh_110 letter_20 text_white text_uppercase">Assets</a>
-          <a href="#learn" class="ff_styrene fw_medium text_sm lh_110 letter_20 text_white text_uppercase">Learn</a>
+        <div class="navbar_responsive d_flex w_100 align_items_center justify_content_end h_100">
+          <!-- ========== NAVIGATION LINKS ============ -->
+          <div class="d_flex align_items_center justify_content_center gap_48 w_100 pl_48 pr_48 mobile_nav">
+            <a href="#market"
+              class="ff_styrene fw_medium text_sm lh_110 letter_20 text_white text_uppercase">MARKETS</a>
+            <a href="#trade" class="ff_styrene fw_medium text_sm lh_110 letter_20 text_white text_uppercase">TRADE</a>
+            <a href="#swap" class="ff_styrene fw_medium text_sm lh_110 letter_20 text_white text_uppercase">SWAP</a>
+            <a href="#assets" class="ff_styrene fw_medium text_sm lh_110 letter_20 text_white text_uppercase">Assets</a>
+            <a href="#learn" class="ff_styrene fw_medium text_sm lh_110 letter_20 text_white text_uppercase">Learn</a>
+          </div>
+          <!-- =========== SOCIAL ICONS =============-->
+          <div
+            class="border_right border_left h_100 d_flex align_items_center justify_content_center px_32 px_lg_20 gap_32 gap_lg_20">
+            <a href="https://x.com/" target="_blank" rel="noopener noreferrer"><img
+                src="./assets/images/svg/twitter.svg" alt="twitter-logo"></a>
+            <a href="https://discord.com/" target="_blank" rel="noopener noreferrer"><img
+                src="./assets/images/svg/discord.svg" alt="discord"></a>
+            <a href="https://telegram.org/" target="_blank" rel="noopener noreferrer"><img
+                src="./assets/images/svg/telegram.svg" alt="telegram"></a>
+          </div>
+          <!-- ============ SEARCH LOGO ========== -->
+          <div class="border_right h_100 d_flex align_items_center justify_content_center px_32 px_lg_20">
+            <img src="./assets/images/svg/search-logo.svg" alt="search-logo">
+          </div>
+          <!-- ========== CONNECT BUTTON ========== -->
+          <div class="d_flex align_items_center justify_content_center pl_32 pr_12 pr_2xl_32 px_lg_20">
+            <button class="yellow_button ff_print lh_120 position_relative">CONNECT</button>
+          </div>
         </div>
-        <div class="border_right h_100  d_flex align_items_center justify_content_center pl_32 pr_32 gap_32">
-          <a href="https://x.com/" target="_blank" rel="noopener noreferrer"><img src="./assets/images/svg/twitter.svg"
-              alt="twitter-logo"></a>
-          <a href="https://discord.com/" target="_blank" rel="noopener noreferrer"><img
-              src="./assets/images/svg/discord.svg" alt="discord"></a>
-          <a href="https://telegram.org/" target="_blank" rel="noopener noreferrer"><img
-              src="./assets/images/svg/telegram.svg" alt="telegram"></a>
-        </div>
-        <div class="border_right h_100  d_flex align_items_center justify_content_center pl_32 pr_32">
-          <img src="./assets/images/svg/search-logo.svg" alt="search-logo">
-        </div>
-        <div class=" d_flex align_items_center justify_content_center pl_32 pr_18">
-          <button class="yellow_button ff_print lh_120 position_relative">CONNECT</button>
-        </div>
+        <!-- nav-toggler for mobile version only -->
+        <button class="nav-toggler">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="mobile_navbar position_fixed bottom_0 left_0 mobile_nav_border">
       </div>
     </nav>
   </header>
 
   <script>
-    // ========== SIDEBAR
-    const sidebar = document.querySelector(".overlay");
-    function Togleside() {
-      sidebar.classList.add("show_nav");
-      document.body.classList.add("overflow_hidden");
-      document.body.classList.remove("overflow-auto");
-      document.body.classList.add("vh-100");
+    // define all UI variable
+    const navToggler = document.querySelector('.nav-toggler');
+    const navMenu = document.querySelector('.mobile_nav');
+    const navLinks = document.querySelectorAll('.mobile_nav a');
+
+    // load all event listeners
+    allEventListeners();
+
+    // functions of all event listeners
+    function allEventListeners() {
+      // toggler icon click event
+      navToggler.addEventListener('click', togglerClick);
+      // nav links click event
+      navLinks.forEach(elem => elem.addEventListener('click', navLinkClick));
     }
-    function hideNav() {
-      sidebar.classList.remove("show_nav");
-      document.body.classList.add("overflow-auto");
-      document.body.classList.remove("overflow_hidden");
-      document.body.classList.remove("vh-100");
+
+    // togglerClick function
+    function togglerClick() {
+      navToggler.classList.toggle('toggler-open');
+      navMenu.classList.toggle('open');
+    }
+
+    // navLinkClick function
+    function navLinkClick() {
+      if (navMenu.classList.contains('open')) {
+        navToggler.click();
+      }
     }
   </script>
 </body>
