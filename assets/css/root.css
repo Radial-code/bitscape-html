@@ -5,6 +5,7 @@
     text-decoration: none !important;
     box-sizing: border-box !important;
 }
+
 /* ================DEFINE CONTAINER================ */
 .custom_container {
     max-width: 1496px;
@@ -15,30 +16,17 @@
 :root {
     --color-black: #000;
     --color-white: #fff;
-    --color-gray: #666666;
-    --color-light-white: #fefefe;
-    --color-alto: #d9d9d9;
-    --color-dark-alto: #0d0d0d;
-    --color-dark-gray: #161616;
-    --color-mine-shaft: #212121;
-    --color-dark-mine-shaft: #3d3d3d;
-    --color-scorpion: #606060;
-    --color-silver-chalice: #a7a7a7;
-    --color-scorpion: #5f5f5f;
-    --color-mine-shaft: #2e2e2e;
-    --color-skyblue: #017eff;
-    --color-blue-gradient: linear-gradient(90deg, #017eff 0%, #97c4ff 100%);
-    --color-blue-zodiac: #0b253f;
+    --color-zombie: #e7d1a8;
+    --color-meteor: #d18d0e;
+    --color-mine-shaft: #303030;
+    --color-gray: #1e1e1e;
 
-    --font-xsm: 20px;
-    --font-sm: 22px;
-    --font-base: 24px;
-    --font-md: 28px;
-    --font-lg: 40px;
-    --font-xl: 44px;
-    --font-2xl: 64px;
-    --font-3xl: 70px;
-    --font-4xl: 80px;
+    --font-xsm: 10px;
+    --font-sm: 12px;
+    --font-base: 16px;
+    --font-md: 19px;
+    --font-lg: 30px;
+    --font-xl: 50px;
 }
 
 /*================================================= DEFINE-ALL = COLOR-VALUE =========================================== */
@@ -54,81 +42,83 @@
     background-color: var(--color-white);
 }
 
-.bg_light_white {
-    background-color: var(--color-light-white);
+.bg_zombie {
+    background-color: var(--color-zombie);
 }
 
-.bg_alto {
-    background-color: var(--color-alto);
-}
-
-.bg_dark_alto {
-    background-color: var(--color-dark-alto);
-}
-
-.bg_dark_gray {
-    background-color: var(--color-dark-gray);
+.bg_meteor {
+    background-color: var(--color-meteor);
 }
 
 .bg_mine_shaft {
     background-color: var(--color-mine-shaft);
 }
 
-.bg_dark_mine_shaft {
-    background-color: var(--color-dark-mine-shaft);
+.bg_gray {
+    background-color: var(--color-gray);
+
 }
 
-.bg_scorpion {
-    background-color: var(--color-scorpion);
-}
-
-.bg_blue_gradient {
-    background: var(--color-blue-gradient);
+.text_black {
+    color: var(--color-black);
 }
 
 .text_white {
     color: var(--color-white);
 }
 
-.text_alto {
-    color: var(--color-alto);
-}
-
 .text_gray {
     color: var(--color-gray);
 }
 
-.text_silver_chalice {
-    color: var(--color-silver-chalice);
+.text_zombie {
+    color: var(--color-zombie);
 }
 
-.text_light_white {
-    color: var(--color-light-white);
+.text_meteor {
+    color: var(--color-meteor);
 }
 
 .text_mine_shaft {
     color: var(--color-mine-shaft);
 }
 
-.text_scorpion {
-    color: var(--color-scorpion);
+
+/*=========================================== FONT WEIGHT ========================================== */
+.fw_normal {
+    font-weight: 400;
 }
 
-.text_blue_gradient {
-    background: var(--color-blue-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.fw_medium {
+    font-weight: 500;
+}
+
+.fw_semibold {
+    font-weight: 600;
+}
+
+.fw_bold {
+    font-weight: 700;
 }
 
 /*=========================================== DEFINE-ALL = FONT-FAMILY ========================================== */
 
 @font-face {
-    font-family: helvetica;
-    src: url("/assets/fonts/helvetica-regular.otf");
+    font-family: print;
+    src: url("/assets/fonts/print_chart_21.ttf");
 }
 
-.ff_inter {
-    font-family: "Inter", sans-serif;
+@font-face {
+    font-family: styrene;
+    src: url("/assets/fonts/styrene_a_black_trial.ttf");
+}
+
+.ff_print {
+    font-family: print;
+}
+
+.ff_styrene {
+    font-family: styrene;
 }
 
 /*=========================================== DEFINE-ALL = FONT-SIZES ========================================== */
@@ -165,35 +155,33 @@
 }
 
 /* =====DEFINE ALL MEIDA QUERIES===== */
-@media (max-width: 1199.98px) {
+/* @media (max-width: 1199.98px) {
     :root {
-        --font-sm: 16px;
-        --font-base: 16px;
-        --font-md: 18px;
-        --font-lg: 28px;
-        --font-xl: 30px;
-        --font-2xl: 40px;
-        --font-3xl: 50px;
-        --font-4xl: 40px;
+        --font-sm: 10px;
+        --font-md: 19px;
+        --font-lg: 26px;
+        --font-xl: 26px;
     }
-}
+} */
 
 @media (max-width: 991.98px) {
     :root {
-        --font-lg: 22px;
-        --font-xl: 26px;
-        --font-2xl: 36px;
-        --font-3xl: 40px;
+        --font-sm: 12px;
+        --font-lg: 28px;
+        --font-xl: 42px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    :root {
+        --font-xl: 32px;
     }
 }
 
 @media (max-width: 575.98px) {
     :root {
-        --font-md: 16px;
-        --font-lg: 20px;
-        --font-xl: 22px;
-        --font-2xl: 30px;
-        --font-3xl: 32px;
-        --font-4xl: 32px;
+        --font-sm: 10px;
+        --font-lg: 26px;
+        --font-xl: 26px;
     }
 }
