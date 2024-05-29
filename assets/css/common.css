@@ -324,8 +324,8 @@
     padding-right: 32px;
 }
 
-.pr_18 {
-    padding-right: 18px;
+.pr_12 {
+    padding-right: 12px;
 }
 
 /* ============== MARGIN ========== */
@@ -391,8 +391,13 @@
     font-weight: 500;
     line-height: 130%;
 }
-
-@media (min-width:768px) {
+@media (min-width: 1400px) {
+    .custom_container {
+        border-left: 2px solid var(--color-mine-shaft);
+        border-right: 2px solid var(--color-mine-shaft);
+    }
+}
+@media (min-width: 768px) {
     .order_md_0 {
         order: 0;
     }
