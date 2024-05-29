@@ -372,6 +372,7 @@
     padding-left: 12px;
     padding-right: 12px;
 }
+
 /* ============== MARGIN ========== */
 .ml_48 {
     margin-left: 48px;
@@ -427,6 +428,7 @@
     border: none;
     clip-path: polygon(0 0, 100% 0, 100% 58%, 87% 100%, 0 100%);
 }
+
 .yellow_button:hover {
     background: white;
 }
@@ -468,41 +470,73 @@
     font-weight: 500;
     line-height: 130%;
 }
+
 @media (min-width: 1400px) {
     .h_3xl_100 {
         height: 100%;
     }
+
     .custom_container {
         border-left: 2px solid var(--color-mine-shaft);
         border-right: 2px solid var(--color-mine-shaft);
     }
 }
+
 @media (min-width: 768px) {
-    
+
     .d_md_none {
         display: none !important;
     }
+
     .pl_md_32 {
         padding-left: 32px;
     }
+
     .pt_md_32 {
         padding-top: 32px;
     }
+
     .align_items_md_end {
         align-items: flex-end;
     }
+
+    .computer_btn .box_black_button {
+        width: 150px;
+        height: 34px;
+    }
+
+    .computer_btn .black_button {
+        font-size: 12px;
+        width: 148px;
+        height: 32px;
+    }
+
+    .welcome_button .box_black_button {
+        width: 130px;
+        height: 34px;
+    }
+
+    .welcome_button .black_button {
+        font-size: 12px;
+        width: 128px;
+        height: 32px;
+    }
+
     .box_black_button {
         width: 172px;
         height: 46px;
     }
+
     .yellow_button {
         font-size: 12px;
     }
+
     .black_button {
         font-size: 12px;
         width: 170px;
         height: 44px;
     }
+
     .order_md_0 {
         order: 0;
     }
@@ -524,6 +558,7 @@
     .box_black_button {
         width: 220px;
     }
+
     .black_button {
         font-size: 12px;
         width: 218px;
