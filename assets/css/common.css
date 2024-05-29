@@ -1,0 +1,83 @@
+/* ================= DISPLAY FLEX ============= */
+.d_flex {
+    display: flex;
+}
+
+.justify_center {
+    justify-content: center;
+}
+
+.justify_between {
+    justify-content: space-between;
+}
+
+.align_start {
+    align-items: start;
+}
+
+.align_end {
+    align-items: end;
+}
+
+.align_center {
+    align-items: center;
+}
+
+.flex_column {
+    flex-direction: column;
+}
+
+.flex_row {
+    flex-direction: row;
+}
+/* ================= TEXT ALIGN ============= */
+
+.text_start {
+    text-align: start;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.text_end {
+    text-align: end;
+}
+
+/* =============== POSITION =============== */
+
+.absolute {
+    position: absolute;
+}
+.relative {
+    position: relative;
+}
+
+/* =============== LINE HEIGHT ================*/
+
+.lh_110 {
+    line-height: 110%;
+}
+
+.lh_120 {
+    line-height: 120%;
+}
+
+.lh_130 {
+    line-height: 130%;
+}
+
+.lh_160 {
+    line-height: 160%;
+}
+
+/* ================== ORDER ================= */
+
+.order_first {
+    order: 0;
+}
+
+.order_last {
+    order: 1;
+}
+
