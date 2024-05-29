@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=s, initial-scale=1.0">
     <!-- ============ FAVICON ============= -->
-    <link rel="shortcut icon" href="./assets/images/svg/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/images/svg/logo.svg" type="image/x-icon">
     <!-- ============= CSS LINK ============= -->
     <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/nav.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- ========== META TAGS ============= -->
     <title>Bitscape</title>
@@ -31,7 +33,505 @@
 </head>
 
 <body>
+    <header class="border_bottom  ">
+        <nav class="custom_container">
+            <div class="d_flex align_items_center nav_height justify_content_between d_md_none ">
+                <!-- ========== NAV-LOGO ========== -->
+                <div
+                    class="d_flex align_items_center justify_content_center gap_12 border_right h_100 nav_logo_padding position_relative z_10">
+                    <img src="./assets/images/svg/logo.svg" alt="logo">
+                    <img src="./assets/images/svg/bitscape-logo.svg" alt="bitscape-logo.svg">
+                </div>
+                <div class="navbar_responsive d_flex w_100 align_items_center justify_content_end h_100">
+                    <!-- ========== NAVIGATION LINKS ============ -->
+                    <div class="d_flex align_items_center justify_content_center gap_48 w_100 pl_48 pr_48 mobile_nav">
+                        <a href="#market"
+                            class="ff_styrene fw_medium text_sm lh_110 letter_20 text_white text_uppercase">MARKETS</a>
+                        <a href="#trade"
+                            class="ff_styrene fw_medium text_sm lh_110 letter_20 text_white text_uppercase">TRADE</a>
+                        <a href="#swap"
+                            class="ff_styrene fw_medium text_sm lh_110 letter_20 text_white text_uppercase">SWAP</a>
+                        <a href="#assets"
+                            class="ff_styrene fw_medium text_sm lh_110 letter_20 text_white text_uppercase">Assets</a>
+                        <a href="#learn"
+                            class="ff_styrene fw_medium text_sm lh_110 letter_20 text_white text_uppercase">Learn</a>
+                    </div>
+                    <!-- =========== SOCIAL ICONS =============-->
+                    <div
+                        class="border_right border_left h_100 d_flex align_items_center justify_content_center px_32 px_lg_20 gap_32 gap_lg_20">
+                        <a href="https://x.com/" target="_blank" rel="noopener noreferrer"><img
+                                src="./assets/images/svg/twitter.svg" alt="twitter-logo"></a>
+                        <a href="https://discord.com/" target="_blank" rel="noopener noreferrer"><img
+                                src="./assets/images/svg/discord.svg" alt="discord"></a>
+                        <a href="https://telegram.org/" target="_blank" rel="noopener noreferrer"><img
+                                src="./assets/images/svg/telegram.svg" alt="telegram"></a>
+                    </div>
+                    <!-- ============ SEARCH LOGO ========== -->
+                    <div class="border_right h_100 d_flex align_items_center justify_content_center px_32 px_lg_20">
+                        <img src="./assets/images/svg/search-logo.svg" alt="search-logo">
+                    </div>
+                    <!-- ========== CONNECT BUTTON ========== -->
+                    <div class="d_flex align_items_center justify_content_center pl_32 pr_12 pr_2xl_32 px_lg_20">
+                        <button class="yellow_button ff_print lh_120 position_relative">CONNECT</button>
+                    </div>
+                </div>
+                <!-- nav-toggler for mobile version only -->
+                <button class="nav-toggler">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="mobile_navbar position_fixed bottom_0 left_0 mobile_nav_border">
+                <div class="menu_icons mx_auto h_100 d_flex align_items_center justify_content_center">
+                    <div class="flex_column d_flex align_items_center justify_content_center mobile_navbar_hover">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.638794" width="3.99998" height="3.99998" fill="#ffffff" />
+                            <rect x="4.63873" width="3.99998" height="3.99998" fill="#ffffff" />
+                            <rect x="8.63892" width="3.99998" height="3.99998" fill="#ffffff" />
+                            <rect x="16.6389" width="3.99998" height="3.99998" fill="#ffffff" />
+                            <rect x="0.638977" y="4" width="3.99998" height="3.99998" fill="#ffffff" />
+                            <rect x="0.638977" y="7.99951" width="3.99998" height="3.99998" fill="#ffffff" />
+                            <rect x="4.63873" y="7.99951" width="3.99998" height="3.99998" fill="#ffffff" />
+                            <rect x="12.6393" y="7.99951" width="3.99998" height="3.99998" fill="#ffffff" />
+                            <rect x="16.6389" y="7.99951" width="3.99998" height="3.99998" fill="#ffffff" />
+                            <rect x="16.6389" y="11.9995" width="3.99998" height="3.99998" fill="#ffffff" />
+                            <rect x="16.6389" y="16" width="3.99998" height="3.99998" fill="#ffffff" />
+                            <rect x="12.6393" y="16" width="3.99998" height="3.99998" fill="#ffffff" />
+                            <rect x="8.63892" y="16" width="3.99998" height="3.99998" fill="#ffffff" />
+                            <rect x="0.638977" y="16" width="3.99998" height="3.99998" fill="#ffffff" />
+                        </svg>
+                        <a href="#home"
+                            class="ff_styrene transition_03s fw_medium text_nav lh_110 letter_20 text_white text_uppercase">HOME</a>
+                    </div>
+                    <div class="flex_column d_flex align_items_center justify_content_center mobile_navbar_hover">
+                        <svg width="21" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="1.97553" cy="16.8634" r="1.02951" stroke="#E7D1A8"
+                                class="mobile_svg_hover transition_03s" stroke-width="0.686342" />
+                            <circle cx="8.38141" cy="16.8634" r="1.02951" stroke="#E7D1A8"
+                                class="mobile_svg_hover transition_03s" stroke-width="0.686342" />
+                            <circle class="mobile_svg_hover transition_03s" cx="15.7023" cy="16.8634" r="1.02951"
+                                stroke="#E7D1A8" stroke-width="0.686342" />
+                            <circle class="mobile_svg_hover transition_03s" cx="2.89063" cy="3.13636" r="1.02951"
+                                stroke="#E7D1A8" stroke-width="0.686342" />
+                            <circle class="mobile_svg_hover transition_03s" cx="15.7023" cy="4.96643" r="1.02951"
+                                stroke="#E7D1A8" stroke-width="0.686342" />
+                            <circle class="mobile_svg_hover transition_03s" cx="3.34819" cy="10.9147" r="1.48707"
+                                stroke="#E7D1A8" stroke-width="0.686342" />
+                            <circle class="mobile_svg_hover transition_03s" cx="13.4145" cy="12.7453" r="1.48707"
+                                stroke="#E7D1A8" stroke-width="0.686342" />
+                            <circle class="mobile_svg_hover transition_03s" cx="8.83893" cy="7.25464" r="2.4022"
+                                stroke="#E7D1A8" stroke-width="0.686342" />
+                            <path class="mobile_svg_hover transition_03s"
+                                d="M14.7872 3.88883L10.6692 4.99995M10.2116 8.88883L12.4994 11.6666M14.3297 14.9999L15.2448 17.2222M9.2965 17.7777L12.0419 14.4444M1.97552 17.2222L2.89065 12.7777M4.26333 12.7777L7.46626 17.2222M2.89065 2.77772L3.34821 9.44439M4.72089 9.99995L6.55114 8.33328M3.80577 2.22217L7.0087 4.44439"
+                                stroke="#E7D1A8" stroke-width="0.686342" stroke-linecap="round" />
+                        </svg>
+                        <a href="#home"
+                            class="ff_styrene transition_03s fw_medium text_nav lh_110 letter_20 text_white text_uppercase">HOME</a>
+                    </div>
+                    <div class="flex_column d_flex align_items_center justify_content_center mobile_navbar_hover">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.455627" y="5.55566" width="2.5" height="11.25" fill="#E7D1A8" />
+                            <rect x="17.1223" y="2.22217" width="2.5" height="11.25" fill="#E7D1A8" />
+                            <rect x="11.7056" y="4.30566" width="2.5" height="5.83333" fill="#E7D1A8" />
+                            <rect x="6.28894" y="10.1392" width="2.08333" height="5.41667" fill="#E7D1A8" />
+                            <path class="mobile_svg_hover transition_03s" d="M1.70563 2.77783L1.70563 19.4445"
+                                stroke="#E7D1A8" stroke-width="0.648148" stroke-linecap="square" />
+                            <path class="mobile_svg_hover transition_03s" d="M18.3723 0.555664V15.5557" stroke="#E7D1A8"
+                                stroke-width="0.648148" stroke-linecap="square" />
+                            <path class="mobile_svg_hover transition_03s" d="M12.9556 3.05566V11.9446" stroke="#E7D1A8"
+                                stroke-width="0.648148" stroke-linecap="square" />
+                            <path class="mobile_svg_hover transition_03s" d="M7.26117 8.3335L7.26117 17.2224"
+                                stroke="#E7D1A8" stroke-width="0.648148" stroke-linecap="square" />
+                        </svg>
+                        <a href="#home"
+                            class="ff_styrene transition_03s fw_medium text_nav lh_110 letter_20 text_white text_uppercase">HOME</a>
+                    </div>
+                    <div class="flex_column d_flex align_items_center justify_content_center mobile_navbar_hover">
+                        <svg width="21" height="20" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6.23889" y="7.5" width="9" height="3" rx="0.274537" fill="#E7D1A8" />
+                            <rect x="10.2389" y="11.5" width="9" height="2" rx="0.274537" fill="#E7D1A8" />
+                            <rect x="2.23889" y="11.5" width="7" height="2" rx="0.274537" fill="#E7D1A8" />
+                            <rect x="0.238892" y="8.5" width="5" height="2" rx="0.274537" fill="#E7D1A8" />
+                            <rect x="16.2389" y="7.5" width="4" height="2" rx="0.274537" fill="#E7D1A8" />
+                            <rect x="12.2389" y="4.5" width="5" height="2" rx="0.274537" fill="#E7D1A8" />
+                            <rect x="1.23889" y="4.5" width="10" height="2" rx="0.274537" fill="#E7D1A8" />
+                            <path class="mobile_svg_hover transition_03s"
+                                d="M17.2389 3H13.7389M11.7389 3H7.73889M5.73889 3H3.23889" stroke="#E7D1A8"
+                                stroke-width="0.549073" stroke-linecap="round" />
+                            <path class="mobile_svg_hover transition_03s"
+                                d="M17.7389 15H13.7389M11.7389 15H7.73889M5.73889 15H2.73889M4.73889 17H7.73889M9.73889 17H15.7389"
+                                stroke="#E7D1A8" stroke-width="0.549073" stroke-linecap="round" />
+                            <path class="mobile_svg_hover transition_03s" d="M6.23889 1H7.73889M9.73889 1H14.7389"
+                                stroke="#E7D1A8" stroke-width="0.549073" stroke-linecap="round" />
+                        </svg>
+                        <a href="#home"
+                            class="ff_styrene transition_03s fw_medium text_nav lh_110 letter_20 text_white text_uppercase">HOME</a>
+                    </div>
+                    <div class="flex_column d_flex align_items_center justify_content_center mobile_navbar_hover">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1_4_205" fill="white">
+                                <rect x="18.2167" y="17.7778" width="2.22222" height="2.22222" rx="0.333333" />
+                            </mask>
+                            <rect x="18.2167" y="17.7778" width="2.22222" height="2.22222" rx="0.333333"
+                                stroke="#E7D1A8" stroke-width="1.33333" mask="url(#path-1-inside-1_4_205)" />
+                            <mask id="path-2-inside-2_4_205" fill="white">
+                                <rect x="14.8834" y="17.7778" width="2.22222" height="2.22222" rx="0.333333" />
+                            </mask>
+                            <rect x="14.8834" y="17.7778" width="2.22222" height="2.22222" rx="0.333333"
+                                stroke="#E7D1A8" stroke-width="1.33333" mask="url(#path-2-inside-2_4_205)" />
+                            <mask id="path-3-inside-3_4_205" fill="white">
+                                <rect x="18.2167" y="14.4448" width="2.22222" height="2.22222" rx="0.333333" />
+                            </mask>
+                            <rect x="18.2167" y="14.4448" width="2.22222" height="2.22222" rx="0.333333"
+                                stroke="#E7D1A8" stroke-width="1.33333" mask="url(#path-3-inside-3_4_205)" />
+                            <mask id="path-4-inside-4_4_205" fill="white">
+                                <rect x="18.2167" y="11.1113" width="2.22222" height="2.22222" rx="0.333333" />
+                            </mask>
+                            <rect x="18.2167" y="11.1113" width="2.22222" height="2.22222" rx="0.333333"
+                                stroke="#E7D1A8" stroke-width="1.33333" mask="url(#path-4-inside-4_4_205)" />
+                            <mask id="path-5-inside-5_4_205" fill="white">
+                                <rect x="14.8834" y="7.77783" width="5.55556" height="2.22222" rx="0.333333" />
+                            </mask>
+                            <rect x="14.8834" y="7.77783" width="5.55556" height="2.22222" rx="0.333333" fill="#E7D1A8"
+                                stroke="#E7D1A8" stroke-width="1.33333" mask="url(#path-5-inside-5_4_205)" />
+                            <mask id="path-6-inside-6_4_205" fill="white">
+                                <rect x="8.21667" y="17.7778" width="5.55556" height="2.22222" rx="0.333333" />
+                            </mask>
+                            <rect x="8.21667" y="17.7778" width="5.55556" height="2.22222" rx="0.333333" fill="#E7D1A8"
+                                stroke="#E7D1A8" stroke-width="1.33333" mask="url(#path-6-inside-6_4_205)" />
+                            <mask id="path-7-inside-7_4_205" fill="white">
+                                <rect x="8.21667" y="11.1113" width="5.55556" height="5.55556" rx="0.333333" />
+                            </mask>
+                            <rect x="8.21667" y="11.1113" width="5.55556" height="5.55556" rx="0.333333" fill="#E7D1A8"
+                                stroke="#E7D1A8" stroke-width="1.33333" mask="url(#path-7-inside-7_4_205)" />
+                            <mask id="path-8-inside-8_4_205" fill="white">
+                                <rect x="0.438965" y="11.1113" width="6.66667" height="8.88889" rx="0.333333" />
+                            </mask>
+                            <rect x="0.438965" y="11.1113" width="6.66667" height="8.88889" rx="0.333333" fill="#E7D1A8"
+                                stroke="#E7D1A8" stroke-width="1.33333" mask="url(#path-8-inside-8_4_205)" />
+                            <mask id="path-9-inside-9_4_205" fill="white">
+                                <rect x="0.438965" width="6.66667" height="10" rx="0.333333" />
+                            </mask>
+                            <rect x="0.438965" width="6.66667" height="10" rx="0.333333" fill="#E7D1A8" stroke="#E7D1A8"
+                                stroke-width="1.33333" mask="url(#path-9-inside-9_4_205)" />
+                            <mask id="path-10-inside-10_4_205" fill="white">
+                                <rect x="8.2168" width="5.55556" height="6.66667" rx="0.333333" />
+                            </mask>
+                            <rect x="8.2168" width="5.55556" height="6.66667" rx="0.333333" fill="#E7D1A8"
+                                stroke="#E7D1A8" stroke-width="1.33333" mask="url(#path-10-inside-10_4_205)" />
+                            <mask id="path-11-inside-11_4_205" fill="white">
+                                <rect x="8.21667" y="7.77783" width="5.55556" height="2.22222" rx="0.333333" />
+                            </mask>
+                            <rect x="8.21667" y="7.77783" width="5.55556" height="2.22222" rx="0.333333" fill="#E7D1A8"
+                                stroke="#E7D1A8" stroke-width="1.33333" mask="url(#path-11-inside-11_4_205)" />
+                            <mask id="path-12-inside-12_4_205" fill="white">
+                                <rect x="14.8834" y="4.44482" width="5.55556" height="2.22222" rx="0.333333" />
+                            </mask>
+                            <rect x="14.8834" y="4.44482" width="5.55556" height="2.22222" rx="0.333333" fill="#E7D1A8"
+                                stroke="#E7D1A8" stroke-width="1.33333" mask="url(#path-12-inside-12_4_205)" />
+                            <mask id="path-13-inside-13_4_205" fill="white">
+                                <rect x="14.8834" width="5.55556" height="3.33333" rx="0.333333" />
+                            </mask>
+                            <rect x="14.8834" width="5.55556" height="3.33333" rx="0.333333" fill="#E7D1A8"
+                                stroke="#E7D1A8" stroke-width="1.33333" mask="url(#path-13-inside-13_4_205)" />
+                            <mask id="path-14-inside-14_4_205" fill="white">
+                                <rect x="14.8834" y="11.1113" width="2.22222" height="2.22222" rx="0.333333" />
+                            </mask>
+                            <rect x="14.8834" y="11.1113" width="2.22222" height="2.22222" rx="0.333333"
+                                stroke="#E7D1A8" stroke-width="1.33333" mask="url(#path-14-inside-14_4_205)" />
+                            <mask id="path-15-inside-15_4_205" fill="white">
+                                <rect x="14.8834" y="14.4448" width="2.22222" height="2.22222" rx="0.333333" />
+                            </mask>
+                            <rect x="14.8834" y="14.4448" width="2.22222" height="2.22222" rx="0.333333"
+                                stroke="#E7D1A8" stroke-width="1.33333" mask="url(#path-15-inside-15_4_205)" />
+                        </svg>
+                        <a href="#home"
+                            class="ff_styrene transition_03s fw_medium text_nav lh_110 letter_20 text_white text_uppercase">HOME</a>
+                    </div>
+                    <div class="flex_column d_flex align_items_center justify_content_center mobile_navbar_hover">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="mobile_svg_hover transition_03s"
+                                d="M16.4722 2.5H4.80558C3.88511 2.5 3.13892 3.24619 3.13892 4.16667V15.8333C3.13892 16.7538 3.88511 17.5 4.80558 17.5H16.4722C17.3927 17.5 18.1389 16.7538 18.1389 15.8333V4.16667C18.1389 3.24619 17.3927 2.5 16.4722 2.5Z"
+                                stroke="#E7D1A8" stroke-width="0.666667" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M10.6389 10.8335C12.0196 10.8335 13.1389 9.71421 13.1389 8.3335C13.1389 6.95278 12.0196 5.8335 10.6389 5.8335C9.2582 5.8335 8.13892 6.95278 8.13892 8.3335C8.13892 9.71421 9.2582 10.8335 10.6389 10.8335Z"
+                                fill="#E7D1A8" />
+                            <path class="mobile_svg_hover transition_03s"
+                                d="M6.47229 17.3332V14.3332C6.47229 13.8911 6.64788 13.4672 6.96045 13.1547C7.27301 12.8421 7.69693 12.6665 8.13896 12.6665H13.139C13.581 12.6665 14.0049 12.8421 14.3175 13.1547C14.63 13.4672 14.8056 13.8911 14.8056 14.3332V17.3332"
+                                fill="#E7D1A8" />
+                        </svg>
+                        <a href="#home"
+                            class="ff_styrene transition_03s fw_medium text_nav lh_110 letter_20 text_white text_uppercase">HOME</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="border_top border_bottom overflow_hidden">
+        <div class="custom_container pt_md_70 pb_md_0 pb_70 d_flex flex_column">
+            <div class="order_last order_md_0">
+                <div
+                    class="welcome_max_w mx_auto d_flex flex_column flex_md_row justify_content_between align_items_md_center ">
+                    <div class="p-0">
+                        <h2 class="sub_heading ff_styrene pt_20 pt_md_0">welcome to the dropzone</h2>
+                        <p class="normal_para ff_print pt_20 pt_md_0 pr_40 pr_sm_0">Lorem ipsum dolor sit amet
+                            consectetur. Dolor
+                            maecenas.</p>
+                    </div>
+                    <div class="cursor_pointer pt_20 pt_md_0">
+                        <svg width="132" height="35" viewBox="0 0 132 35" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_dddd_0_909)">
+                                <rect width="114" height="32" transform="translate(1 1.75049)" fill="black" />
+                                <path
+                                    d="M42 21.2505V18.2505H43.5V21.2505H42ZM42 12.2505V13.7505H37.5V16.7505H42V18.2505H37.5V21.2505H42V22.7505H36V12.2505H42ZM43.5 13.7505V16.7505H42V13.7505H43.5ZM52.5 21.2505V12.2505H54V21.2505H52.5ZM48 22.7505V21.2505H52.5V22.7505H48ZM46.5 21.2505V12.2505H48V21.2505H46.5ZM64.5 12.2505V13.7505H61.5V22.7505H60V13.7505H57V12.2505H64.5ZM75 12.2505V13.7505H72V22.7505H70.5V13.7505H67.5V12.2505H75ZM84 21.2505V22.7505H79.5V21.2505H84ZM85.5 21.2505H84V13.7505H85.5V21.2505ZM84 12.2505V13.7505H79.5V12.2505H84ZM78 13.7505H79.5V21.2505H78V13.7505ZM94.5 12.2505H96V22.7505H94.5V19.7505H93V18.2505H94.5V12.2505ZM88.5 22.7505V12.2505H90V15.2505H91.5V16.7505H90V22.7505H88.5ZM91.5 18.2505V16.7505H93V18.2505H91.5Z"
+                                    fill="#E7D1A8" />
+                                <rect x="115" y="1.75049" width="16" height="19" fill="black" />
+                                <path d="M115 20.7505V33.7505L131 20.7505H115Z" fill="black" />
+                            </g>
+                            <defs>
+                                <filter id="filter0_dddd_0_909" x="0" y="0.750488" width="132" height="34"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                    <feOffset dx="1" dy="1" />
+                                    <feComposite in2="hardAlpha" operator="out" />
+                                    <feColorMatrix type="matrix"
+                                        values="0 0 0 0 0.904167 0 0 0 0 0.818773 0 0 0 0 0.659288 0 0 0 1 0" />
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_909" />
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                    <feOffset dx="-1" dy="1" />
+                                    <feComposite in2="hardAlpha" operator="out" />
+                                    <feColorMatrix type="matrix"
+                                        values="0 0 0 0 0.904167 0 0 0 0 0.818773 0 0 0 0 0.659288 0 0 0 1 0" />
+                                    <feBlend mode="normal" in2="effect1_dropShadow_0_909"
+                                        result="effect2_dropShadow_0_909" />
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                    <feOffset dx="-1" dy="-1" />
+                                    <feComposite in2="hardAlpha" operator="out" />
+                                    <feColorMatrix type="matrix"
+                                        values="0 0 0 0 0.904167 0 0 0 0 0.818773 0 0 0 0 0.659288 0 0 0 1 0" />
+                                    <feBlend mode="normal" in2="effect2_dropShadow_0_909"
+                                        result="effect3_dropShadow_0_909" />
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                    <feOffset dx="1" dy="-1" />
+                                    <feComposite in2="hardAlpha" operator="out" />
+                                    <feColorMatrix type="matrix"
+                                        values="0 0 0 0 0.904167 0 0 0 0 0.818773 0 0 0 0 0.659288 0 0 0 1 0" />
+                                    <feBlend mode="normal" in2="effect3_dropShadow_0_909"
+                                        result="effect4_dropShadow_0_909" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect4_dropShadow_0_909"
+                                        result="shape" />
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="position_relative order_first d_flex order_md_0">
+                <img class="position_absolute left_50 -translate_x_50 w_100 welcome_bg_image"
+                    src="./assets/images/webp/welcome_section_bg.webp" alt="welcome">
+                <div class="computer_blur position_absolute left_50  -translate_x_50"></div>
+                <div class="mx_auto">
+                    <img class="position_relative z_10 computer_image_welcome w_100"
+                        src="./assets/images/webp/computer_image.webp" alt="computer">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="border_bottom overflow_hidden">
+        <div class="custom_container">
+            <div class="row justify_content_center">
+                <div class="col_12 col_md_6 col_lg_4 border_md_right">
+                    <div class="py_20  p_xl_24">
+                        <div class="d_flex gap_32">
+                            <img src="./assets/images/svg/dashboard_img.svg" alt="dashboard_img">
+                            <h3 class="fw_bold ff_styrene text_zombie text_md letter_3 pr_lg_50">LOREM IPSUM DOLOR SIT
+                                AMET</h3>
+                        </div>
+                        <p class="normal_para letter_spacing text_uppercase ff_print pt_24">
+                            Lorem ipsum dolor sit amet consectetur. Eu orci ac nec pellentesque donec.
+                        </p>
+                    </div>
+                </div>
+                <div class="col_12 col_md_6 col_lg_4 position_relative section_line border_lg_right">
+                    <div class="py_20 pl_8 p_xl_24 pl_lg_0">
+                        <div class="d_flex gap_32 ">
+                            <img src="./assets/images/svg/dashboard_img.svg" alt="dashboard_img">
+                            <h3 class="fw_bold ff_styrene text_zombie text_md letter_3 pr_lg_50">LOREM IPSUM DOLOR SIT
+                                AMET</h3>
+                        </div>
+                        <p class="normal_para letter_spacing text_uppercase ff_print pt_24">
+                            Lorem ipsum dolor sit amet consectetur. Eu orci ac nec pellentesque donec.
+                        </p>
+                    </div>
+                </div>
+                <div class="col_12 col_md_6 col_lg_4 ">
+                    <div class="py_20 p_xl_24">
+                        <div class="d_flex gap_32">
+                            <img src="./assets/images/svg/dashboard_img.svg" alt="dashboard_img">
+                            <h3 class="fw_bold ff_styrene text_zombie text_md letter_3 pr_lg_50">LOREM IPSUM DOLOR SIT
+                                AMET</h3>
+                        </div>
+                        <p class="normal_para letter_spacing text_uppercase ff_print pt_24">
+                            Lorem ipsum dolor sit amet consectetur. Eu orci ac nec pellentesque donec.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="custom_container pt_43 pb_73">
+            <div class="row">
+                <div class="col_12 col_lg_3">
+                    <div class="p-0">
+                        <div
+                            class="d_flex align_items_center justify_content_center gap_12 h_100 nav_logo_padding position_relative z_10">
+                            <img src="./assets/images/svg/logo.svg" alt="logo">
+                            <img src="./assets/images/svg/bitscape-logo.svg" alt="bitscape-logo.svg">
+                        </div>
+                        <div class="mx_auto icons_max_w d_flex justify_content_between pt_43">
+                            <a href="https://x.com/" target="_blank" rel="noopener noreferrer"><img
+                                    src="./assets/images/svg/twitter.svg" alt="twitter-logo"></a>
+                            <a href="https://discord.com/" target="_blank" rel="noopener noreferrer"><img
+                                    src="./assets/images/svg/discord.svg" alt="discord"></a>
+                            <a href="https://telegram.org/" target="_blank" rel="noopener noreferrer"><img
+                                    src="./assets/images/svg/telegram.svg" alt="telegram"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col_12 col_lg_9 d_none d_md_block pt_43">
+                    <div class="d_flex justify_content_between">
+                        <div class="d_flex flex_column">
+                            <p class="ff_styrene text_sm text_zombie fw_medium text_uppercase letter_2">MARKETS</p>
+                            <a href="#" class="text_uppercase text_meteor ff_print text_xsm letter_spacing_1 mt_12">Item
+                                1</a>
+                            <a href="#" class="text_uppercase text_meteor ff_print text_xsm letter_spacing_1 mt_12">Item
+                                2</a>
+                            <a href="#" class="text_uppercase text_meteor ff_print text_xsm letter_spacing_1 mt_12">Item
+                                3</a>
+                            <a href="#" class="text_uppercase text_meteor ff_print text_xsm letter_spacing_1 mt_12">Item
+                                4</a>
 
+                        </div>
+                        <div class="d_flex flex_column">
+                            <p class="ff_styrene text_sm text_zombie fw_medium text_uppercase letter_2">Trade</p>
+                            <a href="#" class="text_uppercase text_meteor ff_print text_xsm letter_spacing_1 mt_12">Item
+                                1</a>
+                            <a href="#" class="text_uppercase text_meteor ff_print text_xsm letter_spacing_1 mt_12">Item
+                                2</a>
+                            <a href="#" class="text_uppercase text_meteor ff_print text_xsm letter_spacing_1 mt_12">Item
+                                3</a>
+                            <a href="#" class="text_uppercase text_meteor ff_print text_xsm letter_spacing_1 mt_12">Item
+                                4</a>
+                        </div>
+                        <div class="d_flex flex_column">
+                            <p class="ff_styrene text_sm text_zombie fw_medium text_uppercase letter_2">Swap</p>
+                            <a href="#" class="text_uppercase text_meteor ff_print text_xsm letter_spacing_1 mt_12">Item
+                                1</a>
+                            <a href="#" class="text_uppercase text_meteor ff_print text_xsm letter_spacing_1 mt_12">Item
+                                2</a>
+                            <a href="#" class="text_uppercase text_meteor ff_print text_xsm letter_spacing_1 mt_12">Item
+                                3</a>
+
+                        </div>
+                        <div class="d_flex flex_column ">
+                            <p class="ff_styrene text_sm text_zombie fw_medium text_uppercase letter_2">ordinals</p>
+                            <div class="d_flex gap_20">
+                                <div class="d_flex flex_column">
+                                    <a href="#"
+                                        class="text_uppercase text_meteor ff_print text_xsm letter_spacing_1 mt_12">Item
+                                        1</a>
+                                    <a href="#"
+                                        class="text_uppercase text_meteor ff_print text_xsm letter_spacing_1 mt_12">Item
+                                        2</a>
+                                    <a href="#"
+                                        class="text_uppercase text_meteor ff_print text_xsm letter_spacing_1 mt_12">Item
+                                        3</a>
+                                    <a href="#"
+                                        class="text_uppercase text_meteor ff_print text_xsm letter_spacing_1 mt_12">Item
+                                        4</a>
+                                </div>
+                                <div class="d_flex flex_column">
+
+                                    <a href="#"
+                                        class="text_uppercase text_meteor ff_print text_xsm letter_spacing_1 mt_12">Item
+                                        5</a>
+                                    <a href="#"
+                                        class="text_uppercase text_meteor ff_print text_xsm letter_spacing_1 mt_12">Item
+                                        5</a>
+                                    <a href="#"
+                                        class="text_uppercase text_meteor ff_print text_xsm letter_spacing_1 mt_12">Item
+                                        5</a>
+                                    <a href="#"
+                                        class="text_uppercase text_meteor ff_print text_xsm letter_spacing_1 mt_12">Item
+                                        5</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d_flex flex_column">
+                            <p class="ff_styrene text_sm text_zombie fw_medium text_uppercase letter_2">learn</p>
+                            <a href="#" class="text_uppercase text_meteor ff_print text_xsm letter_spacing_1 mt_12">Item
+                                1</a>
+                            <a href="#" class="text_uppercase text_meteor ff_print text_xsm letter_spacing_1 mt_12">Item
+                                2</a>
+                            <a href="#" class="text_uppercase text_meteor ff_print text_xsm letter_spacing_1 mt_12">Item
+                                3</a>
+                            <a href="#" class="text_uppercase text_meteor ff_print text_xsm letter_spacing_1 mt_12">Item
+                                4</a>
+                        </div>
+                        <div class="d_flex flex_column">
+                            <p class="ff_styrene text_sm text_zombie fw_medium text_uppercase letter_2">Contact</p>
+                            <a href="#" class="text_uppercase text_meteor ff_print text_xsm letter_spacing_1 mt_12">Item
+                                1</a>
+                            <a href="#" class="text_uppercase text_meteor ff_print text_xsm letter_spacing_1 mt_12">Item
+                                2</a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // define all UI variable
+        const navToggler = document.querySelector('.nav-toggler');
+        const navMenu = document.querySelector('.mobile_nav');
+        const navLinks = document.querySelectorAll('.mobile_nav a');
+
+        // load all event listeners
+        allEventListeners();
+
+        // functions of all event listeners
+        function allEventListeners() {
+            // toggler icon click event
+            navToggler.addEventListener('click', togglerClick);
+            // nav links click event
+            navLinks.forEach(elem => elem.addEventListener('click', navLinkClick));
+        }
+
+        // togglerClick function
+        function togglerClick() {
+            navToggler.classList.toggle('toggler-open');
+            navMenu.classList.toggle('open');
+        }
+
+        // navLinkClick function
+        function navLinkClick() {
+            if (navMenu.classList.contains('open')) {
+                navToggler.click();
+            }
+        }
+    </script>
     <!-- ========== BACK TO TOP ============ -->
     <button id="back_to_top_btn" class="cursor_pointer transition_02">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
