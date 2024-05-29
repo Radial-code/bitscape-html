@@ -242,7 +242,7 @@
 
 /* ============ COMMON CLASS ============== */
 
-.transition_03s{
+.transition_03s {
     transition: all 300ms ease-in-out;
 }
 
@@ -272,7 +272,7 @@
     position: fixed;
     bottom: 45px;
     right: 14px;
-    background-color: var(--color-skyblue);
+    background-color: var(--color-meteor);
     border: none;
     z-index: 49;
     height: 40px;

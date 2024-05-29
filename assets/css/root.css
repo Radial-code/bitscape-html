@@ -9,7 +9,10 @@
 body {
     background-color: var(--color-gray) !important;
 }
-
+html,
+body {
+    scroll-behavior: smooth !important;
+}
 /* ================DEFINE CONTAINER================ */
 .custom_container {
     max-width: 1496px;
