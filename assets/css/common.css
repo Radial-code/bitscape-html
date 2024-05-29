@@ -1,15 +1,8 @@
 /* ================= DISPLAY FLEX ============= */
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -12px;
-    margin-right: -12px;
-}
 
 .d_flex {
     display: flex;
 }
-
 
 .flex_wrap {
     flex-wrap: wrap;
@@ -56,13 +49,78 @@
     align-items: center;
 }
 
-.cursor_pointer {
-    cursor: pointer;
+/* ============= ROW AND COL =============== */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
 }
+
+.col_1 {
+    width: 8.33%;
+    padding: 0 12px;
+}
+
+.col_2 {
+    width: 16.66%;
+    padding: 0 12px;
+}
+
+.col_3 {
+    width: 25%;
+    padding: 0 12px;
+}
+
+.col_4 {
+    width: 33.33%;
+    padding: 0 12px;
+}
+
+.col_5 {
+    width: 41.66%;
+    padding: 0 12px;
+}
+
+.col_6 {
+    width: 50%;
+    padding: 0 12px;
+}
+
+.col_7 {
+    width: 58.33%;
+    padding: 0 12px;
+}
+.col_8 {
+    width: 66.66%;
+    padding: 0 12px;
+}
+
+.col_9 {
+    width: 75%;
+    padding: 0 12px;
+}
+
+.col_10 {
+    width: 83.33%;
+    padding: 0 12px;
+}
+
+.col_11 {
+    width: 91.66%;
+    padding: 0 12px;
+}
+
+.col_12 {
+    width: 100%;
+    padding: 0 12px;
+}
+/* ============= WIDTH =============== */
 
 .w_100 {
     width: 100%;
 }
+
 /* ================= TEXT ALIGN ============= */
 
 .text_start {
@@ -77,6 +135,22 @@
     text-align: end;
 }
 
+.text_uppercase {
+    text-transform: uppercase;
+}
+
+.text_capitalize {
+    text-transform: capitalize;
+}
+
+/* ============ LETTER SPACING =========== */
+.letter_16 {
+    letter-spacing: 16%;
+}
+
+.-letter_10 {
+    letter-spacing: 10%;
+}
 /* =============== POSITION =============== */
 
 .position_relative {
@@ -107,8 +181,12 @@
     left: 50%;
 }
 
-.translate_x_minus_50 {
-    transform: translate(-50%);
+.-translate_x_50 {
+    transform: translateX(-50%);
+}
+
+.-translate_y_50 {
+    transform: translateY(-50%);
 }
 
 .right_0 {
@@ -118,7 +196,6 @@
 .bottom_0 {
     bottom: 0;
 }
-
 
 /* =============== LINE HEIGHT ================*/
 
@@ -148,43 +225,24 @@
     order: 1;
 }
 
+/* ============ COMMON CLASS ============== */
 
-
-
-.text_decoration_underline {
-    text-decoration: underline;
+.cursor_pointer {
+    cursor: pointer;
 }
 
-.text_center {
-    text-align: center;
+.z_1 {
+    z-index: 1;
 }
 
-.text_start {
-    text-align: left !important;
+.z_2 {
+    z-index: 2;
 }
 
-.text_capitalize {
-    text-transform: capitalize;
+.z_10 {
+    z-index: 10;
 }
 
-.list_unstyled {
-    list-style-type: none;
-}
-
-
-.common_btn {
-    font-size: var(--font-md);
-    font-weight: 700;
-    background: linear-gradient(90deg, #017EFF 0%, #97C4FF 100%);
-    border-radius: 16px;
-    padding: 20px 75px;
-    border: unset;
-}
-
-.common_btn:focus,
-.common_btn:hover {
-    -webkit-animation: pulse 1s;
-    animation: pulse 1s;
-    -webkit-box-shadow: 0 0 0 0.7em transparent;
-    box-shadow: 0 0 0 0.7em transparent;
+.overflow_hidden {
+    overflow: hidden;
 }
