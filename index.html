@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en" id="nav_hidden">
 
 <head>
   <meta charset="UTF-8">
@@ -702,25 +702,27 @@
     </button>
   </div>
 
-    <script>
-      const navToggler = document.querySelector('.nav-toggler');
-      const navMenu = document.querySelector('.mobile_nav');
-      const navLinks = document.querySelectorAll('.mobile_nav a');
+  <script>
+    const navToggler = document.querySelector('.nav-toggler');
+    const navMenu = document.querySelector('.mobile_nav');
+    const navLinks = document.querySelectorAll('.mobile_nav a');
 
-      function toggleNav() {
-        navToggler.classList.toggle('toggler-open');
-        navMenu.classList.toggle('open');
-        document.body.style.overflow = navMenu.classList.contains('open') ? 'hidden' : 'auto';
+    function toggleNav() {
+      navToggler.classList.toggle('toggler-open');
+      navMenu.classList.toggle('open');
+      document.documentElement.classList.toggle("overflow_hidden");
+    }
+
+    navToggler.addEventListener('click', toggleNav);
+
+    navLinks.forEach(elem => elem.addEventListener('click', () => {
+      if (navMenu.classList.contains('open')) {
+        toggleNav();
       }
+    }));
 
-      navToggler.addEventListener('click', toggleNav);
-      navLinks.forEach(elem => elem.addEventListener('click', () => {
-        if (navMenu.classList.contains('open')) {
-          toggleNav();
-        }
-      }));
 
-    </script>
+  </script>
 
   <!--========== JS LINK ============ -->
   <script src="./assets/js/app.js"></script>
