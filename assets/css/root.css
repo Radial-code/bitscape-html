@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none !important;
+    text-decoration: none !important;
+    box-sizing: border-box !important;
+}
+.custom_container {
+    max-width: 1496px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
