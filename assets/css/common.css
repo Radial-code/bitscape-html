@@ -270,6 +270,10 @@
     z-index: 10;
 }
 
+.z_20 {
+    z-index: 20;
+}
+
 .overflow_hidden {
     overflow: hidden;
 }

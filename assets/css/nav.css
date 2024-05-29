@@ -125,6 +125,7 @@
     }
     /* navbar css for mobile start */
     .nav-toggler {
+        z-index: 111;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -145,6 +146,7 @@
         max-height: 0;
         overflow: hidden;
         transition: 0.3s;
+        z-index: 100;
     }
     .mobile_nav.open {
         max-height: 100vh;
@@ -158,8 +160,15 @@
     .nav-toggler.toggler-open span:nth-child(3) {
         transform: translate(0px, -14px) rotate(-45deg);
     }
+    .text_nav_md{
+        font-size: 24px !important;
+    }
 }
 @media (max-width: 991.98px) {
+    .text_nav_md{
+        font-size: 20px !important;
+    }
+   
     .nav-toggler.toggler-open span:nth-child(1) {
         transform: translate(0px, 11px) rotate(45deg);
     }

@@ -1,6 +1,19 @@
+/* ================= BFI SECTION =============================== */
+.bfi_max_w {
+    max-width: 457px;
+}
+.mobile_img{
+   max-height: 450px;
+   object-fit: contain;
+}
+
 /* ================= WELCOME SECTION =============================== */
 .pt_20 {
     padding-top: 20px;
+}
+
+.pb_16 {
+    padding-bottom: 16px;
 }
 
 .pr_40 {
@@ -98,6 +111,10 @@
     gap: 20px;
 }
 
+.footer_link:hover {
+    opacity: 0.7;
+}
+
 @media (min-width:576px) {
     .pr_sm_0 {
         padding: 0;
@@ -107,9 +124,17 @@
         letter-spacing: 0px;
     }
 
+    .d_sm_inline_block {
+        display: inline-block;
+    }
+
 }
 
 @media (min-width:768px) {
+    .d_md_none {
+        display: none;
+    }
+
     .d_md_block {
         display: block;
     }
@@ -139,6 +164,10 @@
         padding-bottom: 70px;
     }
 
+
+    .pt_md_8 {
+        padding-top: 8px;
+    }
 
     .pt_md_0 {
         padding-top: 0px;
@@ -183,6 +212,23 @@
         padding-left: 8px;
     }
 
+    .bfi_section {
+        min-height: 312px;
+    }
+
+    .bfi_max_w {
+        max-width: 307px;
+    }
+}
+
+@media (min-width:992px) {
+    .bfi_section {
+        min-height: 400px;
+    }
+
+    .bfi_max_w {
+        max-width: 357px;
+    }
 }
 
 @media (min-width:1024px) {
@@ -217,13 +263,83 @@
         border-right: 2px solid var(--color-mine-shaft);
     }
 
+    .footer_lg_line::after {
+        content: "";
+        position: absolute;
+        width: calc(100% + 8px);
+        left: -8px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 2px;
+        background-color: var(--color-mine-shaft);
+    }
+
     .pl_lg_0 {
         padding-left: 0;
+    }
+
+    .pt_lg_0 {
+        padding-top: 0;
+    }
+
+    .pb_lg_0 {
+        padding-bottom: 0;
+    }
+
+    .py_lg_43 {
+        padding-top: 43px;
+        padding-bottom: 43px;
+    }
+
+    .pt_lg_50 {
+        padding-top: 50px;
+    }
+
+    .bfi_section {
+        min-height: 415px;
+    }
+
+    .bfi_max_w {
+        max-width: 440px;
+    }
+}
+
+@media (min-width:1200px) {
+    .bfi_section {
+        min-height: 455px;
     }
 }
 
 @media (min-width:1280px) {
     .p_xl_24 {
         padding: 24px;
+    }
+
+    .pl_xl_50 {
+        padding-left: 50px;
+    }
+
+    .bfi_section {
+        min-height: 530px;
+    }
+
+    .pl_xl_126 {
+        padding-left: 126px;
+    }
+
+    .bfi_max_w {
+        max-width: 457px;
+    }
+}
+
+@media (min-width:1440px) {
+    .bfi_section {
+        min-height: 580px;
+    }
+}
+
+@media (min-width:1496px) {
+    .bfi_section {
+        min-height: 610px;
     }
 }
