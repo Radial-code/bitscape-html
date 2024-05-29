@@ -1,16 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bitscape</title>
-      <!-- ============= CSS LINK ============= -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/root.css">
-     <!-- ============ FAVICON ============= -->
-     <link rel="shortcut icon" href="./assets/images/svg/favicon.svg" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bitscape</title>
+  <!-- ============= CSS LINK ============= -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/root.css">
+  <link rel="stylesheet" href="./assets/css/nav.css">
+  <link rel="stylesheet" href="./assets/css/common.css">
+  <!-- ============ FAVICON ============= -->
+  <link rel="shortcut icon" href="./assets/images/svg/favicon.svg" type="image/x-icon">
 </head>
+
 <body>
-    
+  <header>
+    <nav class="custom_container">
+      <div>
+        <img src="./assets/images/svg/navbar_logo.svg" alt="nav-logo">
+      </div>
+    </nav>
+  </header>
+
+  <script>
+    // ========== SIDEBAR
+    const sidebar = document.querySelector(".overlay");
+    function Togleside() {
+      sidebar.classList.add("show_nav");
+      document.body.classList.add("overflow_hidden");
+      document.body.classList.remove("overflow-auto");
+      document.body.classList.add("vh-100");
+    }
+    function hideNav() {
+      sidebar.classList.remove("show_nav");
+      document.body.classList.add("overflow-auto");
+      document.body.classList.remove("overflow_hidden");
+      document.body.classList.remove("vh-100");
+    }
+  </script>
 </body>
+
 </html>
