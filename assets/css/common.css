@@ -166,8 +166,8 @@
     letter-spacing: 2px;
 }
 
-.-letter_10 {
-    letter-spacing: 10%;
+.letter_6 {
+    letter-spacing: 6px;
 }
 
 /* =============== POSITION =============== */
@@ -278,6 +278,10 @@
     overflow: hidden;
 }
 
+.overflow_x_hidden {
+    overflow-x: hidden;
+}
+
 /* ========== BACK TO TOP CSS =========== */
 #back_to_top_btn {
     display: none;
@@ -333,11 +337,11 @@
 }
 
 .pl_24 {
-    padding-left: 32px;
+    padding-left: 24px;
 }
 
 .pr_24 {
-    padding-right: 32px;
+    padding-right: 24px;
 }
 
 .pr_12 {
@@ -352,8 +356,21 @@
     padding-top: 20px;
 }
 
+.pb_24 {
+    padding-bottom: 24px;
+}
+
 .pt_12 {
     padding-top: 12px;
+}
+
+.pb_48 {
+    padding-bottom: 48px;
+}
+
+.px_12 {
+    padding-left: 12px;
+    padding-right: 12px;
 }
 /* ============== MARGIN ========== */
 .ml_48 {
@@ -373,11 +390,11 @@
 }
 
 .ml_24 {
-    margin-left: 32px;
+    margin-left: 24px;
 }
 
 .mr_24 {
-    margin-right: 32px;
+    margin-right: 24px;
 }
 
 /* ============ GAP ============= */
@@ -405,6 +422,7 @@
 .yellow_button {
     width: 130px;
     height: 32px;
+    font-size: 8px;
     background: var(--color-meteor);
     border: none;
     clip-path: polygon(0 0, 100% 0, 100% 58%, 87% 100%, 0 100%);
@@ -415,6 +433,7 @@
 
 .black_button {
     width: 120px;
+    font-size: 8px;
     height: 25px;
     background: black;
     border: 1px solid var(--bg_zombie);
@@ -428,6 +447,7 @@
 
 .box_black_button {
     background-color: white;
+    width: 122px;
     padding: 1px;
     clip-path: polygon(0 0, 100% 0, 100% 58%, 87% 100%, 0 100%);
 }
@@ -455,8 +475,29 @@
     }
 }
 @media (min-width: 768px) {
+
+    .d_md_none {
+        display: none !important;
+    }
+    .pl_md_32 {
+        padding-left: 32px;
+    }
+    .pt_md_32 {
+        padding-top: 32px;
+    }
+    .align_items_md_end {
+        align-items: flex-end;
+    }
+    .box_black_button {
+        width: 172px;
+        height: 46px;
+    }
+    .yellow_button{
+        font-size: 12px;
+    }
     .black_button {
-        width: 218px;
+        font-size: 12px;
+        width: 170px;
         height: 44px;
     }
     .order_md_0 {
@@ -473,5 +514,16 @@
 
     .align_items_md_center {
         align-items: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .box_black_button {
+        width: 220px;
+    }
+    .black_button {
+        font-size: 12px;
+        width: 218px;
+        height: 44px;
     }
 }

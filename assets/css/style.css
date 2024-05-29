@@ -183,12 +183,9 @@
 }
 
 @media (min-width:768px) {
-    .d_md_none {
-        display: none;
-    }
-
+    
     .d_md_block {
-        display: block;
+        display: block !important;
     }
 
     .mt_md_0 {

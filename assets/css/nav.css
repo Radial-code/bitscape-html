@@ -16,7 +16,7 @@
 .social_icons:hover svg path {
     fill: var(--color-meteor);
 }
-.search_icon:hover svg path{
+.search_icon:hover svg path {
     stroke: var(--color-meteor);
 }
 .desktop_navbar_hover:hover {
@@ -160,15 +160,15 @@
     .nav-toggler.toggler-open span:nth-child(3) {
         transform: translate(0px, -14px) rotate(-45deg);
     }
-    .text_nav_md{
+    .text_nav_md {
         font-size: 24px !important;
     }
 }
 @media (max-width: 991.98px) {
-    .text_nav_md{
+    .text_nav_md {
         font-size: 20px !important;
     }
-   
+
     .nav-toggler.toggler-open span:nth-child(1) {
         transform: translate(0px, 11px) rotate(45deg);
     }
@@ -207,9 +207,6 @@
     header.border_bottom {
         border-bottom: unset !important;
     }
-    .d_md_none {
-        display: none !important;
-    }
     .mobile_navbar {
         display: block !important;
         height: 82px;
@@ -241,4 +238,3 @@
         gap: 2px;
     }
 }
-

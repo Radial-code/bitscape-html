@@ -1,48 +1,63 @@
 .hero_bg_img {
     background-image: url("../images/webp/hero_bg.webp");
-    background-position: center;
-    background-size: 100% 100%;
+    background-position: top;
+    background-size: 100% 70%;
     background-repeat: no-repeat;
 }
 .hero_bg_img .yellow_button {
     width: 120px !important;
     height: 25px !important;
+    font-size: 8px !important;
 }
 
-.headding_max_width {
+.heading_max_width {
     max-width: 480px;
 }
-.macbook_paragrph_width{
-    max-width: 482px;
-    margin-left:auto ;
+.macbook_paragrph_width {
+    max-width: 460px;
 }
 
-.macbook_img{
+.macbook_img {
     transform: translateX(-100px);
 }
-@media (min-width: 1920px) {
-    .hero_bg_img {
-        height: unset !important;
-    }
+.hero_bg_img .normal_para {
+    max-width: 420px;
+}
+.hero_content_max_w {
+    max-width: 400px;
+}
+.hero_mobile_line {
+    top: 70%;
+    height: 2px;
+    background: var(--color-mine-shaft);
 }
 @media (min-width: 768px) {
-    .macbook_img{
-        transform: translateX(-8px);
+    .hero_bg_img {
+        background-position: center;
+        background-size: 100% 100%;
     }
-    .macbook_content_pb{
-        padding-bottom: 150px;
+    .pb_md_70 {
+        padding-bottom: 70px;
+    }
+    .macbook_img {
+        transform: translate(-20px, 4px);
+    }
+    .macbook_content_pb {
+        padding-bottom: 70px;
     }
     .hero_bg_img .yellow_button {
+        font-size: 12px !important;
         width: 220px !important;
         height: 46px !important;
     }
     .hero_mobile_img {
-        width: 778px;
-        height: 954px;
-        right: 0%;
+        width: 456px;
+        height: 560px;
+        right: -7%;
         top: 70px;
         display: block;
         position: absolute;
+        z-index: 11;
     }
     .hero_bg_img {
         height: calc(100vh - 78px);
@@ -50,5 +65,53 @@
     .col_lg_5 {
         width: 41.33%;
         padding: 0 12px;
+    }
+}
+@media (min-width: 1024px) {
+    .hero_content_max_w {
+        max-width: unset;
+    }
+    .hero_mobile_img {
+        right: 0%;
+    }
+}
+@media (min-width: 1200px) {
+    .col_xl_7 {
+        width: 58.33%;
+        padding: 0 12px;
+    }
+    .col_xl_5 {
+        width: 41.66%;
+        padding: 0 12px;
+    }
+
+    .macbook_content_pb {
+        padding-bottom: 80px !important;
+    }
+    .hero_mobile_img {
+        right: 0;
+        width: 580px;
+        height: 710px;
+    }
+    .pl_xl_32 {
+        padding-left: 32px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .hero_mobile_img {
+        width: 682px;
+        height: 836px;
+    }
+}
+@media (min-width: 1536px) {
+    .hero_mobile_img {
+        width: 801px;
+        height: 982px;
+    }
+}
+@media (min-width: 1921px) {
+    .hero_bg_img {
+        height: 810px;
     }
 }

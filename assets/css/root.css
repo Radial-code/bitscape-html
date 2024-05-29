@@ -11,6 +11,7 @@ body {
 }
 html,
 body {
+    overflow-x: hidden !important;
     scroll-behavior: smooth !important;
 }
 /* ================DEFINE CONTAINER================ */
@@ -114,16 +115,17 @@ body {
 }
 
 @font-face {
-    font-family: styrene;
-    src: url("/assets/fonts/styrene_a_black_trial.ttf");
+    font-family: styrene_medium;
+    font-weight: 500 !important;
+    src: url("/assets/fonts/StyreneA-Medium-Trial-BF63f6cbdb24b6d.otf");
 }
 
 .ff_print {
     font-family: print;
 }
 
-.ff_styrene {
-    font-family: styrene;
+.ff_styrene_medium {
+    font-family: "styrene_medium", sans-serif;
 }
 
 /*=========================================== DEFINE-ALL = FONT-SIZES ========================================== */
@@ -173,7 +175,7 @@ body {
     :root {
         --font-sm: 12px;
         --font-lg: 28px;
-        --font-xl: 42px;
+        --font-xl: 40px;
     }
 }
 
