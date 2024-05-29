@@ -45,7 +45,7 @@
         transform: translate(-20px, 4px);
     }
     .macbook_content_pb {
-        padding-bottom: 70px;
+        padding-bottom: 50px;
     }
     .hero_bg_img .yellow_button {
         font-size: 12px !important;
@@ -88,7 +88,7 @@
     }
 
     .macbook_content_pb {
-        padding-bottom: 80px !important;
+        padding-bottom: 60px !important;
     }
     .hero_mobile_img {
         right: 0;
