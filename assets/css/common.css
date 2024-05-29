@@ -1,34 +1,67 @@
 /* ================= DISPLAY FLEX ============= */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
 .d_flex {
     display: flex;
 }
 
-.justify_center {
-    justify-content: center;
+
+.flex_wrap {
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
-.justify_between {
-    justify-content: space-between;
+.d_block {
+    display: block;
 }
 
-.align_start {
-    align-items: start;
+.d_none {
+    display: none;
 }
 
-.align_end {
-    align-items: end;
+.d_inline_block {
+    display: inline-block;
 }
 
-.align_center {
-    align-items: center;
+.flex_row {
+    flex-direction: row;
 }
 
 .flex_column {
     flex-direction: column;
 }
 
-.flex_row {
-    flex-direction: row;
+.flex_wrap {
+    flex: wrap;
+}
+
+.justify_content_center {
+    justify-content: center;
+}
+
+.justify_content_end {
+    justify-content: end;
+}
+
+.justify_content_between {
+    justify-content: space-between;
+}
+
+.align_items_center {
+    align-items: center;
+}
+
+.cursor_pointer {
+    cursor: pointer;
+}
+
+.w_100 {
+    width: 100%;
 }
 /* ================= TEXT ALIGN ============= */
 
@@ -46,12 +79,46 @@
 
 /* =============== POSITION =============== */
 
-.absolute {
-    position: absolute;
-}
-.relative {
+.position_relative {
     position: relative;
 }
+
+.position_absolute {
+    position: absolute;
+}
+
+.position_fixed {
+    position: fixed;
+}
+
+.top_0 {
+    top: 0;
+}
+
+.bottom_50 {
+    bottom: 50%;
+}
+
+.left_0 {
+    left: 0;
+}
+
+.left_50 {
+    left: 50%;
+}
+
+.translate_x_minus_50 {
+    transform: translate(-50%);
+}
+
+.right_0 {
+    right: 0;
+}
+
+.bottom_0 {
+    bottom: 0;
+}
+
 
 /* =============== LINE HEIGHT ================*/
 
@@ -81,3 +148,43 @@
     order: 1;
 }
 
+
+
+
+.text_decoration_underline {
+    text-decoration: underline;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.text_start {
+    text-align: left !important;
+}
+
+.text_capitalize {
+    text-transform: capitalize;
+}
+
+.list_unstyled {
+    list-style-type: none;
+}
+
+
+.common_btn {
+    font-size: var(--font-md);
+    font-weight: 700;
+    background: linear-gradient(90deg, #017EFF 0%, #97C4FF 100%);
+    border-radius: 16px;
+    padding: 20px 75px;
+    border: unset;
+}
+
+.common_btn:focus,
+.common_btn:hover {
+    -webkit-animation: pulse 1s;
+    animation: pulse 1s;
+    -webkit-box-shadow: 0 0 0 0.7em transparent;
+    box-shadow: 0 0 0 0.7em transparent;
+}
