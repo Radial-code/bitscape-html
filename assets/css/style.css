@@ -76,8 +76,8 @@
     letter-spacing: -1px;
 }
 
-.pt_12 {
-    padding-top: 12px;
+.mt_12 {
+    margin-top: 12px;
 }
 
 .pt_8 {
@@ -94,6 +94,10 @@
     max-width: 202px;
 }
 
+.gap_20 {
+    gap: 20px;
+}
+
 @media (min-width:576px) {
     .pr_sm_0 {
         padding: 0;
@@ -106,6 +110,9 @@
 }
 
 @media (min-width:768px) {
+    .d_md_block {
+        display: block;
+    }
 
     .section_line::before {
         left: -103%;
@@ -192,6 +199,14 @@
 
     .col_lg_6 {
         width: 50%;
+    }
+
+    .col_lg_3 {
+        width: 25%;
+    }
+
+    .col_lg_9 {
+        width: 75%;
     }
 
     .col_lg_4 {
