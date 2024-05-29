@@ -91,6 +91,7 @@
     width: 58.33%;
     padding: 0 12px;
 }
+
 .col_8 {
     width: 66.66%;
     padding: 0 12px;
@@ -115,6 +116,7 @@
     width: 100%;
     padding: 0 12px;
 }
+
 /* ============= WIDTH =============== */
 
 .w_100 {
@@ -151,6 +153,7 @@
 .-letter_10 {
     letter-spacing: 10%;
 }
+
 /* =============== POSITION =============== */
 
 .position_relative {
@@ -261,6 +264,23 @@
     border-radius: 50%;
     border: 1px solid transparent;
 }
+
 #back_to_top_btn:hover {
     border: 1px solid var(--color-white);
+}
+
+.border_top {
+    border-top: 2px solid var(--color-mine-shaft);
+}
+
+.border_bottom {
+    border-bottom: 2px solid var(--color-mine-shaft);
+}
+
+.border_left {
+    border-left: 2px solid var(--color-mine-shaft);
+}
+
+.border_right {
+    border-right: 2px solid var(--color-mine-shaft);
 }
