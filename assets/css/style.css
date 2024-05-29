@@ -1,27 +1,8 @@
 /* ================= WELCOME SECTION =============================== */
-.sub_heading {
-    font-size: var(--font-lg);
-    color: var(--color-zombie);
-    font-weight: 700;
-    letter-spacing: 4px;
-    line-height: 110%;
-    text-transform: uppercase;
-}
 
-.normal_para {
-    font-size: var(--font-sm);
-    color: var(--color-meteor);
-    font-weight: 500;
-    line-height: 130%;
-}
 
 .welcome_max_w {
     max-width: 832px;
-}
-
-.mx_auto {
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .welcome_bg_image {
@@ -53,15 +34,5 @@
         max-height: 335px;
         filter: blur(200px);
         top: 35%;
-    }
-}
-
-@media (min-width:768px) {
-    .order_md_0 {
-        order: 0;
-    }
-
-    .order_md_1 {
-        order: 1;
     }
 }

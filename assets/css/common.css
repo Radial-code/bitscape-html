@@ -130,6 +130,7 @@
 .h_100 {
     height: 100%;
 }
+
 /* ================= TEXT ALIGN ============= */
 
 .text_start {
@@ -322,6 +323,7 @@
 .pr_24 {
     padding-right: 32px;
 }
+
 /* ============== MARGIN ========== */
 .ml_48 {
     margin-left: 48px;
@@ -355,10 +357,42 @@
 .gap_32 {
     gap: 32px;
 }
-.gap_32 {
-    gap: 32px;
+
+.gap_24 {
+    gap: 24px;
 }
 
-.gap_32 {
-    gap: 24px;
+.gap_16 {
+    gap: 16px;
+}
+
+.mx_auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ========================== SUHEADING=========================== */
+.sub_heading {
+    font-size: var(--font-lg);
+    color: var(--color-zombie);
+    font-weight: 700;
+    letter-spacing: 4px;
+    line-height: 110%;
+    text-transform: uppercase;
+}
+
+.normal_para {
+    font-size: var(--font-sm);
+    color: var(--color-meteor);
+    font-weight: 500;
+    line-height: 130%;
+}
+
+@media (min-width:768px) {
+    .order_md_0 {
+        order: 0;
+    }
+
+    .order_md_1 {
+        order: 1;
+    }
 }
