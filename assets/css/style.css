@@ -71,18 +71,8 @@
     min-height: 370px;
     width: 100%;
     object-fit: cover;
-    transform: translateX(-4px);
 }
 
-.border_rounded_second,
-.border_rounded {
-    height: 400px;
-    width: 400px;
-    border: 0.5px solid var(--color-meteor);
-    border-radius: 50%;
-    transform: translateY(-20px);
-    opacity: 30%;
-}
 
 .blur_layer {
     height: 100px;
@@ -99,9 +89,6 @@
     margin-top: -10px;
 }
 
-.border_rounded_second {
-    scale: 1.2;
-}
 
 /* ================= WELCOME SECTION =============================== */
 .weclome_mobile {
@@ -276,15 +263,6 @@
         max-width: 400px;
     }
 
-    .border_rounded_second,
-    .border_rounded {
-        height: 380px;
-        width: 380px;
-        border: 0.5px solid var(--color-meteor);
-        border-radius: 50%;
-        transform: translateY(4px);
-        opacity: 30%;
-    }
 
     .pb_sm_30 {
         padding-bottom: 30px !important;
