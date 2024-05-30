@@ -20,6 +20,8 @@
 .macbook_img {
     transform: translateX(-100px);
     width: 100%;
+    min-width: 304px;
+    min-height: 240px;
 }
 .hero_bg_img .normal_para {
     max-width: 420px;
@@ -32,8 +34,11 @@
     height: 2px;
     background: var(--color-mine-shaft);
 }
+.iphone_hero_img {
+    min-width: 280px;
+    min-height: 343px;
+}
 @media (min-width: 768px) {
-   
     .hero_bg_img {
         background-position: center;
         background-size: 100% 100%;
@@ -111,7 +116,7 @@
         width: 801px;
         height: 982px;
     }
-    .macbook_img{
+    .macbook_img {
         width: 106% !important;
     }
 }

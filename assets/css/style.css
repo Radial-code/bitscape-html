@@ -110,7 +110,14 @@
     padding-top: 24px;
 }
 
+.macbook_stock{
+    min-height: 310px;
+}
 /* ======================= Cards Section ============================= */
+.dashboard_img{
+    width: 48px;
+    height: 48px;
+}
 .section_line::after {
     position: absolute;
     content: "";
@@ -158,6 +165,10 @@
 }
 
 /* ======================= FOOTER ======================= */
+.footer_logo{
+    width: 48px;
+    height: 48px;
+}
 .icons_max_w {
     max-width: 202px;
 }

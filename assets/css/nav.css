@@ -1,6 +1,11 @@
 .nav_height {
     height: 78px;
 }
+
+.nav_logo_text{
+    width: 156px;
+    height: 29px;
+}
 .nav_logo_padding {
     padding: 0 32px 0 18px;
 }
