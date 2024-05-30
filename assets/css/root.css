@@ -778,4 +778,11 @@ body {
         width: 218px;
         height: 44px;
     }
+    .d_lg_none {
+        display: none !important;
+    }
+
+    .d_lg_block {
+        display: block !important;
+    }
 }

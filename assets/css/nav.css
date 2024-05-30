@@ -18,17 +18,9 @@
 .search_icon:hover svg path {
     stroke: var(--color-meteor);
 }
-
-.desktop_navbar_hover:hover {
+.desktop_navbar_hover:hover{
     color: var(--color-meteor);
-    background: linear-gradient(
-        180deg,
-        rgba(209, 141, 14, 0.1) 0%,
-        rgba(107, 72, 7, 0) 50%,
-        rgba(194, 131, 13, 0.1) 100%
-    );
 }
-
 .desktop_navbar_hover::after {
     content: "";
     background-color: var(--color-meteor);
@@ -233,8 +225,8 @@
         width: 100%;
     }
     .menu_icons {
-        max-width: 500px;
         gap: 12px;
+        justify-content: space-evenly;
     }
 
     .text_nav {

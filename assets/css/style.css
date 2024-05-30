@@ -39,8 +39,20 @@
 .iphone_hero_img {
     min-width: 280px;
     min-height: 343px;
+    position: relative;
+    z-index: 10;
 }
-
+.iphone_hero_img_blur {
+    width: 200px;
+    z-index: 1;
+    background: black;
+    height: 300px;
+    filter: blur(86px);
+    position: absolute;
+    bottom: -16%;
+    left: 50%;
+    transform: translateX(-50%);
+}
 /* ================= BFI SECTION =============================== */
 .bfi_max_w {
     max-width: 457px;
@@ -223,6 +235,9 @@
 }
 
 @media (min-width: 576px) {
+    .iphone_hero_img_blur {
+        bottom: -5%;
+    }
     .position_mobile {
         margin-top: 0px;
     }
@@ -249,6 +264,15 @@
 }
 
 @media (min-width: 768px) {
+    .iphone_hero_img_blur {
+        bottom: -10%;
+        transform: translateX(0);
+        left: unset;
+        right: 10%;
+        width: 200px;
+        height: 300px;
+        filter: blur(100px);
+    }
     .hero_bg_img {
         background-position: center;
         background-size: 100% 100%;
@@ -277,7 +301,7 @@
         z-index: 11;
     }
     .hero_bg_img {
-        height: calc(100vh - 78px);
+        height: 590px;
     }
     .col_lg_5 {
         width: 41.33%;
@@ -383,7 +407,15 @@
 }
 
 @media (min-width: 1024px) {
-
+    .iphone_hero_img_blur {
+        bottom: -16%;
+        left: unset;
+        right: 19%;
+        filter: blur(85px);
+    }
+    .hero_bg_img {
+        height: 560px;
+    }
     .bfi_section {
         min-height: 400px;
     }
@@ -520,6 +552,15 @@
 }
 
 @media (min-width: 1400px) {
+    .iphone_hero_img_blur {
+        bottom: -21%;
+        left: unset;
+        right: 26%;
+        filter: blur(85px);
+    }
+    .hero_bg_img {
+        height: 687px;
+    }
     .hero_mobile_img {
         width: 682px;
         height: 836px;
@@ -530,6 +571,9 @@
 }
 
 @media (min-width: 1536px) {
+    .hero_bg_img {
+        height: 813px;
+    }
     .bfi_section {
         min-height: 610px;
     }
@@ -540,11 +584,5 @@
     }
     .macbook_img {
         width: 106% !important;
-    }
-}
-
-@media (min-width: 1921px) {
-    .hero_bg_img {
-        height: 810px;
     }
 }
