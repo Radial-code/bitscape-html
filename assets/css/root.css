@@ -136,7 +136,7 @@ body {
 }
 
 .ff_print {
-    font-family: print;
+    font-family: "print",sans-serif;
 }
 
 .ff_styrene_medium {
@@ -688,7 +688,7 @@ body {
     font-size: var(--font-sm);
     color: var(--color-meteor);
     font-weight: 500;
-    line-height: 130%;
+    line-height: 140%;
 }
 
 @media (min-width: 1400px) {
