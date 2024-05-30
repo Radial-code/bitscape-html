@@ -210,6 +210,9 @@
     }
 }
 @media (max-width: 767.98px) {
+    .pt_mobile_10{
+        padding-top: 10px;
+    }
     .mobile_navbar_hover {
         width: 70px;
     }
