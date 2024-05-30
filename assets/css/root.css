@@ -644,7 +644,7 @@ body {
     font-size: 8px;
     background: var(--color-meteor);
     border: none;
-    line-height: 100%;
+    line-height: 100% !important;
     clip-path: polygon(0 0, 100% 0, 100% 60%, 90% 100%, 0 100%);
 }
 
@@ -657,7 +657,7 @@ body {
     font-size: 8px;
     height: 25px;
     background: black;
-    line-height: 100%;
+    line-height: 100% !important;
     border: 1px solid var(--bg_zombie);
     clip-path: polygon(0 0, 100% 0, 100% 60%, 90% 100%, 0 100%);
 }
