@@ -452,6 +452,10 @@
         margin-top: 0px !important;
     }
 
+    .mb_n4 {
+        margin-bottom: -4px;
+    }
+
 }
 
 @media (min-width: 1024px) {
@@ -536,13 +540,13 @@
         padding-bottom: 0;
     }
 
-    .py_lg_43 {
-        padding-top: 43px;
-        padding-bottom: 43px;
+    .py_lg_38 {
+        padding-top: 38px;
+        padding-bottom: 38px;
     }
 
-    .pt_lg_50 {
-        padding-top: 60px;
+    .pt_lg_54 {
+        padding-top: 54px;
     }
 
     .bfi_section {
@@ -662,6 +666,7 @@
         width: 106% !important;
     }
 }
+
 @media (min-width:1600px) {
     .hero_bg_img {
         height: 795px;
