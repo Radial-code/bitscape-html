@@ -6,38 +6,38 @@
     box-sizing: border-box !important;
 }
 
-body {
-    background-color: var(--color-gray) !important;
-}
 html,
 body {
     overflow-x: hidden !important;
+    background-color: var(--color-gray) !important;
     scroll-behavior: smooth !important;
 }
 
-/* Total scrollbar width */
+/* ============ SCROLLBAR CSS ============ */
+
 ::-webkit-scrollbar {
-    width: 4px; /* Width of the scrollbar */
+    width: 4px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
-    background:var(--color-mine-shaft); /* Color of the scrollbar handle */
-    border-radius: 10px; /* Optional: round corners */
+    background: var(--color-mine-shaft);
+    border-radius: 10px;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--color-meteor); /* Color of the track */
-    border-radius: 10px; /* Optional: round corners */
+    background: var(--color-meteor);
+    border-radius: 10px;
 }
 
 /* ================DEFINE CONTAINER================ */
+
 .custom_container {
     max-width: 1496px;
     margin: 0 auto;
     padding: 0 20px;
 }
+
+/*  ================== ROOT =================== */
 
 :root {
     --color-black: #000;
@@ -55,10 +55,7 @@ body {
     --font-xl: 50px;
 }
 
-/*================================================= DEFINE-ALL = COLOR-VALUE =========================================== */
-.bg_transparent {
-    background: transparent;
-}
+/*=============== DEFINE-ALL = COLOR-VALUE =========== */
 
 .bg_black {
     background-color: var(--color-black);
@@ -179,16 +176,6 @@ body {
     font-size: var(--font-4xl);
 }
 
-/* =====DEFINE ALL MEIDA QUERIES===== */
-/* @media (max-width: 1199.98px) {
-    :root {
-        --font-sm: 10px;
-        --font-md: 19px;
-        --font-lg: 26px;
-        --font-xl: 26px;
-    }
-} */
-
 @media (max-width: 991.98px) {
     :root {
         --font-sm: 12px;
@@ -218,6 +205,7 @@ body {
     }
 }
 
+/* ============================ COMMON CSS ============================== */
 
 /* ================= DISPLAY FLEX ============= */
 
@@ -591,6 +579,9 @@ body {
     padding-right: 12px;
 }
 
+.px_32 {
+    padding: 0 32px;
+}
 /* ============== MARGIN ========== */
 .ml_48 {
     margin-left: 48px;
@@ -643,8 +634,6 @@ body {
 .gap_12 {
     gap: 12px;
 }
-
-
 
 .yellow_button {
     width: 130px;
@@ -709,7 +698,6 @@ body {
 }
 
 @media (min-width: 768px) {
-
     .d_md_none {
         display: none !important;
     }

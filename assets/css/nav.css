@@ -6,13 +6,6 @@
     width: 156px;
     height: 29px;
 }
-.nav_logo_padding {
-    padding: 0 32px 0 18px;
-}
-
-.px_32 {
-    padding: 0 32px;
-}
 
 .nav_logo_padding {
     padding: 0 32px 0 18px;
@@ -21,9 +14,11 @@
 .social_icons:hover svg path {
     fill: var(--color-meteor);
 }
+
 .search_icon:hover svg path {
     stroke: var(--color-meteor);
 }
+
 .desktop_navbar_hover:hover {
     color: var(--color-meteor);
     background: linear-gradient(
@@ -33,6 +28,7 @@
         rgba(194, 131, 13, 0.1) 100%
     );
 }
+
 .desktop_navbar_hover::after {
     content: "";
     background-color: var(--color-meteor);
@@ -43,10 +39,12 @@
     left: 50%;
     transition: all 300ms linear;
 }
+
 .desktop_navbar_hover:hover:after {
     width: 100%;
     left: 0;
 }
+
 .nav-toggler {
     border: none;
     background-color: transparent;
@@ -55,6 +53,7 @@
     min-height: 30px;
     display: none;
 }
+
 .nav-toggler span {
     width: 100%;
     height: 3px;
@@ -62,9 +61,11 @@
     display: block;
     transition: 0.3s;
 }
+
 .mobile_navbar {
     display: none !important;
 }
+
 .mobile_navbar_hover {
     width: 55px;
     height: 100%;
@@ -72,9 +73,11 @@
     padding: 6px 15px;
     position: relative;
 }
+
 .mobile_navbar_hover a {
     margin-top: 10px;
 }
+
 .mobile_navbar_hover::after {
     content: "";
     background-color: var(--color-meteor);
@@ -85,31 +88,40 @@
     left: 50%;
     transition: all 300ms linear;
 }
+
 .mobile_navbar_hover:hover:after {
     width: 100%;
     left: 0;
 }
+
 .mobile_navbar_hover:hover a {
     color: var(--color-meteor);
 }
+
 .mobile_navbar_hover:hover svg circle {
     fill: var(--color-meteor);
 }
+
 .mobile_navbar_hover svg circle {
     transition: all 300ms ease-in-out;
 }
+
 .mobile_navbar_hover:hover svg rect {
     fill: var(--color-meteor);
 }
+
 .mobile_navbar_hover svg rect {
     transition: all 300ms ease-in-out;
 }
+
 .mobile_navbar_hover:hover .mobile_svg_stroke {
     stroke: var(--color-meteor);
 }
+
 .mobile_navbar_hover:hover .mobile_svg_path {
     fill: var(--color-meteor);
 }
+
 .mobile_navbar_hover:hover {
     background: linear-gradient(
         180deg,
@@ -118,9 +130,7 @@
         rgba(194, 131, 13, 0.1) 100%
     );
 }
-.no-scroll {
-    overflow: hidden;
-}
+
 @media (max-width: 1399.98px) {
     .nav_logo_padding {
         border-right: unset !important;
@@ -131,7 +141,6 @@
         height: 100%;
         margin-right: 20px;
     }
-    /* navbar css for mobile start */
     .nav-toggler {
         z-index: 111;
         display: flex;
