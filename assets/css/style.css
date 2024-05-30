@@ -630,7 +630,7 @@
 
 @media (min-width: 1536px) {
     .hero_bg_img {
-        height: 813px;
+        height: 680px;
     }
     .bfi_section {
         min-height: 610px;
@@ -643,5 +643,10 @@
 
     .macbook_img {
         width: 106% !important;
+    }
+}
+@media (min-width:1600px) {
+    .hero_bg_img {
+        height: 795px;
     }
 }

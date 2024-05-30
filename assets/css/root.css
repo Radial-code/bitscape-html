@@ -424,23 +424,23 @@ body {
 /* =============== LINE HEIGHT ================*/
 
 .lh_100 {
-    line-height: 100%;
+    line-height: 100% !important;
 }
 
 .lh_110 {
-    line-height: 110%;
+    line-height: 110% !important;
 }
 
 .lh_120 {
-    line-height: 120%;
+    line-height: 120% !important;
 }
 
 .lh_130 {
-    line-height: 130%;
+    line-height: 130% !important;
 }
 
 .lh_160 {
-    line-height: 160%;
+    line-height: 160% !important;
 }
 
 /* ================== ORDER ================= */
@@ -645,7 +645,7 @@ body {
     background: var(--color-meteor);
     border: none;
     line-height: 100%;
-    clip-path: polygon(0 0, 100% 0, 100% 58%, 87% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 90% 100%, 0 100%);
 }
 
 .yellow_button:hover {
@@ -659,7 +659,7 @@ body {
     background: black;
     line-height: 100%;
     border: 1px solid var(--bg_zombie);
-    clip-path: polygon(0 0, 100% 0, 100% 56%, 87% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 90% 100%, 0 100%);
 }
 
 .black_button:hover {
@@ -671,7 +671,7 @@ body {
     background-color: white;
     width: 122px;
     padding: 1px;
-    clip-path: polygon(0 0, 100% 0, 100% 58%, 87% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 90% 100%, 0 100%);
 }
 
 /* ========================== SUHEADING=========================== */
@@ -712,7 +712,7 @@ body {
     }
 
     .pt_md_32 {
-        padding-top: 32px;
+        padding-top: 32px !important;
     }
 
     .align_items_md_end {
