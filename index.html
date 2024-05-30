@@ -4,12 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=s, initial-scale=1.0">
+
   <!-- ============ FAVICON ============= -->
   <link rel="shortcut icon" href="./assets/images/svg/logo.svg" type="image/x-icon">
+
   <!-- ============= CSS LINK ============= -->
   <link rel="stylesheet" href="./assets/css/root.css">
   <link rel="stylesheet" href="./assets/css/nav.css">
   <link rel="stylesheet" href="./assets/css/style.css">
+
   <!-- ========== META TAGS ============= -->
   <title>Bitscape</title>
   <meta name="title" content="Bitscape" />
@@ -32,13 +35,14 @@
 </head>
 
 <body>
+  <!-- ========== NAV BAR ============ -->
   <header class="border_bottom  ">
     <nav class="custom_container">
       <div class="d_none d_md_block">
         <div class="d_flex align_items_center nav_height justify_content_between ">
           <!-- ========== NAV-LOGO ========== -->
           <a href="#"
-            class="d_flex align_items_center justify_content_center gap_12 border_right h_100 nav_logo_padding position_relative z_10">
+            class="d_flex align_items_center justify_content_center gap_12 border_right h_100 nav_logo_padding position_relative z_111">
             <img class="footer_logo" src="./assets/images/svg/logo.svg" alt="logo">
             <img class="nav_logo_text" src="./assets/images/svg/bitscape_logo.svg" alt="bitscape-logo.svg">
           </a>
@@ -107,7 +111,7 @@
             </div>
             <!-- ============ SEARCH LOGO ========== -->
             <div
-              class="border_right h_100 d_flex align_items_center justify_content_center px_32 px_lg_20 search_icon cursor_pointer">
+              class="border_right h_100 d_flex align_items_center justify_content_center px_32 px_lg_20 search_icon cursor_pointer ">
               <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="transition_03s"
                   d="M12.8994 22.1312C18.0316 22.1312 22.1921 17.9707 22.1921 12.8385C22.1921 7.70635 18.0316 3.5459 12.8994 3.5459C7.76725 3.5459 3.6068 7.70635 3.6068 12.8385C3.6068 17.9707 7.76725 22.1312 12.8994 22.1312Z"
@@ -318,6 +322,7 @@
     </nav>
   </header>
 
+  <!-- ========== HERO SECTION ============ -->
   <section>
     <div class="custom_container hero_bg_img position_relative ">
       <div class="hero_mobile_line position_absolute left_0 w_100 d_md_none"></div>
@@ -351,8 +356,9 @@
     </div>
   </section>
 
+  <!-- ========== GASLESS EXCHANGE  SECTION ============ -->
   <section class="border_md_top position_relative z_1">
-    <div class="custom_container ">
+    <div class="custom_container bg_lightgray">
       <div class="row ">
         <div class="col_lg_6 col_xl_7">
           <img class=" macbook_img d_none d_lg_block" src="./assets/images/webp/macbook_img.webp" alt="macbook-img">
@@ -381,6 +387,7 @@
     </div>
   </section>
 
+  <!-- ========== THE BITSCAPE SECTION ============ -->
   <section class="border_top overflow_hidden position_relative z_1">
     <div class="d_md_none position_relative d_flex justify_content_center">
       <div class="border_rounded position_absolute"></div>
@@ -416,6 +423,7 @@
     </div>
   </section>
 
+  <!-- ========== WELCOME TO THE DROPZONE SECTION ========== -->
   <section class="border_top border_bottom overflow_hidden position_relative z_1">
     <div class="position_relative z_1 d_md_none">
       <div class="position_absolute laptop_blur_layer left_50 -translate_x_50"></div>
@@ -456,6 +464,7 @@
     </div>
   </section>
 
+  <!-- ============= THREE CARD SECTION =========== -->
   <section class="border_bottom overflow_hidden position_relative z_1">
     <div class="custom_container">
       <div class="row justify_content_center">
@@ -502,6 +511,7 @@
     </div>
   </section>
 
+  <!-- =========== FOOTER ============ -->
   <footer class="pb_73 pb_md_0">
     <div class="custom_container pt_43 pb_48 pt_lg_0 pb_lg_0">
       <div class="row">
@@ -665,27 +675,6 @@
       </svg>
     </button>
   </div>
-
-  <script>
-    const navToggler = document.querySelector('.nav-toggler');
-    const navMenu = document.querySelector('.mobile_nav');
-    const navLinks = document.querySelectorAll('.mobile_nav a');
-
-    function toggleNav() {
-      navToggler.classList.toggle('toggler-open');
-      navMenu.classList.toggle('open');
-      document.documentElement.classList.toggle("overflow_hidden");
-    }
-
-    navToggler.addEventListener('click', toggleNav);
-
-    navLinks.forEach(elem => elem.addEventListener('click', () => {
-      if (navMenu.classList.contains('open')) {
-        toggleNav();
-      }
-    }));
-
-  </script>
 
   <!--========== JS LINK ============ -->
   <script src="./assets/js/app.js"></script>
