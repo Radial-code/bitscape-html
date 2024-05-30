@@ -295,6 +295,9 @@
 }
 
 @media (min-width: 768px) {
+    .gasless_md_bg {
+        background-color: #181818;
+    }
     .iphone_hero_img_blur {
         bottom: -10%;
         transform: translateX(0);
@@ -455,7 +458,6 @@
     .mb_n4 {
         margin-bottom: -4px;
     }
-
 }
 
 @media (min-width: 1024px) {
@@ -667,7 +669,7 @@
     }
 }
 
-@media (min-width:1600px) {
+@media (min-width: 1600px) {
     .hero_bg_img {
         height: 795px;
     }
