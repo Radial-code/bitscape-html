@@ -460,6 +460,7 @@ body {
 
 .yellow_button {
     width: 130px;
+    padding: 10.5px;
     height: 32px;
     font-size: 8px;
     background: var(--color-meteor);

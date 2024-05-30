@@ -317,7 +317,7 @@
     .hero_mobile_img {
         width: 456px;
         height: 560px;
-        right: -7%;
+        right: -6%;
         top: 70px;
         display: block;
         position: absolute;
@@ -325,7 +325,7 @@
     }
 
     .hero_bg_img {
-        height: 590px;
+        height: 530px;
     }
 
     .col_lg_5 {
