@@ -165,6 +165,15 @@
     min-height: 310px;
 }
 
+.min_h_laptop{
+    min-height: 360px !important;
+}
+.hero_bg_img .yellow_button{
+    padding: 0 !important;
+}
+.mt_n_40{
+    margin-top: -40px;
+}
 /* ======================= Cards Section ============================= */
 .dashboard_img {
     width: 48px;
