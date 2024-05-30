@@ -6,6 +6,7 @@
     background-size: 100% 70%;
     background-repeat: no-repeat;
 }
+
 .hero_bg_img .yellow_button {
     width: 120px !important;
     height: 25px !important;
@@ -15,6 +16,7 @@
 .heading_max_width {
     max-width: 480px;
 }
+
 .macbook_paragrph_width {
     max-width: 485px;
 }
@@ -25,17 +27,21 @@
     min-width: 304px;
     min-height: 240px;
 }
+
 .hero_bg_img .normal_para {
     max-width: 420px;
 }
+
 .hero_content_max_w {
     max-width: 400px;
 }
+
 .hero_mobile_line {
     top: 70%;
     height: 2px;
     background: var(--color-mine-shaft);
 }
+
 .iphone_hero_img {
     min-width: 280px;
     min-height: 343px;
@@ -168,11 +174,13 @@
 .macbook_stock {
     min-height: 310px;
 }
+
 /* ======================= Cards Section ============================= */
 .dashboard_img {
     width: 48px;
     height: 48px;
 }
+
 .section_line::after {
     position: absolute;
     content: "";
@@ -209,6 +217,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
 .laptop_blur_layer {
     background-color: var(--color-meteor);
     filter: blur(100px);
@@ -222,6 +231,7 @@
     width: 48px;
     height: 48px;
 }
+
 .icons_max_w {
     max-width: 202px;
 }
@@ -239,7 +249,7 @@
         bottom: -5%;
     }
     .position_mobile {
-        margin-top: 0px;
+        margin-top: 24px !important;
     }
 
     .pr_sm_0 {
@@ -261,6 +271,20 @@
     .max_w_380 {
         max-width: 400px;
     }
+
+    .border_rounded_second,
+    .border_rounded {
+        height: 380px;
+        width: 380px;
+        border: 0.5px solid var(--color-meteor);
+        border-radius: 50%;
+        transform: translateY(4px);
+        opacity: 30%;
+    }
+
+    .pb_sm_30 {
+        padding-bottom: 30px !important;
+    }
 }
 
 @media (min-width: 768px) {
@@ -277,20 +301,25 @@
         background-position: center;
         background-size: 100% 100%;
     }
+
     .pb_md_70 {
         padding-bottom: 70px;
     }
+
     .macbook_img {
         transform: translate(-20px, 4px);
     }
+
     .macbook_content_pb {
         padding-bottom: 50px;
     }
+
     .hero_bg_img .yellow_button {
         font-size: 12px !important;
         width: 220px !important;
         height: 46px !important;
     }
+
     .hero_mobile_img {
         width: 456px;
         height: 560px;
@@ -300,9 +329,11 @@
         position: absolute;
         z-index: 11;
     }
+
     .hero_bg_img {
         height: 590px;
     }
+
     .col_lg_5 {
         width: 41.33%;
         padding: 0 12px;
@@ -345,8 +376,8 @@
         padding-bottom: 0px;
     }
 
-    .pt_md_8 {
-        padding-top: 8px;
+    .pt_md_12 {
+        padding-top: 12px !important;
     }
 
     .pt_md_0 {
@@ -404,6 +435,15 @@
         min-height: 345px;
         object-fit: cover;
     }
+
+    .pt_md_4 {
+        padding-top: 4px !important;
+    }
+
+    .position_mobile {
+        margin-top: 0px !important;
+    }
+
 }
 
 @media (min-width: 1024px) {
@@ -427,6 +467,7 @@
     .hero_content_max_w {
         max-width: unset;
     }
+
     .hero_mobile_img {
         right: 0%;
     }
@@ -467,7 +508,7 @@
         position: absolute;
         width: calc(100% + 8px);
         left: -8px;
-        top: 50%;
+        top: 55%;
         transform: translateY(-50%);
         height: 2px;
         background-color: var(--color-mine-shaft);
@@ -491,7 +532,7 @@
     }
 
     .pt_lg_50 {
-        padding-top: 50px;
+        padding-top: 60px;
     }
 
     .bfi_section {
@@ -507,10 +548,12 @@
     .bfi_section {
         min-height: 455px;
     }
+
     .col_xl_7 {
         width: 58.33%;
         padding: 0 12px;
     }
+
     .col_xl_5 {
         width: 41.66%;
         padding: 0 12px;
@@ -519,13 +562,23 @@
     .macbook_content_pb {
         padding-bottom: 60px !important;
     }
+
     .hero_mobile_img {
         right: 0;
         width: 580px;
         height: 710px;
     }
+
     .pl_xl_32 {
         padding-left: 32px;
+    }
+
+    .pt_xl_16 {
+        padding-top: 16px;
+    }
+
+    .pt_xl_30 {
+        padding-top: 30px !important;
     }
 }
 
@@ -565,8 +618,13 @@
         width: 682px;
         height: 836px;
     }
+
     .bfi_section {
         min-height: 580px;
+    }
+
+    .p_xxl_28 {
+        padding: 28px;
     }
 }
 
@@ -582,6 +640,7 @@
         width: 801px;
         height: 982px;
     }
+
     .macbook_img {
         width: 106% !important;
     }

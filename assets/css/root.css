@@ -178,8 +178,8 @@ body {
 
 @media (max-width: 991.98px) {
     :root {
-        --font-sm: 12px;
-        --font-lg: 28px;
+        --font-sm: 11px;
+        --font-lg: 27px;
         --font-xl: 40px;
     }
 }
@@ -582,6 +582,7 @@ body {
 .px_32 {
     padding: 0 32px;
 }
+
 /* ============== MARGIN ========== */
 .ml_48 {
     margin-left: 48px;
@@ -606,6 +607,7 @@ body {
 .mr_24 {
     margin-right: 24px;
 }
+
 .mb_24 {
     margin-bottom: 24px;
 }
@@ -614,6 +616,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
 /* ============ GAP ============= */
 .gap_48 {
     gap: 48px;
@@ -641,6 +644,7 @@ body {
     font-size: 8px;
     background: var(--color-meteor);
     border: none;
+    line-height: 100%;
     clip-path: polygon(0 0, 100% 0, 100% 58%, 87% 100%, 0 100%);
 }
 
@@ -653,6 +657,7 @@ body {
     font-size: 8px;
     height: 25px;
     background: black;
+    line-height: 100%;
     border: 1px solid var(--bg_zombie);
     clip-path: polygon(0 0, 100% 0, 100% 56%, 87% 100%, 0 100%);
 }
@@ -778,6 +783,7 @@ body {
         width: 218px;
         height: 44px;
     }
+<<<<<<< HEAD
     .d_lg_none {
         display: none !important;
     }
@@ -786,3 +792,6 @@ body {
         display: block !important;
     }
 }
+=======
+}
+>>>>>>> 123abced5671cda69e41c5899bb998117c78624d
