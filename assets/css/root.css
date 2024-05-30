@@ -46,6 +46,7 @@ body {
     --color-meteor: #d18d0e;
     --color-mine-shaft: #303030;
     --color-gray: #1e1e1e;
+    --color-lightgray: #181818;
 
     --font-xsm: 10px;
     --font-sm: 12px;
@@ -67,6 +68,10 @@ body {
 
 .bg_zombie {
     background-color: var(--color-zombie);
+
+}
+.bg_lightgray {
+    background-color: var(--color-lightgray);
 }
 
 .bg_meteor {
@@ -477,6 +482,10 @@ body {
 
 .z_20 {
     z-index: 20;
+
+}
+.z_111 {
+    z-index: 111;
 }
 
 .overflow_hidden {
