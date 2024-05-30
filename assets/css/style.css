@@ -68,10 +68,10 @@
 
 .mobile_img {
     max-width: 400px;
-    min-height: 400px;
+    min-height: 370px;
     width: 100%;
     object-fit: cover;
-    transform: translateX(-10px);
+    /* transform: translateY(-10px); */
 }
 
 .border_rounded_second,
@@ -87,6 +87,7 @@
 .blur_layer {
     height: 100px;
     width: 300px;
+    border-radius: 50%;
     background-color: var(--color-meteor);
     filter: blur(100px);
     bottom: 20%;
@@ -95,7 +96,7 @@
 }
 
 .position_mobile {
-    margin-top: -45px;
+    margin-top: -10px;
 }
 
 .border_rounded_second {
