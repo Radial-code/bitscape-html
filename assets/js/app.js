@@ -1,21 +1,21 @@
 // ================= NAV BAR 
-const navToggler = document.querySelector('.nav-toggler');
-    const navMenu = document.querySelector('.mobile_nav');
-    const navLinks = document.querySelectorAll('.mobile_nav a');
+const navToggler = document.querySelector('.nav_toggler');
+const navMenu = document.querySelector('.mobile_nav');
+const navLinks = document.querySelectorAll('.mobile_nav a');
 
-    function toggleNav() {
-      navToggler.classList.toggle('toggler-open');
-      navMenu.classList.toggle('open');
-      document.documentElement.classList.toggle("overflow_hidden");
-    }
+function toggleNav() {
+  navToggler.classList.toggle('toggler_open');
+  navMenu.classList.toggle('open');
+  document.documentElement.classList.toggle("overflow_hidden");
+}
 
-    navToggler.addEventListener('click', toggleNav);
+navToggler.addEventListener('click', toggleNav);
 
-    navLinks.forEach(elem => elem.addEventListener('click', () => {
-      if (navMenu.classList.contains('open')) {
-        toggleNav();
-      }
-    }));
+navLinks.forEach(elem => elem.addEventListener('click', () => {
+  if (navMenu.classList.contains('open')) {
+    toggleNav();
+  }
+}));
 
 
 // ============ BACK TO TOP ============
