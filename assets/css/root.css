@@ -475,7 +475,7 @@ body {
 }
 
 .yellow_button:hover {
-    background: white;
+    background: var(--color-white);
 }
 
 .black_button {
@@ -488,12 +488,11 @@ body {
 }
 
 .black_button:hover {
-    background: white;
+    background: var(--color-white);
     color: black !important;
 }
 
 .box_black_button {
-    background-color: white;
     width: 122px;
     padding: 1px;
     clip-path: polygon(0 0, 100% 0, 100% 60%, 90% 100%, 0 100%);
