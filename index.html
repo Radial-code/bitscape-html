@@ -51,15 +51,15 @@
             <!-- ========== NAVIGATION LINKS ============ -->
             <div class="d_flex align_items_center justify_content_center gap_48 w_100 pl_48 pr_48 h_100 mobile_nav">
               <a href="#market"
-                class="ff_styrene_medium fw_medium text_sm text_nav_md lh_110 letter_2 text_zombie text_uppercase desktop_navbar_hover position_relative d_flex align_items_center transition_03s h_3xl_100 ">MARKETS</a>
+                class="ff_styrene_medium fw_medium text_sm text_nav_md lh_110 letter_2 text_zombie text_uppercase desktop_navbar_hover position_relative d_flex align_items_center transition_03s h_2xl_100 ">MARKETS</a>
               <a href="#trade"
-                class="ff_styrene_medium fw_medium text_sm text_nav_md lh_110 letter_2 text_zombie text_uppercase desktop_navbar_hover position_relative d_flex align_items_center transition_03s h_3xl_100 ">TRADE</a>
+                class="ff_styrene_medium fw_medium text_sm text_nav_md lh_110 letter_2 text_zombie text_uppercase desktop_navbar_hover position_relative d_flex align_items_center transition_03s h_2xl_100 ">TRADE</a>
               <a href="#swap"
-                class="ff_styrene_medium fw_medium text_sm text_nav_md lh_110 letter_2 text_zombie text_uppercase desktop_navbar_hover position_relative d_flex align_items_center transition_03s h_3xl_100 ">SWAP</a>
+                class="ff_styrene_medium fw_medium text_sm text_nav_md lh_110 letter_2 text_zombie text_uppercase desktop_navbar_hover position_relative d_flex align_items_center transition_03s h_2xl_100 ">SWAP</a>
               <a href="#assets"
-                class="ff_styrene_medium fw_medium text_sm text_nav_md lh_110 letter_2 text_zombie text_uppercase desktop_navbar_hover position_relative d_flex align_items_center transition_03s h_3xl_100 ">Assets</a>
+                class="ff_styrene_medium fw_medium text_sm text_nav_md lh_110 letter_2 text_zombie text_uppercase desktop_navbar_hover position_relative d_flex align_items_center transition_03s h_2xl_100 ">Assets</a>
               <a href="#learn"
-                class="ff_styrene_medium fw_medium text_sm text_nav_md lh_110 letter_2 text_zombie text_uppercase desktop_navbar_hover position_relative d_flex align_items_center transition_03s h_3xl_100 ">Learn</a>
+                class="ff_styrene_medium fw_medium text_sm text_nav_md lh_110 letter_2 text_zombie text_uppercase desktop_navbar_hover position_relative d_flex align_items_center transition_03s h_2xl_100 ">Learn</a>
             </div>
             <!-- =========== SOCIAL ICONS =============-->
             <div
@@ -124,20 +124,20 @@
 
             </div>
             <!-- ========== CONNECT BUTTON ========== -->
-            <div class="d_flex align_items_center justify_content_center pl_32 pr_12 pr_2xl_32 px_lg_20">
+            <div class="d_flex align_items_center justify_content_center pl_32 pr_12 connect_button px_lg_20">
               <button
                 class="yellow_button transition_03s ff_print lh_120 position_relative cursor_pointer">CONNECT</button>
             </div>
           </div>
-          <!-- nav-toggler for mobile version only -->
-          <button class="nav-toggler" aria-label="toggle button">
-            <span></span>
-            <span></span>
-            <span></span>
+          <!-- nav_toggler for mobile version only -->
+          <button class="nav_toggler cursor_pointer border_none bg_transparent d_none" aria-label="toggle button">
+            <span class="d_block transition_03s w_100"></span>
+            <span class="d_block transition_03s w_100"></span>
+            <span class="d_block transition_03s w_100"></span>
           </button>
         </div>
       </div>
-      <div class="mobile_navbar position_fixed bottom_0 left_0 mobile_nav_border bg_gray z_20">
+      <div class="mobile_navbar d_none position_fixed bottom_0 left_0 mobile_nav_border bg_gray z_20">
         <div class="menu_icons mx_auto h_100 d_flex align_items_center">
           <a href="#" class="flex_column d_flex align_items_center justify_content_center mobile_navbar_hover">
             <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -340,13 +340,15 @@
       <img class=" hero_mobile_img d_none" src="./assets/images/webp/hero_mobile_img.webp" alt="iphone-img">
       <div class=" pt_70 h_100 h_100 d_flex align_items_md_end flex_column flex_md_row pl_xl_126">
         <div class="  pb_md_70 pb_48 hero_content_max_w" data-aos="fade-right">
-          <h1 class="text_zombie text_xl ff_styrene_medium fw_medium text_uppercase lh_100 heading_max_width letter_6"  data-aos-delay="100" data-aos="fade-right">
+          <h1 class="text_zombie text_xl ff_styrene_medium fw_medium text_uppercase lh_100 heading_max_width letter_6"
+            data-aos-delay="100" data-aos="fade-right">
             bitscape is the next big
             innovation</h1>
-          <p class="normal_para ff_print pt_24 pt_md_32 fw_medium text_uppercase lh_160" data-aos="fade-right"  data-aos-delay="200">Lorem ipsum dolor sit amet
+          <p class="sub_para ff_print pt_24 pt_md_32 fw_medium text_uppercase lh_160" data-aos="fade-right"
+            data-aos-delay="200">Lorem ipsum dolor sit amet
             consectetur. Dolor
             maecenas.</p>
-          <div class="pt_24 pt_md_32 d_flex align_items_center gap_24" data-aos="fade-right"  data-aos-delay="300">
+          <div class="pt_24 pt_md_32 d_flex align_items_center gap_24" data-aos="fade-right" data-aos-delay="300">
             <button
               class="yellow_button transition_03s ff_print fw_medium lh_120 position_relative cursor_pointer text_black">CTA
               <span class="text_capitalize">Main</span></button>
@@ -375,12 +377,14 @@
           <img class=" d_lg_none w_100 mt_n_40" src="./assets/images/webp/mobile_laptop_img.webp" alt="macbook-img">
         </div>
         <div class="col_lg_6 col_xl_5 macbook_content_pb ">
-          <div class="h_100 d_flex flex_column justify_content_end px_12 macbook_paragrph_width" >
-            <p class="sub_heading ff_styrene_medium pt_12 pt_lg_0 fw_medium letter_3 text_uppercase" data-aos-delay="100" data-aos="fade-left">Gasless exchange
+          <div class="h_100 d_flex flex_column justify_content_end px_12 macbook_paragrph_width">
+            <p class="sub_heading ff_styrene_medium pt_12 pt_lg_0 fw_medium letter_3 text_uppercase"
+              data-aos-delay="100" data-aos="fade-left">Gasless exchange
               for
               BRC20, SRC20
               & runes</p>
-            <p class="normal_para ff_print pr_40 pr_lg_0 pb_24 pt_20 fw_medium text_uppercase" data-aos-delay="200" data-aos="fade-left">Lorem
+            <p class="sub_para ff_print pr_40 pr_lg_0 pb_24 pt_20 fw_medium text_uppercase" data-aos-delay="200"
+              data-aos="fade-left">Lorem
               ipsum dolor
               sit amet
               consectetur. Dolor maecenas.</p>
@@ -400,25 +404,26 @@
   <!-- ========== THE BITSCAPE SECTION ============ -->
   <section class="border_top overflow_hidden position_relative z_1">
     <div class="d_md_none position_relative d_flex justify_content_center">
-      <div class="blur_layer position_absolute"></div>
+      <div class="blur_layer z_10 position_absolute"></div>
       <img class="mobile_img w_100" src="./assets/images/webp/mobile_bfi_img.webp" alt="mobile_bfi">
     </div>
-    <div class="custom_container position_relative mb_n4 bg_gray position_mobile">
+    <div class="custom_container position_relative mb_n4 bg_gray bitscap_bfi_margin">
       <div class="d_flex flex_column  bfi_section justify_content_center">
 
         <div class="position_absolute left_0 d_none d_md_block">
           <img class="w_100 desktop_bfi_img" src="./assets/images/webp/bfi_bg_img.webp" alt="desktop_bfi">
         </div>
         <div class="pl_xl_126 position_relative z_10">
-          <div class="pb_24 bfi_max_w pb_sm_30" >
+          <div class="pb_24 bfi_max_w pb_sm_30">
             <h2 class="sub_heading ff_styrene_medium pt_20 pt_md_0" data-aos-delay="100" data-aos="fade-right">
               <span class=" d_block d_sm_inline_block"><span class="text_meteor">$BFI </span> //
               </span>
               the bitscape
               governance token
             </h2>
-            <p class="normal_para ff_print pt_20 pt_md_12 text_uppercase" data-aos-delay="200" data-aos="fade-right">brc20 - lorem ipsum dolor sit amet.</p>
-            <div class="pt_20 pt_xl_30 computer_btn"data-aos-delay="300" data-aos="fade-right">
+            <p class="sub_para ff_print pt_20 pt_md_12 text_uppercase" data-aos-delay="200" data-aos="fade-right">
+              brc20 - lorem ipsum dolor sit amet.</p>
+            <div class="pt_20 pt_xl_30 computer_btn" data-aos-delay="300" data-aos="fade-right">
               <div class="box_black_button transition_03s bg_white d_inline_block ">
                 <button
                   class="black_button transition_03s fw_medium ff_print lh_120 position_relative cursor_pointer text_zombie">LEARN
@@ -436,7 +441,7 @@
   <section class="border_top border_bottom overflow_hidden position_relative z_1" id="market">
     <div class="position_relative z_1 d_md_none" id="assets_mobile">
       <div class="position_absolute laptop_blur_layer left_50 -translate_x_50"></div>
-      <img class="weclome_mobile" src="./assets/images/webp/welcome_section_bg.webp" alt="weclcome">
+      <img class="welcome_mobile" src="./assets/images/webp/welcome_section_bg.webp" alt="weclcome">
       <img class="position_absolute top_0 left_50 -translate_x_50 w_100 max_w_380 macbook_stock"
         src="./assets/images/png/macbok.png" alt="macbok">
     </div>
@@ -447,7 +452,7 @@
           class="welcome_max_w mx_auto d_flex flex_column flex_md_row justify_content_between align_items_md_center ">
           <div class="p-0" data-aos-delay="100" data-aos="fade-up">
             <h2 class="sub_heading ff_styrene_medium pt_20 pt_md_0">welcome to the dropzone</h2>
-            <p class="normal_para ff_print pt_20 pt_md_4 pr_40 pr_sm_0 text_uppercase">Lorem ipsum dolor sit amet
+            <p class="sub_para ff_print pt_20 pt_md_4 pr_40 pr_sm_0 text_uppercase">Lorem ipsum dolor sit amet
               consectetur. Dolor
               maecenas.</p>
           </div>
@@ -484,7 +489,7 @@
                 DOLOR SIT
                 AMET</h3>
             </div>
-            <p class="normal_para letter_spacing text_uppercase ff_print pt_24">
+            <p class="sub_para letter_spacing text_uppercase ff_print pt_24">
               Lorem ipsum dolor sit amet consectetur. Eu orci ac nec pellentesque donec.
             </p>
           </div>
@@ -497,7 +502,7 @@
                 DOLOR SIT
                 AMET</h3>
             </div>
-            <p class="normal_para letter_spacing text_uppercase ff_print pt_24">
+            <p class="sub_para letter_spacing text_uppercase ff_print pt_24">
               Lorem ipsum dolor sit amet consectetur. Eu orci ac nec pellentesque donec.
             </p>
           </div>
@@ -510,7 +515,7 @@
                 DOLOR SIT
                 AMET</h3>
             </div>
-            <p class="normal_para letter_spacing text_uppercase ff_print pt_24">
+            <p class="sub_para letter_spacing text_uppercase ff_print pt_24">
               Lorem ipsum dolor sit amet consectetur. Eu orci ac nec pellentesque donec.
             </p>
           </div>
