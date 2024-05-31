@@ -72,6 +72,10 @@ body {
     background-color: var(--color-gray);
 }
 
+.bg_meteor {
+    background-color: var(--color-meteor);
+}
+
 .bg_transparent {
     background-color: transparent;
 }
@@ -184,7 +188,6 @@ body {
 .border_none {
     border: none;
 }
-
 
 .d_inline_block {
     display: inline-block;
@@ -337,7 +340,6 @@ body {
     z-index: 1;
 }
 
-
 .z_10 {
     z-index: 10;
 }
@@ -356,11 +358,8 @@ body {
 
 /* ========== BACK TO TOP CSS =========== */
 #back_to_top_btn {
-    display: none;
-    position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: var(--color-meteor);
     border: none;
     z-index: 49;
     height: 40px;
@@ -471,9 +470,7 @@ body {
     padding: 10.5px;
     height: 32px;
     font-size: 8px;
-    background: var(--color-meteor);
     border: none;
-    line-height: 100% !important;
     clip-path: polygon(0 0, 100% 0, 100% 60%, 90% 100%, 0 100%);
 }
 
@@ -486,7 +483,6 @@ body {
     font-size: 8px;
     height: 25px;
     background: black;
-    line-height: 100% !important;
     border: 1px solid var(--bg_zombie);
     clip-path: polygon(0 0, 100% 0, 100% 60%, 90% 100%, 0 100%);
 }
@@ -506,7 +502,6 @@ body {
 /* ========================== SUHEADING=========================== */
 .sub_heading {
     font-size: var(--font-lg);
-    color: var(--color-zombie);
     font-weight: 700;
     letter-spacing: 4px;
     line-height: 110%;
@@ -515,12 +510,11 @@ body {
 
 .sub_para {
     font-size: var(--font-sm);
-    color: var(--color-meteor);
     font-weight: 500;
     line-height: 140%;
 }
 
-@media (min-width:576px) {
+@media (min-width: 576px) {
     .mb_sm_30 {
         margin-bottom: 30px;
     }
