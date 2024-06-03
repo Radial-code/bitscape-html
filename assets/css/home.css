@@ -1,0 +1,35 @@
+@import url(./root.css);
+.token_links:hover {
+  color: var(--color-meteor);
+}
+.token_section {
+  overflow-x: scroll;
+}
+.token_section div {
+  width: 890px;
+}
+.text_nowrap {
+  text-wrap: nowrap;
+}
+
+/* scrollbar hidden */
+
+.token_section::-webkit-scrollbar {
+  display: none; 
+}
+
+@media (min-width:768px) {
+    .pl_md_16{
+        padding-left: 16px !important;
+    }
+    .token_section div {
+  width: 1000px;
+}
+    
+}
+@media (min-width:992px) {
+    .pl_xl_16{
+        padding-left: 16px !important;
+    }
+    
+}
