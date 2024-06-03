@@ -85,23 +85,23 @@
     min-height: 274px;
     object-fit: cover;
 }
-
+/* 
 .mt_54 {
     margin-top: 54px;
-}
+} */
 
 .max_w_380 {
     max-width: 380px;
 }
 
-
+/* 
 .pb_16 {
     padding-bottom: 16px;
 }
 
 .pr_40 {
     padding-right: 40px;
-}
+} */
 
 .welcome_max_w {
     max-width: 832px;
@@ -123,7 +123,7 @@
     filter: blur(184px);
     top: 10%;
 }
-
+/* 
 .pt_70 {
     padding-top: 70px;
 }
@@ -142,7 +142,7 @@
 
 .pt_24 {
     padding-top: 24px;
-}
+} */
 
 .macbook_stock {
     min-height: 310px;
@@ -156,9 +156,9 @@
     padding: 0 !important;
 }
 
-.mt_n_40 {
+/* .mt_n_40 {
     margin-top: -40px;
-}
+} */
 
 /* ======================= Cards Section ============================= */
 .dashboard_img,
@@ -185,19 +185,15 @@
     bottom: 0;
 }
 
-.letter_spacing {
-    letter-spacing: -1px;
-}
-
-.mt_16 {
+/* .mt_16 {
     margin-top: 16px;
-}
+} */
 
 
-.py_20 {
+/* .py_20 {
     padding-top: 20px;
     padding-bottom: 20px;
-}
+} */
 
 .laptop_blur_layer {
     background-color: var(--color-meteor);
@@ -213,9 +209,9 @@
     max-width: 202px;
 }
 
-.gap_20 {
+/* .gap_20 {
     gap: 20px;
-}
+} */
 
 .footer_link:hover {
     opacity: 0.7;
@@ -239,7 +235,7 @@
     }
 
     .letter_spacing {
-        letter-spacing: 0px;
+        letter-spacing: 0px !important;
     }
 
     .d_sm_inline_block {
@@ -261,6 +257,10 @@
 
     .gap_sm_24 {
         gap: 24px !important;
+    }
+
+    .mb_sm_30 {
+        margin-bottom: 30px;
     }
 }
 
@@ -427,6 +427,64 @@
     .mb_n4 {
         margin-bottom: -4px;
     }
+
+    .d_md_none {
+        display: none !important;
+    }
+
+    .pl_md_32 {
+        padding-left: 32px;
+    }
+
+    .pt_md_32 {
+        padding-top: 32px !important;
+    }
+
+    .align_items_md_end {
+        align-items: flex-end;
+    }
+
+    .computer_btn .box_black_button {
+        width: 150px;
+        height: 34px;
+    }
+
+    .computer_btn .black_button {
+        font-size: 12px;
+        width: 148px;
+        height: 32px;
+    }
+
+    .box_black_button {
+        width: 172px;
+        height: 46px;
+    }
+
+    .yellow_button {
+        font-size: 12px;
+    }
+
+    .black_button {
+        font-size: 12px;
+        width: 170px;
+        height: 44px;
+    }
+
+    .order_md_0 {
+        order: 0;
+    }
+
+    .order_md_1 {
+        order: 1;
+    }
+
+    .flex_md_row {
+        flex-direction: row;
+    }
+
+    .align_items_md_center {
+        align-items: center;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -527,6 +585,24 @@
     .bfi_max_w {
         max-width: 440px;
     }
+
+    .box_black_button {
+        width: 220px;
+    }
+
+    .black_button {
+        font-size: 12px;
+        width: 218px;
+        height: 44px;
+    }
+
+    .d_lg_none {
+        display: none !important;
+    }
+
+    .d_lg_block {
+        display: block !important;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -616,6 +692,15 @@
 
     .p_xxl_28 {
         padding: 28px;
+    }
+
+    .h_2xl_100 {
+        height: 100%;
+    }
+
+    .custom_container {
+        border-left: 2px solid var(--color-mine-shaft);
+        border-right: 2px solid var(--color-mine-shaft);
     }
 }
 
