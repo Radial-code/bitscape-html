@@ -1,29 +1,8 @@
-.text_center {
-    text-align: center;
-}
 
-.fw_light {
-    font-weight: 300 !important;
-}
 
-.max_w_1030 {
-    max-width: 1030px;
-}
-
-.max_w_468 {
-    max-width: 468px;
-}
-
+/* ==================PADDING================== */
 .pt_32 {
     padding-top: 32px;
-}
-
-.yellow_dots {
-    height: 1.5px;
-    width: 1.5px;
-    display: inline-block;
-    transform: translateY(-3px);
-    border-radius: 50%;
 }
 
 .pt_6 {
@@ -34,8 +13,28 @@
     padding-bottom: 20px;
 }
 
-.text_end {
-    text-align: end;
+.py_40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+/* ==================MAX WIDTH================== */
+.max_w_1030 {
+    max-width: 1030px;
+}
+
+.max_w_468 {
+    max-width: 468px;
+}
+
+/* ==================PROMINENT COMMUNITIES====================== */
+.yellow_dots {
+    height: 1.5px;
+    width: 1.5px;
+    display: inline-block;
+    transform: translateY(-3px);
+    border-radius: 50%;
 }
 
 /* =============Ordinal Community Airdrop Allocations SECTION===========*/
@@ -54,9 +53,20 @@
     background-size: 100% 100%;
 }
 
-.py_40 {
-    padding-top: 40px;
-    padding-bottom: 40px;
+.light_gray_button .yellow_button,
+.bfi_countdown .yellow_button {
+    width: 270px;
+    padding: 10.5px;
+    height: 36px;
+    font-size: 12px;
+}
+
+.bfi_countdown .yellow_button {
+    clip-path: polygon(0 0, 100% 0, 100% 67%, 94% 100%, 0 100%);
+}
+
+.light_gray_button .yellow_button {
+    clip-path: polygon(6% 0%, 20% 0, 100% 0%, 100% 100%, -8% 100%);
 }
 
 /* ====================BFI ROOT CSS===================== */
@@ -109,9 +119,13 @@
 }
 
 @media (min-width:576px) {
+
+    /* ==================FLEX CLASS================== */
     .d_sm_flex {
         display: flex;
     }
+
+    /* ==================PADDING================== */
 
     .pt_sm_12 {
         padding-top: 12px;
@@ -123,6 +137,8 @@
 }
 
 @media (min-width:768px) {
+
+    /* ==================PADDING================== */
     .pt_md_20 {
         padding-top: 20px;
     }
@@ -131,20 +147,36 @@
         padding-top: 20px;
     }
 
+    .py_md_60 {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    /* ==================MAX WIDTH================== */
     .max_w_md_630 {
         max-width: 630px;
     }
 
-    .h_md_56 {
-        height: 56px;
-    }
-
+    /* ================= DISPLAY FLEX ============= */
     .justify_content_md_center {
         justify-content: center;
+    }
+
+
+    .light_gray_button .yellow_button,
+    .bfi_countdown .yellow_button {
+        width: 300px;
+        height: 40px;
+    }
+
+    .gap_md_20 {
+        gap: 20px;
     }
 }
 
 @media (min-width:1024px) {
+
+    /* ==================PADDING================== */
     .pt_lg_24 {
         padding-top: 24px;
     }
@@ -168,15 +200,26 @@
         padding-right: 32px;
     }
 
+    /* ==================COL================== */
     .col_lg_8 {
         width: 66.66% !important;
     }
 
+    .light_gray_button .yellow_button,
+    .bfi_countdown .yellow_button {
+        width: 400px;
+        height: 44px;
+    }
 
 }
 
 @media (min-width:1280px) {
 
+    /* ==================PADDING================== */
+    .py_xl_128 {
+        padding-top: 128px;
+        padding-bottom: 128px;
+    }
 
     .px_xl_64 {
         padding-left: 64px;
@@ -186,10 +229,15 @@
     .pr_xl_90 {
         padding-right: 90px;
     }
-}
 
-@media (min-width:1420px) {
-    .h_2xl_auto {
-        height: auto;
+    .px_xl_126 {
+        padding-right: 126px;
+        padding-left: 126px;
+    }
+
+    .light_gray_button .yellow_button,
+    .bfi_countdown .yellow_button {
+        width: 464px;
+        height: 50px;
     }
 }
