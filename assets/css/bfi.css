@@ -34,6 +34,10 @@
     padding-bottom: 20px;
 }
 
+.text_end {
+    text-align: end;
+}
+
 /* =============Ordinal Community Airdrop Allocations SECTION===========*/
 
 .blur_layer_ordinal {
@@ -69,6 +73,10 @@
     .max_w_md_630 {
         max-width: 630px;
     }
+
+    .h_md_56 {
+        height: 56px;
+    }
 }
 
 @media (min-width:1024px) {
@@ -98,6 +106,8 @@
     .col_lg_8 {
         width: 66.66% !important;
     }
+
+
 }
 
 @media (min-width:1280px) {
@@ -110,5 +120,11 @@
 
     .pr_xl_90 {
         padding-right: 90px;
+    }
+}
+
+@media (min-width:1420px) {
+    .h_2xl_auto {
+        height: auto;
     }
 }
