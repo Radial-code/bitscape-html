@@ -47,6 +47,18 @@
     background: radial-gradient(47.99% 107.94% at 29.98% 135%, rgba(209, 141, 14, 0.2) 0%, rgba(209, 141, 14, 0) 100%);
 }
 
+/* =============CountDown===========*/
+.countdown_bg {
+    background: url("../images/webp/bfi_countdown_bg_img.webp") no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.py_40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 /* ====================BFI ROOT CSS===================== */
 @media (max-width: 1023.98px) {
     :root {
