@@ -17,7 +17,19 @@
 .token_section::-webkit-scrollbar {
   display: none; 
 }
+.bfi_token{
+  height: 102px;
+  display: flex;
+  align-items:end;
+}
 
+@media (min-width:576px) {
+  .bfi_token{
+  height: 237px;
+  display: flex;
+  align-items: center;
+}
+}
 @media (min-width:768px) {
     .pl_md_16{
         padding-left: 16px !important;

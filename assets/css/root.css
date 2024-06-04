@@ -263,6 +263,9 @@ body {
 .letter_2 {
     letter-spacing: 2px;
 }
+.letter_10{
+    letter-spacing: 10px !important;
+}
 
 .letter_6 {
     letter-spacing: 6px;
