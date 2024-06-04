@@ -581,23 +581,11 @@ body {
     object-fit: cover;
 }
 
-/* 
-.mt_54 {
-    margin-top: 54px;
-} */
 
 .max_w_380 {
     max-width: 380px;
 }
 
-/* 
-.pb_16 {
-    padding-bottom: 16px;
-}
-
-.pr_40 {
-    padding-right: 40px;
-} */
 
 .welcome_max_w {
     max-width: 832px;
@@ -620,26 +608,6 @@ body {
     top: 10%;
 }
 
-/* 
-.pt_70 {
-    padding-top: 70px;
-}
-
-.pt_43 {
-    padding-top: 43px;
-}
-
-.pb_70 {
-    padding-bottom: 70px;
-}
-
-.pb_73 {
-    padding-bottom: 73px;
-}
-
-.pt_24 {
-    padding-top: 24px;
-} */
 
 .macbook_stock {
     min-height: 310px;
@@ -652,10 +620,6 @@ body {
 .hero_bg .yellow_button {
     padding: 0 !important;
 }
-
-/* .mt_n_40 {
-    margin-top: -40px;
-} */
 
 /* ======================= Cards Section ============================= */
 .dashboard_img,
@@ -682,15 +646,6 @@ body {
     bottom: 0;
 }
 
-/* .mt_16 {
-    margin-top: 16px;
-} */
-
-
-/* .py_20 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-} */
 
 .laptop_blur_layer {
     background-color: var(--color-meteor);
@@ -706,9 +661,6 @@ body {
     max-width: 202px;
 }
 
-/* .gap_20 {
-    gap: 20px;
-} */
 
 .footer_link:hover {
     opacity: 0.7;
