@@ -106,6 +106,9 @@ body {
 .fw_bold {
     font-weight: 700;
 }
+.fw_black {
+    font-weight: 900;
+}
 
 .fw_normal {
     font-weight: 400;
@@ -287,6 +290,9 @@ body {
 
 .letter_2 {
     letter-spacing: 2px;
+}
+.letter_10{
+    letter-spacing: 10px !important;
 }
 
 .letter_6 {
