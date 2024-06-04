@@ -170,6 +170,14 @@ body {
     text-transform: capitalize;
 }
 
+.text_center {
+    text-align: center;
+}
+
+.text_end {
+    text-align: end;
+}
+
 /* ============ LETTER SPACING =========== */
 .letter_3 {
     letter-spacing: 3px;
@@ -671,6 +679,38 @@ body {
 }
 
 @media (min-width: 576px) {
+    /* ==================PADDING / MARGIN /GAP================== */
+
+    .pr_sm_0 {
+        padding: 0;
+    }
+
+    .pb_sm_30 {
+        padding-bottom: 30px !important;
+    }
+
+    .mb_sm_30 {
+        margin-bottom: 30px;
+    }
+
+    .gap_sm_24 {
+        gap: 24px !important;
+    }
+
+    /* ==================LETTER SPACING / MAX-WIDTH / DISPLAY================== */
+    .letter_spacing {
+        letter-spacing: 0px !important;
+    }
+
+    .max_w_380 {
+        max-width: 400px;
+    }
+
+    .d_sm_inline_block {
+        display: inline-block;
+    }
+
+    /* ==================HERO SECTION================== */
     .iphone_hero_img_blur {
         bottom: -5%;
     }
@@ -679,38 +719,11 @@ body {
         margin-top: 24px !important;
     }
 
-    .pr_sm_0 {
-        padding: 0;
-    }
-
-    .letter_spacing {
-        letter-spacing: 0px !important;
-    }
-
-    .d_sm_inline_block {
-        display: inline-block;
-    }
-
+    /* ==================WELCOME SECTION================== */
     .welcome_mobile {
         min-height: 294px;
     }
 
-    .max_w_380 {
-        max-width: 400px;
-    }
-
-
-    .pb_sm_30 {
-        padding-bottom: 30px !important;
-    }
-
-    .gap_sm_24 {
-        gap: 24px !important;
-    }
-
-    .mb_sm_30 {
-        margin-bottom: 30px;
-    }
 }
 
 @media (min-width: 768px) {
@@ -733,8 +746,59 @@ body {
         background-size: 100% 100%;
     }
 
+    /* ==================PADDING / MARGIN /GAP================== */
+
+    .pb_md_0 {
+        padding-bottom: 0px !important;
+    }
+
     .pb_md_70 {
         padding-bottom: 70px;
+    }
+
+    .pt_md_0 {
+        padding-top: 0px !important;
+    }
+
+
+    .pt_md_4 {
+        padding-top: 4px !important;
+    }
+
+    .pt_md_12 {
+        padding-top: 12px !important;
+    }
+
+    .pt_md_24 {
+        padding-top: 24px !important;
+    }
+
+    .pt_md_32 {
+        padding-top: 32px !important;
+    }
+
+    .pt_md_48 {
+        padding-top: 48px !important;
+    }
+
+    .pt_md_70 {
+        padding-top: 70px;
+    }
+
+    .pl_md_32 {
+        padding-left: 32px;
+    }
+
+    .pl_md_8 {
+        padding-left: 8px;
+    }
+
+    .mt_md_0 {
+        margin-top: 0;
+    }
+
+    .mb_n4 {
+        margin-bottom: -4px;
     }
 
     .macbook_img {
@@ -774,10 +838,6 @@ body {
         display: block !important;
     }
 
-    .mt_md_0 {
-        margin-top: 0;
-    }
-
     .d_md_flex {
         display: flex;
     }
@@ -798,31 +858,6 @@ body {
     .border_md_top {
         border-top: 2px solid var(--color-mine-shaft);
     }
-
-    .pt_md_70 {
-        padding-top: 70px;
-    }
-
-    .pb_md_0 {
-        padding-bottom: 0px !important;
-    }
-
-    .pt_md_12 {
-        padding-top: 12px !important;
-    }
-
-    .pt_md_0 {
-        padding-top: 0px !important;
-    }
-
-    .pt_md_24 {
-        padding-top: 24px !important;
-    }
-
-    .pt_md_48 {
-        padding-top: 48px !important;
-    }
-
 
     .computer_blur {
         max-width: 483px;
@@ -860,9 +895,6 @@ body {
         border-top: 2px solid var(--color-mine-shaft);
     }
 
-    .pl_md_8 {
-        padding-left: 8px;
-    }
 
     .bfi_section {
         min-height: 342px;
@@ -877,29 +909,18 @@ body {
         object-fit: cover;
     }
 
-    .pt_md_4 {
-        padding-top: 4px !important;
-    }
 
     .bitscap_bfi_margin {
         margin-top: 0px !important;
     }
 
-    .mb_n4 {
-        margin-bottom: -4px;
-    }
+
 
     .d_md_none {
         display: none !important;
     }
 
-    .pl_md_32 {
-        padding-left: 32px;
-    }
 
-    .pt_md_32 {
-        padding-top: 32px !important;
-    }
 
     .align_items_md_end {
         align-items: flex-end;
