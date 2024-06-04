@@ -45,7 +45,7 @@
     }
 
     .col_lg_8 {
-        width: 66.66%;
+        width: 66.66% !important;
     }
 }
 

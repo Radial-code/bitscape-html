@@ -387,7 +387,10 @@
     }
 
     .col_md_6 {
-        width: 50%;
+        width: 50% !important;
+    }
+    .col_md_5{
+        width: 42.33% !important;
     }
 
     .section_line::before {
@@ -535,19 +538,19 @@
     }
 
     .col_lg_6 {
-        width: 50%;
+        width: 50% !important;
     }
 
     .col_lg_3 {
-        width: 25%;
+        width: 25% !important;
     }
 
     .col_lg_9 {
-        width: 75%;
+        width: 75% !important;
     }
 
     .col_lg_4 {
-        width: 33.33%;
+        width: 33.33% !important;
     }
 
     .border_lg_right {
@@ -585,6 +588,9 @@
     .pt_lg_48 {
         padding-top: 48px;
     }
+    .pl_lg_48{
+        padding-left: 48px;
+    }
 
     .bfi_section {
         min-height: 415px;
@@ -614,6 +620,13 @@
 }
 
 @media (min-width: 1200px) {
+    .col_xl_3{
+         width: 25% !important;
+    }
+    .col_xl_8{
+         width: 66.66% !important;
+    }
+    }
     .bfi_section {
         min-height: 455px;
     }
@@ -653,7 +666,7 @@
     .gap_xl_32 {
         gap: 32px !important;
     }
-}
+
 
 @media (min-width: 1280px) {
     .p_xl_24 {

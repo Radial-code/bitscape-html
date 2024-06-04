@@ -186,6 +186,9 @@ body {
 .text_xlg {
     font-size: var(--font-xlg);
 }
+.text_lg {
+    font-size: var(--font-lg);
+}
 
 .text_xl {
     font-size: var(--font-xl);
