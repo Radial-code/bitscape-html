@@ -1,201 +1,123 @@
 /*  ================== ROOT =================== */
 
 :root {
-    --color-black: #000;
-    --color-white: #fff;
-    --color-zombie: #e7d1a8;
-    --color-meteor: #d18d0e;
-    --color-mine-shaft: #303030;
-    --color-gray: #1e1e1e;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-zombie: #e7d1a8;
+  --color-meteor: #d18d0e;
+  --color-mine-shaft: #303030;
+  --color-gray: #1e1e1e;
 
-    --font-xsm: 10px;
-    --font-sm: 12px;
-    --font-xBase: 14px;
-    --font-base: 16px;
-    --font-xmd: 18px;
-    --font-md: 19px;
-    --font-xlg: 28px;
-    --font-lg: 30px;
-    --font-xl: 50px;
+  --font-xsm: 12px;
+  --font-sm: 14px;
+  --font-base: 16px;
+  --font-md: 18px;
+  --font-lg: 30px;
+  --font-xl: 50px;
 }
 
 /*=============== DEFINE-ALL = COLOR-VALUE =========== */
 
 .bg_black {
-    background-color: var(--color-black);
+  background-color: var(--color-black);
 }
 
 .bg_white {
-    background-color: var(--color-white);
+  background-color: var(--color-white);
 }
 
 .bg_zombie {
-    background-color: var(--color-zombie);
+  background-color: var(--color-zombie);
 }
 
 .bg_gray {
-    background-color: var(--color-gray);
+  background-color: var(--color-gray);
 }
 
 .bg_meteor {
-    background-color: var(--color-meteor);
+  background-color: var(--color-meteor);
 }
 
 .bg_transparent {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .text_black {
-    color: var(--color-black);
+  color: var(--color-black);
 }
 
 .text_zombie {
-    color: var(--color-zombie);
+  color: var(--color-zombie);
 }
 
 .text_meteor {
-    color: var(--color-meteor);
+  color: var(--color-meteor);
 }
 
 .text_white {
-    color: var(--color-white);
+  color: var(--color-white);
 }
-
-/*=========================================== FONT WEIGHT ========================================== */
-
-.fw_medium {
-    font-weight: 500;
-}
-
-.fw_bold {
-    font-weight: 700;
-}
-
-.fw_black {
-    font-weight: 900;
-}
-
-.fw_normal {
-    font-weight: 400;
-}
-
-/*=========================================== DEFINE-ALL = FONT-FAMILY ========================================== */
-
-@font-face {
-    font-family: print;
-    src: url("/assets/fonts/print_chart_21.ttf");
-}
-
-@font-face {
-    font-family: styrene_medium;
-    font-weight: 500 !important;
-    src: url("/assets/fonts/StyreneA-Medium-Trial-BF63f6cbdb24b6d.otf");
-}
-
-@font-face {
-    font-family: styrene_light;
-    font-weight: 300 !important;
-    src: url("/assets/fonts/StyreneA-Light-Trial-.otf");
-}
-
-@font-face {
-    font-family: lt_superior_bold;
-    font-weight: 700 !important;
-    src: url("/assets/fonts/LTSuperior-Bold.otf");
-}
-
-@font-face {
-    font-family: styrene_regular;
-    font-weight: 400 !important;
-    src: url("/assets/fonts/StyreneA-Regular-Trial.otf");
-}
-
-.ff_print {
-    font-family: "print", sans-serif;
-}
-
-.ff_styrene_medium {
-    font-family: "styrene_medium", sans-serif;
-}
-
-.ff_styrene_light {
-    font-family: "styrene_light", sans-serif;
-}
-
-.ff_styrene_regular {
-    font-family: "styrene_regular", sans-serif;
-}
-
-.ff_lt_superior_bold {
-    font-family: "lt_superior_bold", sans-serif;
-}
-
 /*=========================================== DEFINE-ALL = FONT-SIZES ========================================== */
 .text_xsm {
-    font-size: var(--font-xsm);
+  font-size: var(--font-xsm);
 }
 
 .text_sm {
-    font-size: var(--font-sm);
+  font-size: var(--font-sm);
 }
 
 .text_xBase {
-    font-size: var(--font-xBase);
+  font-size: var(--font-xBase);
 }
 
 .text_base {
-    font-size: var(--font-base);
+  font-size: var(--font-base);
 }
 
 .text_xmd {
-    font-size: var(--font-xmd);
+  font-size: var(--font-xmd);
 }
 
 .text_md {
-    font-size: var(--font-md);
+  font-size: var(--font-md);
 }
 
 .text_xlg {
-    font-size: var(--font-xlg);
+  font-size: var(--font-xlg);
 }
 .text_lg {
-    font-size: var(--font-lg);
+  font-size: var(--font-lg);
 }
 
 .text_xl {
-    font-size: var(--font-xl);
+  font-size: var(--font-xl);
 }
 
 @media (max-width: 1023.98px) {
-    :root {
-        --font-sm: 11px;
-        --font-lg: 27px;
-        --font-xl: 40px;
-    }
-
- 
+  :root {
+    --font-sm: 11px;
+    --font-lg: 27px;
+    --font-xl: 40px;
+  }
 }
 
 @media (max-width: 767.98px) {
-    :root {
-        --font-xBase: 12px;
-        --font-base: 14px;
-        --font-xmd: 16px;
-        --font-xlg: 24px;
-        --font-xl: 32px;
-    }
+  :root {
+    --font-sm: 12px;
+    --font-base: 14px;
+    --font-md: 20px;
+    --font-lg: 22px;
+    --font-xl: 32px;
 
-  
+  }
 }
 
 @media (max-width: 575.98px) {
-    :root {
-        --font-sm: 10px;
-        --font-base: 12px;
-        --font-xmd: 14px;
-        --font-xlg: 20px;
-        --font-lg: 26px;
-        --font-xl: 26px;
-    }
-
+  :root {
+    --font-sm: 12px;
+    --font-base: 10px;
+    --font-md: 18px;
+    --font-lg: 12px;
+    --font-xl: 18px;
+  }
 }
