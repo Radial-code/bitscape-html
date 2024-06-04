@@ -143,6 +143,12 @@ body {
     src: url("/assets/fonts/LTSuperior-Bold.otf");
 }
 
+@font-face {
+    font-family: styrene_regular;
+    font-weight: 400 !important;
+    src: url("/assets/fonts/StyreneA-Regular-Trial.otf");
+}
+
 .ff_print {
     font-family: "print", sans-serif;
 }
@@ -153,6 +159,10 @@ body {
 
 .ff_styrene_light {
     font-family: "styrene_light", sans-serif;
+}
+
+.ff_styrene_regular {
+    font-family: "styrene_regular", sans-serif;
 }
 
 .ff_lt_superior_bold {
@@ -171,6 +181,7 @@ body {
 .text_xBase {
     font-size: var(--font-xBase);
 }
+
 .text_base {
     font-size: var(--font-base);
 }
@@ -191,20 +202,29 @@ body {
     font-size: var(--font-xl);
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1023.98px) {
     :root {
         --font-sm: 11px;
         --font-lg: 27px;
         --font-xl: 40px;
     }
+
+    .text_md_18 {
+        font-size: 18px !important;
+    }
 }
 
 @media (max-width: 767.98px) {
     :root {
+        --font-xBase: 12px;
         --font-base: 14px;
         --font-xmd: 16px;
         --font-xlg: 24px;
         --font-xl: 32px;
+    }
+
+    .text_sm_18 {
+        font-size: 18px !important;
     }
 }
 
@@ -216,6 +236,10 @@ body {
         --font-xlg: 20px;
         --font-lg: 26px;
         --font-xl: 26px;
+    }
+
+    .text_18 {
+        font-size: 18px !important;
     }
 }
 
@@ -322,6 +346,7 @@ body {
 .letter_spacing {
     letter-spacing: -1px;
 }
+
 .letter_spacing_1 {
     letter-spacing: 1px;
 }
@@ -373,6 +398,7 @@ body {
 .lh_120 {
     line-height: 120% !important;
 }
+
 .lh_122 {
     line-height: 122% !important;
 }
