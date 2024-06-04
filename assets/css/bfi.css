@@ -1,0 +1,29 @@
+.text_center {
+    text-align: center;
+}
+
+.fw_light {
+    font-weight: 300 !important;
+}
+
+.max_w_1030 {
+    max-width: 1030px;
+}
+
+.max_w_468 {
+    max-width: 468px;
+}
+
+@media (min-width:1024px) {
+    .py_lg_24 {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+}
+
+@media (min-width:1024px) {
+    .py_lg_32 {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}

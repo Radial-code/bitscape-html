@@ -93,6 +93,10 @@ body {
     color: var(--color-meteor);
 }
 
+.text_white {
+    color: var(--color-white);
+}
+
 /*=========================================== FONT WEIGHT ========================================== */
 
 .fw_medium {
@@ -101,6 +105,10 @@ body {
 
 .fw_bold {
     font-weight: 700;
+}
+
+.fw_normal {
+    font-weight: 400;
 }
 
 /*=========================================== DEFINE-ALL = FONT-FAMILY ========================================== */
@@ -116,12 +124,32 @@ body {
     src: url("/assets/fonts/StyreneA-Medium-Trial-BF63f6cbdb24b6d.otf");
 }
 
+@font-face {
+    font-family: styrene_light;
+    font-weight: 300 !important;
+    src: url("/assets/fonts/StyreneA-Light-Trial-.otf");
+}
+
+@font-face {
+    font-family: lt_superior_bold;
+    font-weight: 700 !important;
+    src: url("/assets/fonts/LTSuperior-Bold.otf");
+}
+
 .ff_print {
     font-family: "print", sans-serif;
 }
 
 .ff_styrene_medium {
     font-family: "styrene_medium", sans-serif;
+}
+
+.ff_styrene_light {
+    font-family: "styrene_light", sans-serif;
+}
+
+.ff_lt_superior_bold {
+    font-family: "lt_superior_bold", sans-serif;
 }
 
 /*=========================================== DEFINE-ALL = FONT-SIZES ========================================== */
@@ -155,7 +183,7 @@ body {
 
 @media (max-width: 767.98px) {
     :root {
-        --font-base:14px;
+        --font-base: 14px;
         --font-xl: 32px;
     }
 }
