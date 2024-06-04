@@ -367,6 +367,12 @@
     .pt_md_0 {
         padding-top: 0px !important;
     }
+    .pt_md_24 {
+        padding-top: 24px !important;
+    }
+    .pt_md_48 {
+        padding-top: 48px !important;
+    }
 
 
     .computer_blur {

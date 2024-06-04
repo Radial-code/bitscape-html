@@ -11,7 +11,15 @@
 .text_nowrap {
   text-wrap: nowrap;
 }
-
+.pt_16{
+  padding-top: 16px;
+}
+.pb_12{
+  padding-bottom: 12px;
+}
+.pt_16{
+  padding-top: 16px;
+}
 /* scrollbar hidden */
 
 .token_section::-webkit-scrollbar {
@@ -21,6 +29,17 @@
   height: 102px;
   display: flex;
   align-items:end;
+  background-image: url('../images/png/bfi-token-bg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+/* introduction section */
+.introduction_para{
+  max-width: 700px;
+}
+.introduction_bottom_services_para:hover{
+color: var(--color-meteor);
+border-bottom: 2px solid var(--color-meteor);
 }
 
 @media (min-width:576px) {

@@ -49,6 +49,7 @@ body {
 
     --font-xsm: 10px;
     --font-sm: 12px;
+    --font-xBase: 14px;
     --font-base: 16px;
     --font-xmd: 18px;
     --font-md: 19px;
@@ -167,6 +168,9 @@ body {
     font-size: var(--font-sm);
 }
 
+.text_xBase {
+    font-size: var(--font-xBase);
+}
 .text_base {
     font-size: var(--font-base);
 }
