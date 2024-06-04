@@ -50,7 +50,9 @@ body {
     --font-xsm: 10px;
     --font-sm: 12px;
     --font-base: 16px;
+    --font-xmd: 18px;
     --font-md: 19px;
+    --font-xlg: 28px;
     --font-lg: 30px;
     --font-xl: 50px;
 }
@@ -106,6 +108,7 @@ body {
 .fw_bold {
     font-weight: 700;
 }
+
 .fw_black {
     font-weight: 900;
 }
@@ -168,8 +171,16 @@ body {
     font-size: var(--font-base);
 }
 
+.text_xmd {
+    font-size: var(--font-xmd);
+}
+
 .text_md {
     font-size: var(--font-md);
+}
+
+.text_xlg {
+    font-size: var(--font-xlg);
 }
 
 .text_xl {
@@ -187,6 +198,8 @@ body {
 @media (max-width: 767.98px) {
     :root {
         --font-base: 14px;
+        --font-xmd: 16px;
+        --font-xlg: 24px;
         --font-xl: 32px;
     }
 }
@@ -195,6 +208,8 @@ body {
     :root {
         --font-sm: 10px;
         --font-base: 12px;
+        --font-xmd: 14px;
+        --font-xlg: 20px;
         --font-lg: 26px;
         --font-xl: 26px;
     }
@@ -291,7 +306,8 @@ body {
 .letter_2 {
     letter-spacing: 2px;
 }
-.letter_10{
+
+.letter_10 {
     letter-spacing: 10px !important;
 }
 
@@ -301,6 +317,9 @@ body {
 
 .letter_spacing {
     letter-spacing: -1px;
+}
+.letter_spacing_1 {
+    letter-spacing: 1px;
 }
 
 /* =============== POSITION =============== */
@@ -349,6 +368,9 @@ body {
 
 .lh_120 {
     line-height: 120% !important;
+}
+.lh_122 {
+    line-height: 122% !important;
 }
 
 .lh_160 {

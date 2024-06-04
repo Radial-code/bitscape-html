@@ -14,16 +14,50 @@
     max-width: 468px;
 }
 
-@media (min-width:1024px) {
-    .py_lg_24 {
-        padding-top: 24px;
-        padding-bottom: 24px;
+.pt_32 {
+    padding-top: 32px;
+}
+
+@media (min-width:768px) {
+    .pt_md_20 {
+        padding-top: 20px;
     }
 }
 
 @media (min-width:1024px) {
+    .pt_lg_24 {
+        padding-top: 24px;
+    }
+
+    .py_lg_24 {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
     .py_lg_32 {
         padding-top: 32px;
         padding-bottom: 32px;
+    }
+
+    .px_lg_32 {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .col_lg_8 {
+        width: 66.66%;
+    }
+}
+
+@media (min-width:1280px) {
+
+
+    .px_xl_64 {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    .pr_xl_90 {
+        padding-right: 90px;
     }
 }
