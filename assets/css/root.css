@@ -197,6 +197,7 @@ body {
 .text_xlg {
     font-size: var(--font-xlg);
 }
+
 .text_lg {
     font-size: var(--font-lg);
 }
@@ -208,6 +209,7 @@ body {
 @media (max-width: 1023.98px) {
     :root {
         --font-sm: 11px;
+        --font-xmd: 13px;
         --font-lg: 27px;
         --font-xl: 40px;
     }
@@ -235,7 +237,7 @@ body {
     :root {
         --font-sm: 10px;
         --font-base: 12px;
-        --font-xmd: 14px;
+        --font-xmd: 12px;
         --font-xlg: 20px;
         --font-lg: 26px;
         --font-xl: 26px;
