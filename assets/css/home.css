@@ -70,6 +70,9 @@
   width: 120%;
   background-color: var(--color-mine-shaft);
 }
+.px_0{
+  padding: 0 0px !important;
+}
 /* tokimonia section start here */
 .tokimonia_coin_img {
   left: 0;
@@ -82,7 +85,14 @@
 .tokimonia_section .row {
   min-height: 500px !important;
 }
-
+.px_20{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.tertormonio_bg{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
 @media (min-width: 576px) {
   .bfi_token {
     height: 237px;
@@ -129,9 +139,9 @@
     filter: drop-shadow(2px 2px 70px var(--color-meteor));
   }
 }
-@media (min-width: 992px) {
-  .pl_xl_16 {
-    padding-left: 16px !important;
+@media (min-width: 1024px) {
+  .d_lg_none{
+    display: none;
   }
   .hero_bfi {
     right: 5%;
@@ -139,9 +149,18 @@
     width: 300px;
     filter: drop-shadow(2px 2px 80px var(--color-meteor));
   }
+    .tertormonio_bg {
+    background-image: url(../images/png/tertormonio_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 33%;
+  }
   
 }
 @media (min-width: 1200px) {
+   .pl_xl_16 {
+    padding-left: 16px !important;
+  }
   .hero_bfi {
     right: 10%;
     height: 350px;
