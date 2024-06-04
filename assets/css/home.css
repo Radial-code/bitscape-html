@@ -76,6 +76,13 @@
     width: 250px;
     filter: drop-shadow(2px 2px 60px var(--color-meteor));
   }
+  .introduction_bg{
+   max-width: 500px;
+   right: 0;
+   z-index: 0 !important;
+   top: 0;
+   height: 100%;
+  }
    .letter_sm_10{
     letter-spacing: 10px;
   }
