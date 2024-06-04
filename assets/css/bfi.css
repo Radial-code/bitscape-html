@@ -46,7 +46,52 @@
     left: -1%;
     background: radial-gradient(47.99% 107.94% at 29.98% 135%, rgba(209, 141, 14, 0.2) 0%, rgba(209, 141, 14, 0) 100%);
 }
+/* ====================BFI ROOT CSS===================== */
+@media (max-width: 1023.98px) {
+    :root {
+        --font-sm: 11px !important;
+        --font-xmd: 13px !important;
+        --font-lg: 27px !important;
+        --font-xl: 40px !important;
+    }
 
+    .text_md_18 {
+        font-size: 18px !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    :root {
+        --font-xBase: 12px !important;
+        --font-base: 14px !important;
+        --font-xmd: 16px !important;
+        --font-xlg: 24px !important;
+        --font-xl: 32px !important;
+    }
+
+    .text_sm_18 {
+        font-size: 18px !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    :root {
+        --font-sm: 10px !important;
+        --font-base: 12px !important;
+        --font-xmd: 12px !important;
+        --font-xlg: 20px !important;
+        --font-lg: 26px !important;
+        --font-xl: 26px !important;
+    }
+
+    .text_18 {
+        font-size: 18px !important;
+    }
+
+    .text_12 {
+        font-size: 18px !important;
+    }
+}
 @media (min-width:576px) {
     .d_sm_flex {
         display: flex;
