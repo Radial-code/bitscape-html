@@ -46,6 +46,7 @@
     left: -1%;
     background: radial-gradient(47.99% 107.94% at 29.98% 135%, rgba(209, 141, 14, 0.2) 0%, rgba(209, 141, 14, 0) 100%);
 }
+
 /* ====================BFI ROOT CSS===================== */
 @media (max-width: 1023.98px) {
     :root {
@@ -64,6 +65,7 @@
     :root {
         --font-xBase: 12px !important;
         --font-base: 14px !important;
+        --font-md: 16px !important;
         --font-xmd: 16px !important;
         --font-xlg: 24px !important;
         --font-xl: 32px !important;
@@ -79,6 +81,7 @@
         --font-sm: 10px !important;
         --font-base: 12px !important;
         --font-xmd: 12px !important;
+        --font-md: 12px !important;
         --font-xlg: 20px !important;
         --font-lg: 26px !important;
         --font-xl: 18px !important;
@@ -89,9 +92,10 @@
     }
 
     .text_12 {
-        font-size: 18px !important;
+        font-size: 12px !important;
     }
 }
+
 @media (min-width:576px) {
     .d_sm_flex {
         display: flex;
@@ -121,6 +125,10 @@
 
     .h_md_56 {
         height: 56px;
+    }
+
+    .justify_content_md_center {
+        justify-content: center;
     }
 }
 
