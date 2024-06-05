@@ -160,6 +160,10 @@ body {
     height: 100%;
 }
 
+.max_w_380 {
+    max-width: 380px;
+}
+
 /* ================= TEXT ============= */
 
 .text_uppercase {
@@ -529,16 +533,6 @@ body {
     max-width: 480px;
 }
 
-.macbook_paragrph_width {
-    max-width: 485px;
-}
-
-.macbook_img {
-    transform: translateX(-100px);
-    min-width: 304px;
-    min-height: 240px;
-}
-
 .hero_bg .sub_para {
     max-width: 420px;
 }
@@ -563,6 +557,25 @@ body {
     height: 300px;
     filter: blur(86px);
     bottom: -16%;
+}
+
+/* -==========GASLESS EXCHANGE SECTION============ */
+.macbook_paragrph_width {
+    max-width: 485px;
+}
+
+.macbook_img {
+    transform: translateX(-100px);
+    min-width: 304px;
+    min-height: 240px;
+}
+
+.macbook_stock {
+    min-height: 310px;
+}
+
+.min_h_laptop {
+    min-height: 360px !important;
 }
 
 /* ================= BFI SECTION =============================== */
@@ -599,11 +612,6 @@ body {
 }
 
 
-.max_w_380 {
-    max-width: 380px;
-}
-
-
 .welcome_max_w {
     max-width: 832px;
 }
@@ -625,31 +633,26 @@ body {
     top: 10%;
 }
 
-
-.macbook_stock {
-    min-height: 310px;
-}
-
-.min_h_laptop {
-    min-height: 360px !important;
+.laptop_blur_layer {
+    background-color: var(--color-meteor);
+    filter: blur(103px);
+    height: 190px;
+    width: 300px;
+    top: 20%;
 }
 
 .hero_bg .yellow_button {
     padding: 0 !important;
 }
 
-/* ======================= Cards Section ============================= */
+/* =======================DASHBOARD CARDS SECTION ============================= */
 .dashboard_img {
     width: 48px;
     height: 48px;
 }
 
-.section_line::after {
-    top: 0;
-}
-
-.section_line::after,
-.section_line::before {
+.three_card_line::after,
+.three_card_line::before {
     position: absolute;
     content: "";
     height: 2px;
@@ -658,17 +661,12 @@ body {
     width: 110%;
 }
 
-.section_line::before {
-    bottom: 0;
+.three_card_line::after {
+    top: 0;
 }
 
-
-.laptop_blur_layer {
-    background-color: var(--color-meteor);
-    filter: blur(103px);
-    height: 190px;
-    width: 300px;
-    top: 20%;
+.three_card_line::before {
+    bottom: 0;
 }
 
 /* ======================= FOOTER ======================= */
@@ -735,24 +733,7 @@ body {
 }
 
 @media (min-width: 768px) {
-    .gasless_md_bg {
-        background-color: #181818;
-    }
 
-    .iphone_hero_img_blur {
-        bottom: -10%;
-        transform: translateX(0);
-        left: unset;
-        right: 10%;
-        width: 200px;
-        height: 300px;
-        filter: blur(100px);
-    }
-
-    .hero_bg {
-        background-position: center;
-        background-size: 100% 100%;
-    }
 
     /* ==================PADDING / MARGIN /GAP================== */
 
@@ -809,6 +790,7 @@ body {
         margin-bottom: -4px;
     }
 
+    /* ==================MACKBOOK SECTION ========================== */
     .macbook_img {
         transform: translate(-20px, 4px);
     }
@@ -817,6 +799,7 @@ body {
         padding-bottom: 50px;
     }
 
+    /* ===========================HERO SECTION HOMEPAGE======================= */
     .hero_bg .yellow_button {
         font-size: 12px !important;
         width: 220px !important;
@@ -837,11 +820,26 @@ body {
         height: 530px;
     }
 
-    .col_lg_5 {
-        width: 41.33%;
-        padding: 0 12px;
+    .gasless_md_bg {
+        background-color: #181818;
     }
 
+    .iphone_hero_img_blur {
+        bottom: -10%;
+        transform: translateX(0);
+        left: unset;
+        right: 10%;
+        width: 200px;
+        height: 300px;
+        filter: blur(100px);
+    }
+
+    .hero_bg {
+        background-position: center;
+        background-size: 100% 100%;
+    }
+
+    /* ========================DISPLAY===================== */
     .d_md_block {
         display: block !important;
     }
@@ -850,15 +848,21 @@ body {
         display: flex;
     }
 
-    .section_line::before {
+    .d_md_none {
+        display: none !important;
+    }
+
+    /* ========================THREE CARD SECTION===================== */
+    .three_card_line::before {
         left: -103%;
         width: 220%;
     }
 
-    .section_line::after {
+    .three_card_line::after {
         width: 0;
     }
 
+    /* ========================BORDER COMMON CLASSES=================== */
     .border_md_right {
         border-right: 2px solid var(--color-mine-shaft);
     }
@@ -866,6 +870,7 @@ body {
     .border_md_top {
         border-top: 2px solid var(--color-mine-shaft);
     }
+
 
     .computer_blur {
         max-width: 483px;
@@ -878,6 +883,7 @@ body {
         top: 60px;
     }
 
+    /* =================ROW COL FLEX ORDER========================== */
     .col_md_6 {
         width: 50% !important;
     }
@@ -886,24 +892,27 @@ body {
         width: 42.33% !important;
     }
 
-    .section_line::before {
-        left: -103%;
-        width: 220%;
+    .order_md_0 {
+        order: 0;
     }
 
-    .section_line::after {
-        width: 0;
+    .order_md_1 {
+        order: 1;
     }
 
-    .border_md_right {
-        border-right: 2px solid var(--color-mine-shaft);
+    .flex_md_row {
+        flex-direction: row;
     }
 
-    .border_md_top {
-        border-top: 2px solid var(--color-mine-shaft);
+    .align_items_md_center {
+        align-items: center;
     }
 
+    .align_items_md_end {
+        align-items: flex-end;
+    }
 
+    /* ==========THE BITSCAPE BFI SECTION============ */
     .bfi_section {
         min-height: 342px;
     }
@@ -917,23 +926,11 @@ body {
         object-fit: cover;
     }
 
-
     .bitscap_bfi_margin {
         margin-top: 0px !important;
     }
 
-
-
-    .d_md_none {
-        display: none !important;
-    }
-
-
-
-    .align_items_md_end {
-        align-items: flex-end;
-    }
-
+    /* =======================WELCOME SECTION================== */
     .computer_btn .box_black_button {
         width: 150px;
         height: 34px;
@@ -960,24 +957,11 @@ body {
         height: 44px;
     }
 
-    .order_md_0 {
-        order: 0;
-    }
-
-    .order_md_1 {
-        order: 1;
-    }
-
-    .flex_md_row {
-        flex-direction: row;
-    }
-
-    .align_items_md_center {
-        align-items: center;
-    }
 }
 
 @media (min-width: 1024px) {
+
+    /* =====================HERO================ */
     .iphone_hero_img_blur {
         bottom: -16%;
         left: unset;
@@ -987,14 +971,6 @@ body {
 
     .hero_bg {
         height: 560px;
-    }
-
-    .bfi_section {
-        min-height: 400px;
-    }
-
-    .bfi_max_w {
-        max-width: 357px;
     }
 
     .hero_content_max_w {
@@ -1012,9 +988,11 @@ body {
         top: 35%;
     }
 
-    .section_line::before {
+    .three_card_line::before {
         width: 0;
     }
+
+    /* =====================ROW COL ======================= */
 
     .col_lg_6 {
         width: 50% !important;
@@ -1036,6 +1014,7 @@ body {
         border-right: 2px solid var(--color-mine-shaft);
     }
 
+    /* ===================FOOTER=================== */
     .footer_lg_line::after {
         content: "";
         position: absolute;
@@ -1047,6 +1026,7 @@ body {
         background-color: var(--color-mine-shaft);
     }
 
+    /* ==========================PADDING ============== */
     .pl_lg_0 {
         padding-left: 0;
     }
@@ -1072,6 +1052,7 @@ body {
         padding-left: 48px;
     }
 
+    /* ==========THE BITSCAPE BFI SECTION============ */
     .bfi_section {
         min-height: 415px;
     }
@@ -1090,6 +1071,7 @@ body {
         height: 44px;
     }
 
+    /* ====================DISPLAY================ */
     .d_lg_none {
         display: none !important;
     }
@@ -1100,6 +1082,8 @@ body {
 }
 
 @media (min-width: 1200px) {
+
+    /* =========================ROW COL ================== */
     .col_xl_3 {
         width: 25% !important;
     }
@@ -1108,9 +1092,6 @@ body {
         width: 66.66% !important;
     }
 
-    .bfi_section {
-        min-height: 455px;
-    }
 
     .col_xl_7 {
         width: 58.33%;
@@ -1127,16 +1108,21 @@ body {
         padding: 0 12px;
     }
 
-    .macbook_content_pb {
-        padding-bottom: 60px !important;
-    }
-
     .hero_mobile_img {
         right: 0;
         width: 580px;
         height: 710px;
     }
 
+    .macbook_content_pb {
+        padding-bottom: 60px !important;
+    }
+
+    .bfi_section {
+        min-height: 455px;
+    }
+
+    /* ===========================PADDING / GAP===================== */
     .pl_xl_32 {
         padding-left: 32px;
     }
@@ -1164,16 +1150,16 @@ body {
         padding-left: 50px;
     }
 
-    .bfi_section {
-        min-height: 530px;
-    }
-
     .pl_xl_126 {
         padding-left: 126px;
     }
 
     .bfi_max_w {
         max-width: 457px;
+    }
+
+    .bfi_section {
+        min-height: 530px;
     }
 }
 
@@ -1198,17 +1184,17 @@ body {
         min-height: 580px;
     }
 
+    .custom_container {
+        border-left: 2px solid var(--color-mine-shaft);
+        border-right: 2px solid var(--color-mine-shaft);
+    }
+
     .p_xxl_28 {
         padding: 28px;
     }
 
     .h_2xl_100 {
         height: 100%;
-    }
-
-    .custom_container {
-        border-left: 2px solid var(--color-mine-shaft);
-        border-right: 2px solid var(--color-mine-shaft);
     }
 }
 
