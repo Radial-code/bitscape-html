@@ -18,9 +18,10 @@
 
 
 /* ==================MAX WIDTH================== */
-.max_w_900 {
-    max-width: 900px;
+.max_w_880 {
+    max-width: 880px;
 }
+
 
 .max_w_468 {
     max-width: 468px;
@@ -201,6 +202,9 @@
     /* ==================COL================== */
     .col_lg_8 {
         width: 66.66% !important;
+    }
+    .align_items_lg_center{
+        align-items: center;
     }
 
     .light_gray_button .yellow_button,
