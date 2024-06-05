@@ -321,7 +321,8 @@
                             class="ff_styrene_medium transition_03s fw_medium text_nav lh_110 letter_2 text_zombie text_uppercase pt_mobile_10">
                             assets</p>
                     </a>
-                    <a href="#account_mobile" class="flex_column d_flex align_items_center justify_content_center mobile_nav_svg">
+                    <a href="#account_mobile"
+                        class="flex_column d_flex align_items_center justify_content_center mobile_nav_svg">
                         <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path class="mobile_svg_stroke transition_03s"
                                 d="M16.4722 2.5H4.80558C3.88511 2.5 3.13892 3.24619 3.13892 4.16667V15.8333C3.13892 16.7538 3.88511 17.5 4.80558 17.5H16.4722C17.3927 17.5 18.1389 16.7538 18.1389 15.8333V4.16667C18.1389 3.24619 17.3927 2.5 16.4722 2.5Z"
@@ -381,7 +382,8 @@
                     class="ff_styrene_medium text_zombie fw_bold text_lg text_12 pt_24 letter_md_6 introduction_heading pt_md_48">
                     INTRODUCTION
                 </h2>
-                <p class="ff_styrene_regular text_zombie text_xBase introduction_para fw_normal pt_md_24 pt_12">The
+                <p class="ff_styrene_regular text_zombie text_xBase lh_122 introduction_para fw_normal pt_md_24 pt_12">
+                    The
                     $BFI
                     token is central
                     to Bitscape's ecosystem, facilitating
@@ -396,38 +398,83 @@
             </div>
             <div class="row justify_content_between pl_lg_48 introduction_row position_relative z_10">
                 <div class="col_12 col_xl_3 col_md_5">
-                    <p
-                        class="pb_12 introduction_bottom_services_para transition_03s ff_styrene_medium text_zombie border_bottom text_base text_uppercase">
+                    <p onclick="myTabs(1)" id="myTab1"
+                        class="pb_12 introduction_bottom_services_para cursor_pointer active transition_03s ff_styrene_medium text_zombie border_bottom text_base text_uppercase">
                         EXCHANGE TOKEN</p>
-                    <p
-                        class="pb_12 introduction_bottom_services_para transition_03s ff_styrene_medium text_zombie border_bottom text_base text_uppercase pt_16">
+                    <p onclick="myTabs(2)" id="myTab2"
+                        class="pb_12 introduction_bottom_services_para cursor_pointer transition_03s ff_styrene_medium text_zombie border_bottom text_base text_uppercase pt_16">
                         Gasless Airdrop</p>
-                    <p
-                        class="pb_12 introduction_bottom_services_para transition_03s ff_styrene_medium text_zombie border_bottom text_base text_uppercase pt_16">
+                    <p onclick="myTabs(3)" id="myTab3"
+                        class="pb_12 introduction_bottom_services_para cursor_pointer transition_03s ff_styrene_medium text_zombie border_bottom text_base text_uppercase pt_16">
                         Layer 2 Integration</p>
-                    <p
-                        class="pb_12 introduction_bottom_services_para transition_03s ff_styrene_medium text_zombie border_bottom text_base text_uppercase pt_16">
+                    <p onclick="myTabs(4)" id="myTab4"
+                        class="pb_12 introduction_bottom_services_para cursor_pointer transition_03s ff_styrene_medium text_zombie border_bottom text_base text_uppercase pt_16">
                         Liquidity Bridging</p>
-                    <p
-                        class="pb_12 introduction_bottom_services_para transition_03s ff_styrene_medium text_zombie border_bottom text_base text_uppercase pt_16">
+                    <p onclick="myTabs(5)" id="myTab5"
+                        class="pb_12 introduction_bottom_services_para cursor_pointer transition_03s ff_styrene_medium text_zombie border_bottom text_base text_uppercase pt_16">
                         Multi-Protocol $BFI Token</p>
-                    <p
-                        class="pb_12 introduction_bottom_services_para transition_03s ff_styrene_medium text_zombie border_bottom text_base text_uppercase pt_16">
+                    <p onclick="myTabs(6)" id="myTab6"
+                        class="pb_12 introduction_bottom_services_para cursor_pointer transition_03s ff_styrene_medium text_zombie border_bottom text_base text_uppercase pt_16">
                         early access</p>
-                    <p
-                        class="pb_12 introduction_bottom_services_para transition_03s ff_styrene_medium text_zombie border_bottom text_base text_uppercase pt_16">
+                    <p onclick="myTabs(7)" id="myTab7"
+                        class="pb_12 introduction_bottom_services_para cursor_pointer transition_03s ff_styrene_medium text_zombie border_bottom text_base text_uppercase pt_16">
                         Alpha Pass</p>
-                    <p
-                        class="pb_12 introduction_bottom_services_para transition_03s ff_styrene_medium text_zombie border_bottom text_base text_uppercase pt_16">
+                    <p onclick="myTabs(8)" id="myTab8"
+                        class="pb_12 introduction_bottom_services_para cursor_pointer transition_03s ff_styrene_medium text_zombie border_bottom text_base text_uppercase pt_16">
                         Voting</p>
                 </div>
                 <div class="col_xl_8 col_md_6 col_lg_6 col_12 d_flex justify_content_center align_items_center">
-                    <p
-                        class="ff_styrene_medium text_zombie text_md pt_70 pt_lg_0 text_center text_md_start pr_xl_40 letter_2 letter_md_4 lh_120 text_uppercase">
+                    <p id="tab1"
+                        class="ff_styrene_medium tab text_zombie text_md pt_70 pt_lg_0 text_center text_md_start pr_xl_40 letter_2 letter_md_4 lh_120 text_uppercase">
                         The $BFI
                         token is the inaugural token paired in
                         the Bitscape markets, serving as the
                         foundational token for all trading pairs on the platform, ensuring liquidity and stability.
+                    </p>
+                    <p id="tab2"
+                        class="ff_styrene_medium tab text_zombie text_md pt_70 pt_lg_0 text_center text_md_start pr_xl_40 letter_2 letter_md_4 lh_120 text_uppercase">
+                        All market pairs on BitScape and partner platforms utilising BitScape technology will
+                        exclusively utilise the $BFI token initially, ensuring a unified and efficient trading
+                        experience across the ecosystem.
+                    </p>
+                    <p id="tab3"
+                        class="ff_styrene_medium tab text_zombie text_md pt_70 pt_lg_0 text_center text_md_start pr_xl_40 letter_2 letter_md_4 lh_120 text_uppercase">
+                        The $BFI
+                        token is the inaugural token paired in
+                        the Bitscape markets, serving as the
+                        foundational token for all trading pairs on the platform, ensuring liquidity and stability.
+                    </p>
+                    <p id="tab4"
+                        class="ff_styrene_medium tab text_zombie text_md pt_70 pt_lg_0 text_center text_md_start pr_xl_40 letter_2 letter_md_4 lh_120 text_uppercase">
+                      All market pairs on BitScape and partner platforms utilising BitScape technology will exclusively
+                      utilise the $BFI token initially, ensuring a unified and efficient trading experience across the
+                      ecosystem.
+                    </p>
+                    <p id="tab5"
+                        class="ff_styrene_medium tab text_zombie text_md pt_70 pt_lg_0 text_center text_md_start pr_xl_40 letter_2 letter_md_4 lh_120 text_uppercase">
+                        The $BFI
+                        token is the inaugural token paired in
+                        the Bitscape markets, serving as the
+                        foundational token for all trading pairs on the platform, ensuring liquidity and stability.
+                    </p>
+                    <p id="tab6"
+                        class="ff_styrene_medium tab text_zombie text_md pt_70 pt_lg_0 text_center text_md_start pr_xl_40 letter_2 letter_md_4 lh_120 text_uppercase">
+                        All market pairs on BitScape and partner platforms utilising BitScape technology will
+                        exclusively utilise the $BFI token initially, ensuring a unified and efficient trading
+                        experience across the ecosystem.
+                    </p>
+                    <p id="tab7"
+                        class="ff_styrene_medium tab text_zombie text_md pt_70 pt_lg_0 text_center text_md_start pr_xl_40 letter_2 letter_md_4 lh_120 text_uppercase">
+                        The $BFI
+                        token is the inaugural token paired in
+                        the Bitscape markets, serving as the
+                        foundational token for all trading pairs on the platform, ensuring liquidity and stability.
+                    </p>
+                    <p id="tab8"
+                        class="ff_styrene_medium tab text_zombie text_md pt_70 pt_lg_0 text_center text_md_start pr_xl_40 letter_2 letter_md_4 lh_120 text_uppercase">
+                    Continuous eligibility for exclusive giveaways, perks, and benefits awaits all $BFI holders,
+                    incentivizing engagement with the ecosystem and rewarding participation in its growth and
+                    development
                     </p>
                 </div>
             </div>
@@ -442,7 +489,7 @@
                         <div class="d_flex gap_20 align_items_center gap_sm_24 gap_xl_32">
                             <img class="market_logo" src="./assets/images/svg/market_logo_img.svg" alt="dashboard_img">
                             <h3
-                                class="fw_bold ff_styrene_medium text_zombie text_base letter_3 pr_lg_50 text_uppercase">
+                                class="fw_bold ff_styrene_regular text_zombie text_base letter_3 pr_lg_50 text_uppercase">
                                 market pairing
                             </h3>
                         </div>
@@ -458,7 +505,7 @@
                         <div class="d_flex align_items_center gap_20 gap_sm_24 gap_xl_32">
                             <img class="market_logo" src="./assets/images/svg/market_logo_img.svg" alt="candel_img">
                             <h3
-                                class="fw_bold ff_styrene_medium text_zombie text_base letter_3 pr_lg_50 text_uppercase">
+                                class="fw_bold ff_styrene_regular text_zombie text_base letter_3 pr_lg_50 text_uppercase">
                                 Holder Returns</h3>
                         </div>
                         <p class="text_zombie ff_styrene_regular letter_spacing text_sm pt_20">
@@ -473,7 +520,7 @@
                         <div class="d_flex align_items_center gap_20 gap_sm_24 gap_xl_32">
                             <img class="market_logo" src="./assets/images/svg/market_logo_img.svg" alt="wall_image">
                             <h3
-                                class="fw_bold ff_styrene_medium text_zombie text_base letter_3 pr_lg_50 text_uppercase">
+                                class="fw_bold ff_styrene_regular text_zombie text_base letter_3 pr_lg_50 text_uppercase">
                                 LOREM
                                 Airdrops
                             </h3>
@@ -490,7 +537,7 @@
                         <div class="d_flex gap_20 gap_sm_24 gap_xl_32 align_items_center">
                             <img class="market_logo" src="./assets/images/svg/market_logo_img.svg" alt="wall_image">
                             <h3
-                                class="fw_bold ff_styrene_medium text_zombie text_base letter_3 pr_lg_50 text_uppercase">
+                                class="fw_bold ff_styrene_regular text_zombie text_base letter_3 pr_lg_50 text_uppercase">
                                 Ecosystem Engagement</h3>
                         </div>
                         <p class="ff_styrene_regular letter_spacing text_sm text_zombie pt_20">
@@ -513,7 +560,8 @@
                 </div>
                 <div class="col_xl_5 col_12 col_lg_6 d_flex flex_column justify_content_center pl_xl_16">
                     <div class=" px_20">
-                        <h2 class="ff_styrene_medium text_zombie fw_bold text_lg text_12 letter_2 letter_md_6 pt_20 pt_lg_0">
+                        <h2
+                            class="ff_styrene_medium text_zombie fw_bold text_lg text_12 letter_2 letter_md_6 pt_20 pt_lg_0">
                             TOKENOMICS
                         </h2>
                         <p class="ff_styrene_regular text_zombie text_xBase fw_normal pt_24 lh_110">The
@@ -548,7 +596,8 @@
                 <div class="col_12 col_md_6">
                     <p class="text_uppercase text_base text_zombie letter_2 ff_styrene_medium fw_medium">ALLOCATIONS
                     </p>
-                    <p class="text_xBase ff_styrene_regular text_zombie lh_110 pt_20 pt_md_12">Here's an insightful breakdown of
+                    <p class="text_xBase ff_styrene_regular text_zombie lh_110 pt_20 pt_md_12">Here's an insightful
+                        breakdown of
                         the strategic allocations within the Bitscape ecosystem,
                         meticulously crafted to
                         foster growth, innovation, and community engagement.
@@ -636,7 +685,8 @@
             <div class="row justify_content_center py_20 py_lg_32">
                 <div class="col_12 col_md_6 col_lg_4 ">
                     <p class="text_zombie ff_styrene_medium letter_2 text_base">PROMINENT COMMUNITIES</p>
-                    <p class="text_sm ff_styrene_regular letter_spacing_1 text_zombie lh_122 pt_20 pt_md_12 pr_xl_54">Any wallet
+                    <p class="text_sm ff_styrene_regular letter_spacing_1 text_zombie lh_122 pt_20 pt_md_12 pr_xl_54">
+                        Any wallet
                         holding
                         those
                         Ordinals will be reward with
@@ -664,7 +714,8 @@
                 </div>
                 <div class="col_12 col_md_6 col_lg_4 pt_32 pt_md_0">
                     <p class="text_zombie ff_styrene_medium letter_2 text_base">MARKET LEADERS</p>
-                    <p class="ff_styrene_regular text_sm letter_spacing_1 text_zombie lh_122 pt_20 pt_md_12 pr_xl_54">Any wallet
+                    <p class="ff_styrene_regular text_sm letter_spacing_1 text_zombie lh_122 pt_20 pt_md_12 pr_xl_54">
+                        Any wallet
                         holding
                         those
                         Ordinals will be reward with
@@ -685,7 +736,8 @@
                 </div>
                 <div class="col_12 col_md_6 col_lg_4 pt_32 pt_lg_0">
                     <p class="text_zombie ff_styrene_medium letter_2 text_base">BITSCAPE PARTNERSHIPS</p>
-                    <p class="ff_styrene_regular letter_spacing_1 text_sm  text_zombie lh_122 pt_20 pt_md_12 pr_xl_54">Any wallet
+                    <p class="ff_styrene_regular letter_spacing_1 text_sm  text_zombie lh_122 pt_20 pt_md_12 pr_xl_54">
+                        Any wallet
                         holding
                         those
                         Ordinals will be reward with
@@ -716,7 +768,8 @@
                         within the Bitscape ecosystem.
                     </p>
                     <p class="ff_styrene_regular text_xBase  text_zombie lh_122 pt_12 pt_lg_24">
-                        See <span class="text_meteor ff_styrene_medium">allocations charts</span> for info on where sales are being used.
+                        See <span class="text_meteor ff_styrene_medium">allocations charts</span> for info on where
+                        sales are being used.
                     </p>
 
                 </div>
@@ -753,7 +806,8 @@
     </section>
     <!-- ============= BFI COUNTDOWN CARD SECTION =========== -->
     <section id="desktop_eligibility">
-        <div id="account_mobile" class="custom_container border_top countdown_bg py_40 py_md_60 py_xl_128 px_lg_32 px_xl_126">
+        <div id="account_mobile"
+            class="custom_container border_top countdown_bg py_40 py_md_60 py_xl_128 px_lg_32 px_xl_126">
             <div class="row">
                 <div class="col_12 col_md_6">
                     <h2 class="sub_heading text_zombie ff_styrene_medium max_w_468">$BFI AIRDROP
@@ -963,7 +1017,6 @@
             </div>
         </div>
     </footer>
-
     <!-- ========== BACK TO TOP ============ -->
     <div class="d_none d_md_block">
         <button id="back_to_top_btn" class="cursor_pointer transition_03s d_none position_fixed bg_meteor">
@@ -1025,6 +1078,35 @@
 
             startCountdown();
         }
+        // tabs
+        function myTabs(a) {
+            let tabs = document.querySelectorAll(".tab");
+            let myTabs = [
+                document.getElementById("myTab1"),
+                document.getElementById("myTab2"),
+                document.getElementById("myTab3"),
+                document.getElementById("myTab4"),
+                document.getElementById("myTab5"),
+                document.getElementById("myTab6"),
+                document.getElementById("myTab7"),
+                document.getElementById("myTab8"),
+            ];
+
+            tabs.forEach((tab) => {
+                tab.style.display = "none";
+            });
+
+            myTabs.forEach((tab) => {
+                tab.classList.remove("active");
+            });
+
+            document.getElementById("tab" + a).style.display = "block"; // changed "Tab" to "tab"
+            document.getElementById("myTab" + a).classList.add("active");
+        }
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            myTabs(1);
+        });
     </script>
 </body>
 
