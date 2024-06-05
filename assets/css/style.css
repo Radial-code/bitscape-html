@@ -47,13 +47,13 @@ body {
 @font-face {
     font-family: styrene_medium;
     font-weight: 500 !important;
-    src: url("/assets/fonts/StyreneA-Medium-Trial-BF63f6cbdb24b6d.otf");
+    src: url("/assets/fonts/StyreneA-Medium-Trial.otf");
 }
 
 @font-face {
     font-family: styrene_light;
     font-weight: 300 !important;
-    src: url("/assets/fonts/StyreneA-Light-Trial-.otf");
+    src: url("/assets/fonts/StyreneA-Light-Trial.otf");
 }
 
 @font-face {
