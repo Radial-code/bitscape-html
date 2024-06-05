@@ -182,6 +182,9 @@ body {
 .letter_3 {
     letter-spacing: 3px;
 }
+.letter_4 {
+    letter-spacing: 4px;
+}
 
 .letter_2 {
     letter-spacing: 2px;
@@ -464,6 +467,7 @@ body {
 
 .yellow_button:hover {
     background: var(--color-white);
+    color: black;
 }
 
 .black_button {

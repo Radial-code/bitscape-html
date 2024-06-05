@@ -217,19 +217,12 @@
   .d_xl_none {
     display: none;
   }
+  .pr_xl_40{
+    padding-right: 40px;
+  }
 }
 
 @media (min-width: 1400px) {
-  .hero_bfi {
-    right: 10%;
-    height: 400px;
-    width: 400px;
-  }
-
-  .pr_xxl_130 {
-    padding-right: 130px;
-  }
-
   .tertormonio_bg {
     background-size: 100% 100%;
     background-position-x: 43%;
