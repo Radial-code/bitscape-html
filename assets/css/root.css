@@ -136,10 +136,6 @@
         --font-lg: 27px;
         --font-xl: 40px;
     }
-
-    .text_md_18 {
-        font-size: 18px !important;
-    }
 }
 
 @media (max-width: 767.98px) {
@@ -149,10 +145,6 @@
         --font-xmd: 16px;
         --font-xlg: 24px;
         --font-xl: 32px;
-    }
-
-    .text_sm_18 {
-        font-size: 18px !important;
     }
 }
 
@@ -164,9 +156,5 @@
         --font-xlg: 20px;
         --font-lg: 26px;
         --font-xl: 26px;
-    }
-
-    .text_18 {
-        font-size: 12px !important;
     }
 }

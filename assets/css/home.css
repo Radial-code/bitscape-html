@@ -62,7 +62,7 @@
 }
 
 .introduction_heading {
-  padding-top: 100px;
+  padding-top: 124px;
 }
 
 .hero_bfi {
@@ -154,6 +154,12 @@
 }
 
 @media (min-width: 768px) {
+  .letter_md_6 {
+     letter-spacing: 6px;
+    }
+  .letter_md_4 {
+     letter-spacing: 4px;
+    }
   .pl_md_16 {
     padding-left: 16px !important;
   }

@@ -100,6 +100,7 @@
 @media (max-width: 575.98px) {
     :root {
         --font-sm: 10px !important;
+        --font-xBase: 10px !important;
         --font-base: 12px !important;
         --font-xmd: 12px !important;
         --font-md: 12px !important;
