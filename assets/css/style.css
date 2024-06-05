@@ -1118,7 +1118,7 @@ body {
     }
 
     .col_xl_5 {
-        width: 41.66%;
+        width: 41.66% !important;
         padding: 0 12px;
     }
 

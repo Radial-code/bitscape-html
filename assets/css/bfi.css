@@ -361,6 +361,9 @@
 @media (min-width: 1024px) {
 
     /* ==================PADDING================== */
+    .pl_lg_20{
+        padding-left: 20px;
+    }
     .pt_lg_24 {
         padding-top: 24px;
     }
@@ -413,9 +416,12 @@
     .tertormonio_bg {
         background-image: url(../images/webp/tertormonio_bg.webp);
         background-repeat: no-repeat;
-        background-size: cover;
-        background-position-x: 33%;
+        background-size:115% 100%;
+        background-position-x: 41%;
     }
+    .tokimonia_section .row {
+    min-height: 420px !important;
+}
 
     .light_gray_button .yellow_button,
     .bfi_countdown .yellow_button {
@@ -428,7 +434,6 @@
 }
 
 @media (min-width: 1280px) {
-
     /* ==================PADDING================== */
     .py_xl_128 {
         padding-top: 128px;
@@ -447,6 +452,9 @@
     .px_xl_126 {
         padding-right: 126px;
         padding-left: 126px;
+    }
+    .pl_xl_48{
+        padding-left: 48px;
     }
 
     .light_gray_button .yellow_button,
@@ -468,6 +476,9 @@
     .tertormonio_bg {
         background-position-x: 33%;
     }
+     .tokimonia_section .row {
+    min-height: 500px !important;
+}
 
     .d_xl_none {
         display: none;
