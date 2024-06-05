@@ -1,5 +1,3 @@
-
-
 /* ==================PADDING================== */
 .pt_32 {
     padding-top: 32px;
@@ -30,8 +28,7 @@
 
 /* ==================PROMINENT COMMUNITIES====================== */
 .yellow_dots {
-    height: 1.5px;
-    width: 1.5px;
+    padding: 1px;
     display: inline-block;
     transform: translateY(-3px);
     border-radius: 50%;
@@ -74,7 +71,7 @@
     :root {
         --font-sm: 11px !important;
         --font-xmd: 13px !important;
-         --font-md: 16px !important;
+        --font-md: 16px !important;
         --font-lg: 27px !important;
         --font-xl: 40px !important;
     }
@@ -227,8 +224,8 @@
         padding-right: 64px;
     }
 
-    .pr_xl_90 {
-        padding-right: 90px;
+    .pr_xl_54 {
+        padding-right: 54px;
     }
 
     .px_xl_126 {
