@@ -16,6 +16,22 @@
     padding-bottom: 40px;
 }
 
+.pt_16 {
+    padding-top: 16px;
+}
+
+.pb_12 {
+    padding-bottom: 12px;
+}
+
+.px_0 {
+    padding: 0 0px !important;
+}
+
+.px_20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 /* ==================MAX WIDTH================== */
 .max_w_880 {
@@ -25,6 +41,98 @@
 
 .max_w_468 {
     max-width: 468px;
+}
+
+/* ==================scrollbar hidden================== */
+.token_section::-webkit-scrollbar {
+    display: none;
+}
+
+/* ============= introduction section================= */
+.bfi_token {
+    height: 102px;
+    display: flex;
+    align-items: end;
+    background-image: url("../images/webp/bfi-token-bg.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.token_links:hover {
+    color: var(--color-meteor);
+}
+
+.token_section {
+    overflow-x: scroll;
+}
+
+.token_section div {
+    width: 890px;
+}
+
+.introduction_para {
+    max-width: 700px;
+}
+
+.introduction_bottom_services_para:hover {
+    color: var(--color-meteor);
+    border-bottom: 2px solid var(--color-meteor);
+}
+
+.introduction_row {
+    padding-bottom: 70px;
+    padding-top: 30px;
+}
+
+
+.introduction_heading {
+    padding-top: 124px;
+}
+
+.hero_bfi {
+    right: 8%;
+    top: -7%;
+    height: 144px;
+    width: 144px;
+    z-index: 3 !important;
+    filter: drop-shadow(1px 1px 40px var(--color-meteor));
+}
+
+.top_line {
+    position: relative;
+}
+
+.top_line::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    top: 0;
+    left: -10%;
+    width: 120%;
+    background-color: var(--color-mine-shaft);
+}
+
+/* =============tokimonia section start here================ */
+.tokimonia_coin_img {
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    left: -8px;
+}
+
+.tokimonia_section .row {
+    min-height: 500px !important;
+}
+
+.market_logo {
+    max-width: 30px;
+}
+
+.tertormonio_bg {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 /* ==================PROMINENT COMMUNITIES====================== */
@@ -134,6 +242,37 @@
     .pt_sm_0 {
         padding-top: 0px !important;
     }
+
+    .bfi_token {
+        height: 237px;
+        display: flex;
+        align-items: center;
+    }
+
+    .introduction_row {
+        padding-bottom: 60px;
+        padding-top: 80px;
+    }
+
+    .hero_bfi {
+        right: 5%;
+        top: -14%;
+        height: 250px;
+        width: 250px;
+        filter: drop-shadow(2px 2px 60px var(--color-meteor));
+    }
+
+    .introduction_bg {
+        max-width: 500px;
+        right: 0;
+        z-index: 0 !important;
+        top: 0;
+        height: 100%;
+    }
+
+    .letter_sm_10 {
+        letter-spacing: 10px;
+    }
 }
 
 @media (min-width:768px) {
@@ -172,6 +311,34 @@
     .gap_md_20 {
         gap: 20px;
     }
+
+    .letter_md_6 {
+        letter-spacing: 6px;
+    }
+
+    .letter_md_4 {
+        letter-spacing: 4px;
+    }
+
+    .pl_md_16 {
+        padding-left: 16px !important;
+    }
+
+    .token_section div {
+        width: 1000px;
+    }
+
+    .text_md_start {
+        text-align: start !important;
+    }
+
+    .hero_bfi {
+        right: 5%;
+        top: -20%;
+        height: 250px;
+        width: 250px;
+        filter: drop-shadow(2px 2px 70px var(--color-meteor));
+    }
 }
 
 @media (min-width:1024px) {
@@ -204,7 +371,8 @@
     .col_lg_8 {
         width: 66.66% !important;
     }
-    .align_items_lg_center{
+
+    .align_items_lg_center {
         align-items: center;
     }
 
@@ -212,6 +380,24 @@
     .bfi_countdown .yellow_button {
         width: 400px;
         height: 44px;
+    }
+
+    .d_lg_none {
+        display: none;
+    }
+
+    .hero_bfi {
+        right: 5%;
+        height: 300px;
+        width: 300px;
+        filter: drop-shadow(2px 2px 80px var(--color-meteor));
+    }
+
+    .tertormonio_bg {
+        background-image: url(../images/webp/tertormonio_bg.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: 33%;
     }
 
 }
@@ -242,5 +428,39 @@
     .bfi_countdown .yellow_button {
         width: 464px;
         height: 50px;
+    }
+
+    .pl_xl_16 {
+        padding-left: 16px !important;
+    }
+
+    .hero_bfi {
+        right: 10%;
+        height: 350px;
+        width: 350px;
+    }
+
+    .tertormonio_bg {
+        background-position-x: 33%;
+    }
+
+    .d_xl_none {
+        display: none;
+    }
+
+    .pr_xl_40 {
+        padding-right: 40px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .tertormonio_bg {
+        background-size: 100% 100%;
+        background-position-x: 43%;
+    }
+
+    .py_xxl_145 {
+        padding-left: 145px;
+        padding-right: 145px;
     }
 }

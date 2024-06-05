@@ -178,10 +178,15 @@ body {
     text-align: end;
 }
 
+.text_nowrap {
+    text-wrap: nowrap;
+}
+
 /* ============ LETTER SPACING =========== */
 .letter_3 {
     letter-spacing: 3px;
 }
+
 .letter_4 {
     letter-spacing: 4px;
 }
