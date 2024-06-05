@@ -151,7 +151,9 @@
     left: -1%;
     background: radial-gradient(47.99% 107.94% at 29.98% 135%, rgba(209, 141, 14, 0.2) 0%, rgba(209, 141, 14, 0) 100%);
 }
-
+.ordinal_img{
+    min-height: 195px;
+}
 /* =============CountDown===========*/
 .countdown_bg {
     background: url("../images/webp/bfi_countdown_bg_img.webp") no-repeat;
@@ -162,17 +164,17 @@
 .light_gray_button .yellow_button,
 .bfi_countdown .yellow_button {
     width: 270px;
-    padding: 10.5px;
+    padding: 11px;
     height: 36px;
     font-size: 12px;
 }
 
 .bfi_countdown .yellow_button {
-    clip-path: polygon(0 0, 100% 0, 100% 67%, 94% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 76%, 95.5% 100%, 0 100%);
 }
 
 .light_gray_button .yellow_button {
-    clip-path: polygon(6% 0%, 20% 0, 100% 0%, 100% 100%, -8% 100%);
+    clip-path: polygon(5% 0%, 20% 0, 100% 0%, 100% 100%, -8% 100%);
 }
 
 /* ====================BFI ROOT CSS===================== */
@@ -339,6 +341,11 @@
         width: 250px;
         filter: drop-shadow(2px 2px 70px var(--color-meteor));
     }
+
+    .light_gray_button .yellow_button,
+    .bfi_countdown .yellow_button {
+        padding: 14px;
+    }
 }
 
 @media (min-width:1024px) {
@@ -400,6 +407,14 @@
         background-position-x: 33%;
     }
 
+    .light_gray_button .yellow_button,
+    .bfi_countdown .yellow_button {
+        padding: 15.5px;
+    }
+
+    .progressbar_h {
+        height: 56px;
+    }
 }
 
 @media (min-width:1280px) {
@@ -451,6 +466,11 @@
     .pr_xl_40 {
         padding-right: 40px;
     }
+
+    .light_gray_button .yellow_button,
+    .bfi_countdown .yellow_button {
+        padding: 19px;
+    }
 }
 
 @media (min-width: 1400px) {
@@ -462,5 +482,11 @@
     .py_xxl_145 {
         padding-left: 145px;
         padding-right: 145px;
+    }
+}
+
+@media (min-width: 1420px) {
+    .progressbar_h {
+        height: auto;
     }
 }
