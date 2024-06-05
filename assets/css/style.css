@@ -630,7 +630,6 @@ body {
 }
 
 /* ======================= Cards Section ============================= */
-.dashboard_img,
 .dashboard_img {
     width: 48px;
     height: 48px;
@@ -1113,6 +1112,7 @@ body {
         width: 41.66%;
         padding: 0 12px;
     }
+
     .col_xl_6 {
         width: 50%;
         padding: 0 12px;

@@ -1,29 +1,38 @@
 @import url(./root.css);
+
 .token_links:hover {
   color: var(--color-meteor);
 }
+
 .token_section {
   overflow-x: scroll;
 }
+
 .token_section div {
   width: 890px;
 }
+
 .text_nowrap {
   text-wrap: nowrap;
 }
+
 .pt_16 {
   padding-top: 16px;
 }
+
 .pb_12 {
   padding-bottom: 12px;
 }
+
 .pt_16 {
   padding-top: 16px;
 }
+
 /* scrollbar hidden */
 .token_section::-webkit-scrollbar {
   display: none;
 }
+
 .bfi_token {
   height: 102px;
   display: flex;
@@ -32,24 +41,30 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
+
 /* introduction section */
 .introduction_para {
   max-width: 700px;
 }
+
 .introduction_bottom_services_para:hover {
   color: var(--color-meteor);
   border-bottom: 2px solid var(--color-meteor);
 }
+
 .introduction_row {
   padding-bottom: 70px;
   padding-top: 30px;
 }
+
 .text_center {
   text-align: center;
 }
+
 .introduction_heading {
   padding-top: 100px;
 }
+
 .hero_bfi {
   right: 8%;
   top: -7%;
@@ -58,9 +73,11 @@
   z-index: 3 !important;
   filter: drop-shadow(2px 2px 30px var(--color-meteor));
 }
+
 .top_line {
   position: relative;
 }
+
 .top_line::before {
   position: absolute;
   content: "";
@@ -70,9 +87,11 @@
   width: 120%;
   background-color: var(--color-mine-shaft);
 }
-.px_0{
+
+.px_0 {
   padding: 0 0px !important;
 }
+
 /* tokimonia section start here */
 .tokimonia_coin_img {
   left: 0;
@@ -82,27 +101,37 @@
   position: relative;
   left: -8px;
 }
+
 .tokimonia_section .row {
   min-height: 500px !important;
 }
-.px_20{
+
+.market_logo {
+  max-width: 30px;
+}
+
+.px_20 {
   padding-left: 20px;
   padding-right: 20px;
 }
-.tertormonio_bg{
+
+.tertormonio_bg {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+
 @media (min-width: 576px) {
   .bfi_token {
     height: 237px;
     display: flex;
     align-items: center;
   }
+
   .introduction_row {
     padding-bottom: 60px;
     padding-top: 80px;
   }
+
   .hero_bfi {
     right: 5%;
     top: -14%;
@@ -110,6 +139,7 @@
     width: 250px;
     filter: drop-shadow(2px 2px 60px var(--color-meteor));
   }
+
   .introduction_bg {
     max-width: 500px;
     right: 0;
@@ -117,20 +147,25 @@
     top: 0;
     height: 100%;
   }
+
   .letter_sm_10 {
     letter-spacing: 10px;
   }
 }
+
 @media (min-width: 768px) {
   .pl_md_16 {
     padding-left: 16px !important;
   }
+
   .token_section div {
     width: 1000px;
   }
+
   .text_md_start {
     text-align: start !important;
   }
+
   .hero_bfi {
     right: 5%;
     top: -20%;
@@ -139,54 +174,69 @@
     filter: drop-shadow(2px 2px 70px var(--color-meteor));
   }
 }
+
 @media (min-width: 1024px) {
-  .d_lg_none{
+  .d_lg_none {
     display: none;
   }
+
   .hero_bfi {
     right: 5%;
     height: 300px;
     width: 300px;
     filter: drop-shadow(2px 2px 80px var(--color-meteor));
   }
-    .tertormonio_bg {
-    background-image: url(../images/png/tertormonio_bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: 33%;
-  }
-  
-}
-@media (min-width: 1200px) {
-   .pl_xl_16 {
-    padding-left: 16px !important;
-  }
-  .hero_bfi {
-    right: 10%;
-    height: 350px;
-    width: 350px;
-  }
+
   .tertormonio_bg {
     background-image: url(../images/png/tertormonio_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: 33%;
   }
-  .d_xl_none{
+
+}
+
+@media (min-width: 1200px) {
+  .pl_xl_16 {
+    padding-left: 16px !important;
+  }
+
+  .hero_bfi {
+    right: 10%;
+    height: 350px;
+    width: 350px;
+  }
+
+  .tertormonio_bg {
+    background-image: url(../images/png/tertormonio_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 33%;
+  }
+
+  .d_xl_none {
     display: none;
   }
 }
+
 @media (min-width: 1400px) {
   .hero_bfi {
     right: 10%;
     height: 400px;
     width: 400px;
   }
+
   .pr_xxl_130 {
     padding-right: 130px;
   }
+
   .tertormonio_bg {
     background-size: 100% 100%;
     background-position-x: 43%;
+  }
+
+  .py_xxl_60 {
+    padding-left: 130px;
+    padding-right: 130px;
   }
 }
