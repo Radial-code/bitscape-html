@@ -74,6 +74,7 @@
     :root {
         --font-sm: 11px !important;
         --font-xmd: 13px !important;
+         --font-md: 16px !important;
         --font-lg: 27px !important;
         --font-xl: 40px !important;
     }
@@ -87,7 +88,7 @@
     :root {
         --font-xBase: 12px !important;
         --font-base: 14px !important;
-        --font-md: 16px !important;
+        --font-md: 14px !important;
         --font-xmd: 16px !important;
         --font-xlg: 24px !important;
         --font-xl: 32px !important;
