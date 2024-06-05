@@ -162,6 +162,7 @@
 }
 
 .ordinal_img {
+    min-width: 250px;
     min-height: 195px;
 }
 
