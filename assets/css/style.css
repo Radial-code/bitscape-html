@@ -684,7 +684,8 @@ body {
 .social_icons {
     transform: translateY(2px);
 }
-
+/*=========================== MEDIA MIN SCREEN START HERE ===============================*/
+ 
 @media (min-width: 576px) {
     /* ==================PADDING / MARGIN /GAP================== */
 
