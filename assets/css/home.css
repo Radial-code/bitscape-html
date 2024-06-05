@@ -37,7 +37,7 @@
   height: 102px;
   display: flex;
   align-items: end;
-  background-image: url("../images/png/bfi-token-bg.png");
+  background-image: url("../images/webp/bfi-token-bg.webp");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -188,7 +188,7 @@
   }
 
   .tertormonio_bg {
-    background-image: url(../images/png/tertormonio_bg.png);
+    background-image: url(../images/webp/tertormonio_bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: 33%;
@@ -208,9 +208,6 @@
   }
 
   .tertormonio_bg {
-    background-image: url(../images/png/tertormonio_bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position-x: 33%;
   }
 
