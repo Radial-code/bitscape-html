@@ -164,6 +164,14 @@ body {
     max-width: 380px;
 }
 
+.max_w_880 {
+    max-width: 880px;
+}
+
+.max_w_468 {
+    max-width: 468px;
+}
+
 /* ================= TEXT ============= */
 
 .text_uppercase {
@@ -419,6 +427,36 @@ body {
 .py_20 {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.pt_32 {
+    padding-top: 32px;
+}
+
+.pt_6 {
+    padding-top: 6px;
+}
+
+.pb_20 {
+    padding-bottom: 20px;
+}
+
+.py_40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.pt_16 {
+    padding-top: 16px;
+}
+
+.pb_12 {
+    padding-bottom: 12px;
+}
+
+.px_20 {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* ============== MARGIN ========== */
@@ -684,8 +722,9 @@ body {
 .social_icons {
     transform: translateY(2px);
 }
+
 /*=========================== MEDIA MIN SCREEN START HERE ===============================*/
- 
+
 @media (min-width: 576px) {
     /* ==================PADDING / MARGIN /GAP================== */
 
@@ -695,6 +734,14 @@ body {
 
     .pb_sm_30 {
         padding-bottom: 30px !important;
+    }
+
+    .pt_sm_12 {
+        padding-top: 12px;
+    }
+
+    .pt_sm_0 {
+        padding-top: 0px !important;
     }
 
     .mb_sm_30 {
@@ -790,6 +837,15 @@ body {
 
     .mb_n4 {
         margin-bottom: -4px;
+    }
+
+    .pt_md_20 {
+        padding-top: 20px;
+    }
+
+    .py_md_60 {
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     /* ==================MACKBOOK SECTION ========================== */
@@ -1057,6 +1113,33 @@ body {
         padding-left: 48px;
     }
 
+    .pl_lg_20 {
+        padding-left: 20px;
+    }
+
+    .pt_lg_24 {
+        padding-top: 24px;
+    }
+
+    .pt_lg_20 {
+        padding-top: 20px;
+    }
+
+    .py_lg_24 {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .py_lg_32 {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .px_lg_32 {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
     /* ==========THE BITSCAPE BFI SECTION============ */
     .bfi_section {
         min-height: 415px;
@@ -1140,6 +1223,37 @@ body {
         padding-top: 30px !important;
     }
 
+    .py_xl_128 {
+        padding-top: 128px;
+        padding-bottom: 128px;
+    }
+
+    .px_xl_64 {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    .pr_xl_54 {
+        padding-right: 54px;
+    }
+
+    .px_xl_126 {
+        padding-right: 126px;
+        padding-left: 126px;
+    }
+
+    .pl_xl_48 {
+        padding-left: 48px;
+    }
+
+    .pr_xl_40 {
+        padding-right: 40px;
+    }
+
+    .pl_xl_16 {
+        padding-left: 16px !important;
+    }
+
     .gap_xl_32 {
         gap: 32px !important;
     }
@@ -1157,6 +1271,11 @@ body {
 
     .pl_xl_126 {
         padding-left: 126px;
+    }
+
+    .py_xxl_145 {
+        padding-left: 145px;
+        padding-right: 145px;
     }
 
     .bfi_max_w {
