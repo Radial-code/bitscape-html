@@ -1179,6 +1179,9 @@ body {
   .col_xl_3 {
     width: 25% !important;
   }
+   .col_xl_4 {
+    width: 33.33% !important;
+  }
 
   .col_xl_8 {
     width: 66.66% !important;

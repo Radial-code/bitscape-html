@@ -132,3 +132,19 @@ function eligibility() {
 
   eligibility_btn.innerHTML = "CONNECT WALLET TO CLAIM";
 }
+
+const chartBtn = document.getElementById("chart_btn");
+const chartDataElements = document.querySelectorAll(".chart_data");
+
+chartBtn.addEventListener("click", function () {
+  chartDataElements.forEach((chartData) => {
+    if (chartData.style.display === "none" || chartData.style.display === "") {
+      chartData.style.display = "block";
+      chartBtn.innerHTML = "Collapse charts ▲";
+    } else {
+      chartData.style.display = "none";
+      chartBtn.innerHTML = "Expand charts for more details ▼";
+    }
+  });
+});
+
