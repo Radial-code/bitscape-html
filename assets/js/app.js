@@ -98,14 +98,14 @@ function myTabs(a) {
   ];
 
   tabs.forEach((tab) => {
-    tab.style.display = "none";
+    tab.classList.remove("show");
   });
 
   myTabs.forEach((tab) => {
     tab.classList.remove("active");
   });
 
-  document.getElementById("tab" + a).style.display = "block"; // changed "Tab" to "tab"
+  document.getElementById("tab" + a).classList.add("show");
   document.getElementById("myTab" + a).classList.add("active");
 }
 
@@ -113,15 +113,22 @@ document.addEventListener("DOMContentLoaded", (event) => {
   myTabs(1);
 });
 
+// counter sections buttons js
 const address_btn = document.getElementById("address_btn");
 const eligibility_btn = document.getElementById("eligibility_btn");
 function address() {
   address_btn.innerHTML =
     "bc1prvdtyd9zhnfqhnzpqq3jkjp5c7xu8lg77ld4senfj427ew8pux8s0vf0du";
   eligibility_btn.style.cursor = "pointer";
-  
+  eligibility_btn.style.background = "#d18d0e";
+  document.getElementById("eligibility_btn").removeAttribute("disabled");
 }
 function eligibility() {
+  address_btn.style.display = "none";
   const eligibility_box = document.getElementById("eligibility_box");
-  eligibility_box.style.display = "none";
+  eligibility_box.style.opacity = "1";
+  eligibility_box.style.maxHeight = "464px";
+  eligibility_box.classList.add("eligibility_box_spacing");
+
+  eligibility_btn.innerHTML = "CONNECT WALLET TO CLAIM";
 }
