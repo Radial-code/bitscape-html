@@ -1049,6 +1049,9 @@ body {
     .pt_lg_48 {
         padding-top: 48px;
     }
+    .pt_lg_60{
+        padding-top: 60px !important;
+    }
 
     .pl_lg_48 {
         padding-left: 48px;

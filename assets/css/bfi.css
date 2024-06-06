@@ -49,13 +49,15 @@
 
 /* ============= introduction section================= */
 .tab {
-  display: none;
+  display:none;
+   transition: opacity 0.3s ease;
 }
 
 .active {
   color: var(--color-meteor) !important;
   border-bottom: 2px solid var(--color-meteor) !important;
 }
+
 
 .bfi_token {
   height: 102px;
