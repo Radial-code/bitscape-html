@@ -133,6 +133,7 @@ function eligibility() {
   eligibility_btn.innerHTML = "CONNECT WALLET TO CLAIM";
 }
 
+// CHART DATA JS START HERE
 const chartBtn = document.getElementById("chart_btn");
 const chartDataElements = document.querySelectorAll(".chart_data");
 
