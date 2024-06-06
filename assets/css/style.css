@@ -206,6 +206,12 @@ body {
 .letter_2 {
     letter-spacing: 2px;
 }
+.letter_10{
+    letter-spacing: 10px;
+}
+.letter_-10{
+    letter-spacing: -2px;
+}
 
 .letter_6 {
     letter-spacing: 6px;
@@ -427,6 +433,9 @@ body {
 .py_20 {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+.py_8{
+    padding:8px 0px;
 }
 
 .pt_32 {
