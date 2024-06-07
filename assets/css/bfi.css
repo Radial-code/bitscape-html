@@ -9,7 +9,7 @@
   transform: translateY(70%);
   max-height: 0px;
   overflow: hidden;
-  transition: all .3s linear;
+  transition: all .7s ease;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -226,7 +226,7 @@ align-items: center;
 }
 
 .sliderdwon {
-  animation: sliderdwon 9s reverse linear infinite;
+  animation: sliderdwon 13s reverse linear infinite;
 }
 
 .box {
@@ -235,11 +235,11 @@ align-items: center;
   margin-bottom: 8px;
 }
 .slide-up {
-  animation: slide-up 9s linear infinite;
+  animation: slide-up 13s linear infinite;
 }
 
 .slide-down {
-  animation: slide-down 9s reverse linear infinite;
+  animation: slide-down 13s reverse linear infinite;
 }
 .ecosystrem_row div{
 max-width: 400px;
