@@ -130,6 +130,13 @@ align-items: center;
   );
 }
 
+.chart_data{
+  max-width: 379px;
+  margin-left: auto;
+  display: grid;
+  transition: all .5s ease;
+}
+
 .ordinal_img {
   min-width: 250px;
   min-height: 195px;

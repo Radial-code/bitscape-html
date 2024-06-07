@@ -507,7 +507,9 @@ body {
 .gap_12 {
   gap: 12px;
 }
-
+.gap_28{
+  gap: 28px;
+}
 .gap_8 {
   gap: 8px;
 }

@@ -139,11 +139,11 @@ const chartDataElements = document.querySelectorAll(".chart_data");
 
 chartBtn.addEventListener("click", function () {
   chartDataElements.forEach((chartData) => {
-    if (chartData.style.display === "none" || chartData.style.display === "") {
-      chartData.style.display = "block";
+    if (chartData.style.gridTemplateRows === "0fr" || chartData.style.gridTemplateRows === "") {
+      chartData.style.gridTemplateRows = "1fr";
       chartBtn.innerHTML = "Collapse charts ▲";
     } else {
-      chartData.style.display = "none";
+      chartData.style.gridTemplateRows = "0fr";
       chartBtn.innerHTML = "Expand charts for more details ▼";
     }
   });
