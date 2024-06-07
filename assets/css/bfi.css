@@ -224,7 +224,7 @@ align-items: center;
 }
 
 .sliderdwon {
-  animation: sliderdwon 5s reverse linear infinite;
+  animation: sliderdwon 6s reverse linear infinite;
 }
 
 .box {
@@ -233,11 +233,11 @@ align-items: center;
   margin-bottom: 8px;
 }
 .slide-up {
-  animation: slide-up 5s linear infinite;
+  animation: slide-up 7s linear infinite;
 }
 
 .slide-down {
-  animation: slide-down 5s reverse linear infinite;
+  animation: slide-down 6s reverse linear infinite;
 }
 .ecosystrem_row div{
 max-width: 400px;

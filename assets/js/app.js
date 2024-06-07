@@ -120,7 +120,9 @@ function address() {
   address_btn.innerHTML =
     "bc1prvdtyd9zhnfqhnzpqq3jkjp5c7xu8lg77ld4senfj427ew8pux8s0vf0du";
   eligibility_btn.style.cursor = "pointer";
+  address_btn.style.cursor = "default";
   eligibility_btn.style.background = "#d18d0e";
+  eligibility_btn.style.color = "#000";
   document.getElementById("eligibility_btn").removeAttribute("disabled");
 }
 function eligibility() {
