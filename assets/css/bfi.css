@@ -6,9 +6,10 @@
 /* ============= introduction section================= */
 .tab {
   opacity: 0;
+  transform: translateY(70%);
   max-height: 0px;
   overflow: hidden;
-  transition: opacity 1s ease, max-height 0.5s ease;
+  transition: all .3s linear;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -20,6 +21,7 @@ align-items: center;
 }
 
 .show {
+  transform: translateY(0%);
   opacity: 1 !important;
   min-height: 320px !important;
 }
@@ -224,7 +226,7 @@ align-items: center;
 }
 
 .sliderdwon {
-  animation: sliderdwon 6s reverse linear infinite;
+  animation: sliderdwon 9s reverse linear infinite;
 }
 
 .box {
@@ -233,11 +235,11 @@ align-items: center;
   margin-bottom: 8px;
 }
 .slide-up {
-  animation: slide-up 7s linear infinite;
+  animation: slide-up 9s linear infinite;
 }
 
 .slide-down {
-  animation: slide-down 6s reverse linear infinite;
+  animation: slide-down 9s reverse linear infinite;
 }
 .ecosystrem_row div{
 max-width: 400px;
